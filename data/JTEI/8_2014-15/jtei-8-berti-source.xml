@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?<?xml-model href="https://github.com/DH-RSE/software-citation-jtei/raw/main/schema/tei_jtei_annotated.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?<?xml-model href="https://github.com/DH-RSE/software-citation-jtei/raw/main/schema/tei_jtei_annotated.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://github.com/DH-RSE/software-citation-jtei/raw/main/schema/tei_jtei_annotated.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://github.com/DH-RSE/software-citation-jtei/raw/main/schema/tei_jtei_annotated.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <!-- [RvdB] general remarks:
   -are the escaped XPath characters in the URL identifiers intentional? Wouldn't it be nicer to use unescaped XPath characters: "http://data.perseus.org/citations/urn:cts:greekLit:tlg0008.tlg001.perseus-grc1:3.6@0Ἴστρος[1]-συκοφάνται[1]"
    instead of
