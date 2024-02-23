@@ -1430,9 +1430,9 @@
                <note type="category">general</note>
             </item>
             <item xml:id="teicorpo">
-               <name>TEICORPO</name>
-               <ref type="URL"/>
-               <note type="description"/>
+               <name>TEI-CORPO</name>
+               <ref type="URL">https://github.com/christopheparisse/teicorpo</ref>
+               <note type="description">Conversion tool from Elan, Clan, Transcriber and Praat files to TEI files and back.</note>
                <note type="category"/>
             </item>
             <item xml:id="teiconvert">
@@ -1454,13 +1454,13 @@
                <note type="category"/>
             </item>
             <item xml:id="transcriber">
-               <name>TRANSCRIBER</name>
+               <name>Transcriber</name>
                <ref type="URL"/>
                <note type="description"/>
                <note type="category"/>
             </item>
             <item xml:id="praat">
-               <name>PRAAT</name>
+               <name>Praat</name>
                <ref type="URL">http://www.fon.hum.uva.nl/praat/</ref>
                <note type="description"/>
                <note type="category"/>
@@ -1472,7 +1472,7 @@
                <note type="category"/>
             </item>
             <item xml:id="treetagger">
-               <name>TREETAGGER</name>
+               <name>TreeTagger</name>
                <ref type="URL">https://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger/</ref>
                <note type="description"/>
                <note type="category"/>
@@ -1528,7 +1528,7 @@
             <item xml:id="efes">
                <name>EFES</name>
                <ref type="URL">https://github.com/EpiDoc/EFES</ref>
-               <note type="description"/>
+               <note type="description">EFES is a delivery, search and browse platform that can be set up and customized for an individual EpiDoc XML-based project with only minimal training and technical skill on the part of a project team.</note>
                <note type="category"/>
             </item>
             <item xml:id="epidocxslt">
