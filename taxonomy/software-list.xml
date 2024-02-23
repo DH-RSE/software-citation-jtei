@@ -260,8 +260,9 @@
             <item xml:id="aracne">
                <name>ARACNE</name>
                <ref type="URL">http://www.aracne.unina.it/</ref>
+               <ref type="URL">https://zenodo.org/records/2647499</ref>
                <note type="description">?</note>
-               <note type="category"/>
+               <note type="category">research</note>
             </item>
             <item xml:id="lucene">
                <name>Apache Lucene</name>
@@ -348,7 +349,7 @@
                <ref type="URL">https://aframe.io/</ref>
                <note type="description">an open-source web framework for building virtual reality
                   (VR) experiences (JavaScript)</note>
-               <note type="category"/>
+               <note type="category">general</note>
             </item>
             <item xml:id="gephi">
                <name>Gephi</name>
@@ -552,7 +553,7 @@
                   aligned words from diverse text corpora. The ultimate goal of Ugarit is to improve
                   automatic translation alignment methods and to implement a set of dynamic lexica,
                   with particular regard for languages with less supported infrastructures.</note>
-               <note type="category"/>
+               <note type="category">research</note>
             </item>
             <item xml:id="smartcompose">
                <name>Smart Compose</name>
@@ -643,7 +644,7 @@
                <name>Lenticular Lenses II</name>
                <ref type="URL"/>
                <note type="description"/>
-               <note type="category"/>
+               <note type="category">research</note>
             </item>
             <item xml:id="d3js">
                <name>D3.js</name>
@@ -699,7 +700,7 @@
                <name>Celluloid</name>
                <ref target="URL">https://github.com/celluloid-camp/celluloid</ref>
                <note type="description">video annotation service</note>
-               <note type="category"/>
+               <note type="category">research</note>
             </item>
             <item xml:id="vlc">
                <name>VLC</name>
@@ -761,21 +762,21 @@
                <ref target="URL">https://ant.umn.edu/</ref>
                <note type="description">VideoAnt is a web-based video annotation tool for mobile and
                   desktop devices.</note>
-               <note type="category"/>
+               <note type="category">general</note>
             </item>
             <item xml:id="padma">
                <name>Pad.ma</name>
                <ref target="URL">https://pad.ma/</ref>
                <note type="description">Pad.ma is an online archive of densely text-annotated video
                   material, primarily footage and not finished films.</note>
-               <note type="category"/>
+               <note type="category">general</note>
             </item>
             <item xml:id="memorekall">
                <name>MemoRekall</name>
                <ref target="URL">https://memorekall.com/fr/</ref>
                <note type="description">Une application libre et gratuite d'annotation et
                   commentaire vidéo pour la médiation numérique</note>
-               <note type="category"/>
+               <note type="category">general</note>
             </item>
             <item xml:id="youtube">
                <name>YouTube</name>
@@ -795,13 +796,13 @@
                <name>Turtle Graphics</name>
                <ref type="URL"/>
                <note type="description"/>
-               <note type="category"/>
+               <note type="category">general</note>
             </item>
             <item xml:id="scratch">
                <name>Scratch</name>
                <ref type="URL"/>
                <note type="description">computational environment</note>
-               <note type="category"/>
+               <note type="category">general</note>
             </item>
             <item xml:id="snap">
                <name>Snap!</name>
@@ -834,13 +835,13 @@
                <name>Concourse</name>
                <ref type="URL">https://concourse-ci.org/</ref>
                <note type="description"/>
-               <note type="category"/>
+               <note type="category">general</note>
             </item>
             <item xml:id="tpen">
                <name>T-PEN</name>
                <ref type="URL"/>
                <note type="description"/>
-               <note type="category"/>
+               <note type="category">research</note>
             </item>
             <item xml:id="collatex">
                <name>CollateX</name>
@@ -931,14 +932,14 @@
                <ref type="URL">https://github.com/isl/Mapping-Memory-Manager</ref>
                <note type="description">Mapping Memory Manager (3M) is a package for managing
                   mapping definition files.</note>
-               <note type="category"/>
+               <note type="category">general</note>
             </item>
             <item xml:id="heterotoki">
                <name>Heterotoki</name>
                <ref type="URL">https://github.com/ponchio/heterotoki</ref>
                <note type="description">Online application to map heterogeneous
                   terminologies.</note>
-               <note type="category"/>
+               <note type="category">research</note>
             </item>
             <item xml:id="php">
                <name>PHP</name>
@@ -1033,7 +1034,7 @@
                <name>cPanel</name>
                <ref type="URL"/>
                <note type="description"/>
-               <note type="category"/>
+               <note type="category">general</note>
             </item>
             <item xml:id="wix">
                <name>Wix</name>
@@ -1046,7 +1047,7 @@
                <name>RAWGraphs</name>
                <ref type="URL">https://www.rawgraphs.io/</ref>
                <note type="description">A free and open source tool for data visualization</note>
-               <note type="category"/>
+               <note type="category">general</note>
             </item>
             <item xml:id="lancsbox">
                <name>#LancsBox</name>
@@ -1059,7 +1060,7 @@
                <ref type="URL">http://www2.statmt.org/moses/</ref>
                <note type="description">Open source toolkit for statistical machine
                   translation.</note>
-               <note type="category"/>
+               <note type="category">research</note>
             </item>
             <item xml:id="giza">
                <name>GIZA++</name>
@@ -1105,7 +1106,7 @@
                <name>Koha</name>
                <ref type="URL">https://koha-community.org/</ref>
                <note type="description">free library system</note>
-               <note type="category"/>
+               <note type="category">general</note>
             </item>
             <item xml:id="filemaker">
                <name>FileMaker</name>
@@ -1130,19 +1131,19 @@
                <name>Webble-Technologie</name>
                <ref type="URL"/>
                <note type="description"/>
-               <note type="category"/>
+               <note type="category">general</note>
             </item>
             <item xml:id="ecomparatio">
                <name>eComparatio</name>
                <ref type="URL"/>
                <note type="description"/>
-               <note type="category"/>
+               <note type="category">research</note>
             </item>
             <item xml:id="cgs">
                <name>Canonical Graph Services (CGS)</name>
                <ref type="URL"/>
                <note type="description"/>
-               <note type="category"/>
+               <note type="category">general</note>
             </item>
             <item xml:id="webgl">
                <name>WebGL</name>
@@ -1156,25 +1157,25 @@
                <name>Signum</name>
                <ref type="URL"/>
                <note type="description"/>
-               <note type="category"/>
+               <note type="category">research?</note>
             </item>
             <item xml:id="indri">
                <name>Indri</name>
                <ref type="URL">http://sourceforge.net/projects/lemur/files/lemur/indri-5.6/</ref>
                <note type="description"/>
-               <note type="category"/>
+               <note type="category">general</note>
             </item>
             <item xml:id="edinburghgeoparser">
                <name>Edinburgh Geoparser</name>
                <ref type="URL"/>
                <note type="description"/>
-               <note type="category"/>
+               <note type="category">research</note>
             </item>
             <item xml:id="edinburghgazetteer">
                <name>Edinburgh gazetteer</name>
                <ref type="URL"/>
                <note type="description"/>
-               <note type="category"/>
+               <note type="category">research</note>
             </item>
             <item xml:id="palimpsest">
                <name>Palimpsest</name>
@@ -1190,19 +1191,19 @@
                <name>Cytoscape’s tools for network visualization and statistical analysis</name>
                <ref type="URL"/>
                <note type="description"/>
-               <note type="category"/>
+               <note type="category">general</note>
             </item>
             <item xml:id="abby">
                <name>ABBY</name>
                <ref type="URL"/>
                <note type="description"/>
-               <note type="category"/>
+               <note type="category">?</note>
             </item>
             <item xml:id="omnipage">
                <name>OmniPage</name>
                <ref type="URL"/>
                <note type="description"/>
-               <note type="category"/>
+               <note type="category">general</note>
             </item>
             <item xml:id="juxta">
                <name>Juxta</name>
@@ -1218,13 +1219,13 @@
                <name>KorAP</name>
                <ref type="URL"/>
                <note type="description"/>
-               <note type="category"/>
+               <note type="category">research</note>
             </item>
             <item xml:id="cwrc">
                <name>Canadian Writing Research Collaboratory (CWRC)</name>
                <ref type="URL"/>
                <note type="description"/>
-               <note type="category"/>
+               <note type="category">research</note>
             </item>
             <item xml:id="cwrcwriter">
                <name>CWRC-Writer</name>
@@ -1282,13 +1283,13 @@
                <name>Azure cloud service</name>
                <ref type="URL"/>
                <note type="description"/>
-               <note type="category"/>
+               <note type="category">general</note>
             </item>
             <item xml:id="gate">
                <name>GATE</name>
                <ref type="URL"/>
                <note type="description"/>
-               <note type="category"/>
+               <note type="category">?</note>
             </item>
             <item xml:id="r">
                <name>R</name>
@@ -1350,25 +1351,25 @@
                <name>iGraph R package</name>
                <ref type="URL"/>
                <note type="description"/>
-               <note type="category"/>
+               <note type="category">research</note>
             </item>
             <item xml:id="textal">
                <name>Textal</name>
                <ref type="URL"/>
                <note type="description"/>
-               <note type="category"/>
+               <note type="category">general</note>
             </item>
             <item xml:id="planthumanitiesworkbench">
                <name>Plant Humanities Workbench</name>
                <ref type="URL"/>
                <note type="description"/>
-               <note type="category"/>
+               <note type="category">research</note>
             </item>
             <item xml:id="zooniverse">
                <name>Zooniverse</name>
                <ref type="URL"/>
                <note type="description"/>
-               <note type="category"/>
+               <note type="category">research</note>
             </item>
             <item xml:id="tisapi">
                <name>TIS API</name>
@@ -1402,13 +1403,13 @@
                <note type="description">A tool that uses the CITE Architecture, allowing alignments
                   among texts. It is a zero-infrastructure HTML app that exports data in a
                   plain-text CEX format.</note>
-               <note type="category"/>
+               <note type="category">research</note>
             </item>
             <item xml:id="inkscape">
                <name>Inkscape</name>
                <ref type="URL"/>
                <note type="description"/>
-               <note type="category"/>
+               <note type="category">general</note>
             </item>
             <item xml:id="apachespark">
                <name>ApacheSpark</name>
@@ -1432,128 +1433,136 @@
             <item xml:id="teicorpo">
                <name>TEI-CORPO</name>
                <ref type="URL">https://github.com/christopheparisse/teicorpo</ref>
-               <note type="description">Conversion tool from Elan, Clan, Transcriber and Praat files to TEI files and back.</note>
-               <note type="category"/>
+               <note type="description">Conversion tool from Elan, Clan, Transcriber and Praat files
+                  to TEI files and back.</note>
+               <note type="category">research</note>
             </item>
             <item xml:id="teiconvert">
                <name>TEICONVERT</name>
                <ref type="URL">http://ct3.ortolang.fr/teiconvert/</ref>
                <note type="description"/>
-               <note type="category"/>
+               <note type="category">research</note>
             </item>
             <item xml:id="teimeta">
                <name>TEIMETA</name>
                <ref type="URL"/>
                <note type="description"/>
-               <note type="category"/>
+               <note type="category">research</note>
             </item>
             <item xml:id="clan">
                <name>CLAN</name>
                <ref type="URL">http://dali.talkbank.org/clan/</ref>
                <note type="description"/>
-               <note type="category"/>
+               <note type="category">research</note>
             </item>
             <item xml:id="transcriber">
                <name>Transcriber</name>
                <ref type="URL"/>
                <note type="description"/>
-               <note type="category"/>
+               <note type="category">research</note>
             </item>
             <item xml:id="praat">
                <name>Praat</name>
                <ref type="URL">http://www.fon.hum.uva.nl/praat/</ref>
                <note type="description"/>
-               <note type="category"/>
+               <note type="category">research</note>
             </item>
             <item xml:id="elan">
                <name>ELAN</name>
                <ref type="URL"/>
                <note type="description"/>
-               <note type="category"/>
+               <note type="category">research</note>
             </item>
             <item xml:id="treetagger">
                <name>TreeTagger</name>
                <ref type="URL">https://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger/</ref>
                <note type="description"/>
-               <note type="category"/>
+               <note type="category">research</note>
             </item>
             <item xml:id="stanfordcorenlp">
                <name>Stanford Core NLP</name>
                <ref type="URL">https://nlp.stanford.edu/software/</ref>
                <note type="description"/>
-               <note type="category"/>
+               <note type="category">research</note>
             </item>
             <item xml:id="txm">
                <name>TXM</name>
                <ref type="URL">http://textometrie.ens-lyon.fr</ref>
                <note type="description"/>
-               <note type="category"/>
+               <note type="category">research</note>
             </item>
             <item xml:id="letrameur">
                <name>Le Trameur</name>
                <ref type="URL"/>
                <note type="description"/>
-               <note type="category"/>
+               <note type="category">research</note>
             </item>
             <item xml:id="iramuteq">
                <name>Iramuteq</name>
                <ref type="URL"/>
                <note type="description"/>
-               <note type="category"/>
+               <note type="category">research</note>
             </item>
             <item xml:id="exmaralda">
                <name>EXMARaLDA</name>
                <ref type="URL">https://exmaralda.org</ref>
                <note type="description"/>
-               <note type="category"/>
+               <note type="category">research</note>
             </item>
             <item xml:id="anvil">
                <name>Anvil</name>
                <ref type="URL">https://www.anvil-software.org</ref>
                <note type="description"/>
-               <note type="category"/>
+               <note type="category">general</note>
             </item>
             <item xml:id="folker">
                <name>FOLKER</name>
                <ref type="URL">https://exmaralda.org/en/folker-en/</ref>
                <note type="description"/>
-               <note type="category"/>
+               <note type="category">research</note>
             </item>
             <item xml:id="weblicht">
                <name>Weblicht</name>
-               <ref type="URL"/>
-               <note type="description"/>
-               <note type="category"/>
+               <ref type="URL"
+                  >https://weblicht.sfs.uni-tuebingen.de/weblichtwiki/index.php/Main_Page</ref>
+               <note type="description">WebLicht is an execution environment for automatic
+                  annotation of text corpora.</note>
+               <note type="category">research</note>
             </item>
             <item xml:id="efes">
                <name>EFES</name>
                <ref type="URL">https://github.com/EpiDoc/EFES</ref>
-               <note type="description">EFES is a delivery, search and browse platform that can be set up and customized for an individual EpiDoc XML-based project with only minimal training and technical skill on the part of a project team.</note>
-               <note type="category"/>
+               <note type="description">EFES is a delivery, search and browse platform that can be
+                  set up and customized for an individual EpiDoc XML-based project with only minimal
+                  training and technical skill on the part of a project team.</note>
+               <note type="category">research</note>
             </item>
             <item xml:id="epidocxslt">
                <name>EpiDoc Reference XSLT Stylesheets</name>
                <ref type="URL">https://github.com/EpiDoc/Stylesheets</ref>
                <note type="description"/>
-               <note type="category"/>
+               <note type="category">research</note>
             </item>
             <item xml:id="oxygen">
                <name>oXygen XML Editor</name>
                <ref type="URL"/>
                <note type="description"/>
-               <note type="category"/>
+               <note type="category">general</note>
             </item>
             <item xml:id="oxygenauthor">
                <name>oXygen XML Author</name>
                <ref type="URL"/>
                <note type="description"/>
-               <note type="category"/>
+               <note type="category">general</note>
             </item>
             <item xml:id="kiln">
                <name>Kiln</name>
                <ref type="URL">https://kcl-ddh.github.io/kiln/</ref>
-               <note type="description"/>
-               <note type="category"/>
+               <note type="description">Kiln is a multi-platform framework for building and
+                  deploying complex websites whose source content is primarily in XML. It brings
+                  together various independent software components into an integrated whole that
+                  provides the infrastructure and base functionality for such sites.</note>
+               <note type="category">general</note>
             </item>
             <item xml:id="tapas">
                <name>TAPAS</name>
@@ -1567,7 +1576,7 @@
                <name>TEI Publisher</name>
                <ref type="URL">https://teipublisher.com/index.html</ref>
                <note type="description"/>
-               <note type="category"/>
+               <note type="category">research</note>
             </item>
             <item xml:id="teichi">
                <name>TEICHI</name>
@@ -1582,49 +1591,54 @@
                <name>Edition Production and Presentation Technology</name>
                <ref type="URL">http://sourceforge.net/projects/eppt/</ref>
                <note type="description"/>
-               <note type="category"/>
+               <note type="category">research</note>
             </item>
             <item xml:id="elwoodviewer">
                <name>Elwood Viewer</name>
                <ref type="URL">http://www3.iath.virginia.edu/seenet/elwoodinfo.htm</ref>
                <note type="description"/>
-               <note type="category"/>
+               <note type="category">research</note>
             </item>
             <item xml:id="evt">
                <name>Edition Visualization Technology</name>
                <ref type="URL"/>
                <note type="description"/>
-               <note type="category"/>
+               <note type="category">research</note>
             </item>
             <item xml:id="tei2html">
                <name>tei2html</name>
                <ref type="URL">https://github.com/jawalsh/tei2html</ref>
-               <note type="description"/>
-               <note type="category"/>
+               <note type="description">tei2html is a bundle of XSLT style sheets, CSS, and
+                  Javascript for transforming TEI P5 XML to (hopefully) valid XHTML. </note>
+               <note type="category">research</note>
             </item>
             <item xml:id="basex">
                <name>BaseX</name>
-               <ref type="URL"/>
-               <note type="description"/>
-               <note type="category"/>
+               <ref type="URL">https://basex.org/</ref>
+               <note type="description">BaseX is a native and light-weight XML database management
+                  system and XQuery processor, developed as a community project on GitHub.</note>
+               <note type="category">general</note>
             </item>
             <item xml:id="tipuesearch">
                <name>Tipue Search</name>
                <ref type="URL"/>
-               <note type="description"/>
-               <note type="category"/>
+               <note type="description">Serialize generated HTML content to a JS variable for use by
+                  the Tipue static search jQuery plugin.</note>
+               <note type="category">general</note>
             </item>
             <item xml:id="digitallightbox">
                <name>Digital Lightbox</name>
                <ref type="URL">http://lightbox-dev.dighum.kcl.ac.uk</ref>
                <note type="description"/>
-               <note type="category"/>
+               <note type="category">research</note>
             </item>
             <item xml:id="jquery">
                <name>Jquery</name>
                <ref type="URL"/>
-               <note type="description"/>
-               <note type="category"/>
+               <note type="description">jQuery is a JavaScript library designed to simplify HTML DOM
+                  tree traversal and manipulation, as well as event handling, CSS animations, and
+                  Ajax.</note>
+               <note type="category">general</note>
             </item>
             <item xml:id="teistylesheets">
                <name>TEI XSL Stylesheets</name>
@@ -1671,20 +1685,20 @@
             <item xml:id="versioningmachine">
                <name>Versioning Machine</name>
                <ref type="URL">http://v-machine.org/</ref>
-               <note type="description"/>
-               <note type="category"/>
+               <note type="description">The Versioning Machine is a framework and an interface for displaying multiple versions of text encoded according to the Text Encoding Initiative (TEI) Guidelines, and is P5 compatible. </note>
+               <note type="category">research</note>
             </item>
             <item xml:id="conftool">
                <name>ConfTool Conference Management Software</name>
                <ref type="URL">http://www.conftool.net/</ref>
                <note type="description"/>
-               <note type="category"/>
+               <note type="category">general</note>
             </item>
             <item xml:id="indesign">
                <name>Adobe InDesign</name>
                <ref type="URL"/>
                <note type="description"/>
-               <note type="category"/>
+               <note type="category">general</note>
             </item>
             <item xml:id="teiboilerplate">
                <name>TEI Boilerplate</name>
@@ -1699,47 +1713,56 @@
             <item xml:id="teioxygenframework">
                <name>TEI oXygen Framework</name>
                <ref type="URL"/>
-               <note type="description"/>
+               <note type="category">research</note>
             </item>
             <item xml:id="git">
                <name>Git</name>
                <ref type="URL">https://git-scm.com/</ref>
-               <note type="description">Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency. </note>
+               <note type="description">Git is a free and open source distributed version control
+                  system designed to handle everything from small to very large projects with speed
+                  and efficiency. </note>
+               <note type="category">general</note>
             </item>
             <item xml:id="emacs">
                <name>Emacs</name>
                <ref type="URL"/>
-               <note type="description"/>
+               <note type="category">general</note>
             </item>
             <item xml:id="emacsorgmode">
                <name>Emacs Orgdmode</name>
                <ref type="URL">https://orgmode.org/</ref>
                <note type="description"/>
+               <note type="category">general</note>
             </item>
             <item xml:id="mandoku1">
                <name>Emacs Module Mandoku</name>
                <ref type="URL">https://github.com/mandoku/mandoku</ref>
                <note type="description"/>
+               <note type="category">research</note>
             </item>
             <item xml:id="toolbox">
                <name>Toolbox</name>
                <ref type="URL"/>
                <note type="description"/>
+               <note type="category">?</note>
             </item>
             <item xml:id="ediarum">
                <name>Ediarum</name>
                <ref type="URL"/>
                <note type="description"/>
+               <note type="category">research</note>
             </item>
             <item xml:id="transkribus">
                <name>Transkribus</name>
                <ref type="URL"/>
                <note type="description"/>
+               <note type="category">research</note>
             </item>
             <item xml:id="xproc">
                <name>XProc</name>
                <ref type="URL"/>
                <note type="description">An XML Pipeline Language</note>
+               <note type="category">general</note>
             </item>
             <item xml:id="ceteicean">
                <name>CETEIcean</name>
@@ -1752,132 +1775,158 @@
                <name>Image Markup Tool</name>
                <ref type="URL">http://www.tapor.uvic.ca/~mholmes/image_markup/</ref>
                <note type="description"/>
+               <note type="category">research</note>
             </item>
             <item xml:id="tustep">
                <name>Tuebingen System of Text Processing tools</name>
                <ref type="URL">http://www.tustep.uni-tuebingen.de/tustep_eng.html</ref>
                <note type="description"/>
+               <note type="category">research</note>
             </item>
             <item xml:id="netbeans">
                <name>NetBeans</name>
                <ref type="URL"/>
                <note type="description"/>
+               <note type="category">general</note>
             </item>
             <item xml:id="eclipse">
                <name>Eclipse</name>
                <ref type="URL"/>
                <note type="description"/>
+               <note type="category">general</note>
             </item>
             <item xml:id="svn">
                <name>Subversion</name>
                <ref type="URL"/>
                <note type="description"/>
+               <note type="category">general</note>
             </item>
             <item xml:id="euporiawebapp">
                <name>EuporiaWebApp</name>
                <ref type="URL"/>
                <note type="description"/>
+               <note type="category">research</note>
             </item>
             <item xml:id="aporia">
                <name>Aporia</name>
                <ref type="URL"/>
                <note type="description"/>
+               <note type="category">research</note>
             </item>
             <item xml:id="saussure">
                <name>Saussure Project</name>
                <ref type="URL"/>
                <note type="description"/>
+               <note type="category">research</note>
             </item>
             <item xml:id="g2a">
                <name>G2A</name>
                <ref type="URL"/>
-               <note type="description"/>
+               <note type="description">A Web Application to Study, Annotate and Scholarly Edit Ancient Texts and Their Aligned Translations</note>
+               <note type="category">research</note>
             </item>
             <item xml:id="goddag">
                <name>GODDAG processor</name>
                <ref type="URL"/>
                <note type="description"/>
+               <note type="category">research</note>
             </item>
             <item xml:id="tagmlparser">
                <name>TAGML parser</name>
                <ref type="URL"/>
                <note type="description"/>
+               <note type="category">research</note>
             </item>
             <item xml:id="sublime">
                <name>Sublime Editor</name>
                <ref type="URL"/>
                <note type="description"/>
+               <note type="category">general</note>
             </item>
             <item xml:id="sublimepackage">
                <name>Sublime Editor TAGML syntax highlighting package</name>
                <ref type="URL">https://huygensing.github.io/tagml-sublime-syntax/</ref>
                <note type="description"/>
+               <note type="category">research</note>
             </item>
             <item xml:id="context">
                <name>ConTeXt</name>
                <ref type="URL"/>
                <note type="description"/>
+               <note type="category">general</note>
             </item>
             <item xml:id="microsoftword">
                <name>Microsoft Word</name>
                <ref type="URL"/>
                <note type="description"/>
+               <note type="category">general</note>
             </item>
             <item xml:id="teuchos">
                <name>Teuchos</name>
                <ref type="URL"/>
                <note type="description"/>
+               <note type="category">research</note>
             </item>
             <item xml:id="textgrid">
                <name>TextGrid</name>
                <ref type="URL">http://textgrid.de/</ref>
                <note type="description"/>
+               <note type="category">research</note>
             </item>
             <item xml:id="timeline">
                <name>Timeline Widget</name>
                <ref type="URL">http://www.simile-widgets.org/timeline/</ref>
                <note type="description"/>
+               <note type="category">general</note>
             </item>
             <item xml:id="serverfaces">
                <name>Server Faces</name>
                <ref type="URL"/>
                <note type="description"/>
+               <note type="category">general</note>
             </item>
             <item xml:id="teicophilib">
                <name>TeiCoPhiLib</name>
                <ref type="URL"/>
                <note type="description"/>
+               <note type="category">research</note>
             </item>
             <item xml:id="dariahgeobrowser">
                <name>DARIAH Geo-Browser</name>
                <ref type="URL">http://geobrowser.de.dariah.eu/embed/?</ref>
                <note type="description"/>
+               <note type="category">research</note>
             </item>
             <item xml:id="vienneseeditor">
                <name>Viennese Lexicographic Editor</name>
                <ref type="URL"/>
                <note type="description"/>
+               <note type="category">research</note>
             </item>
             <item xml:id="cqp">
                <name>Corpus Query Processor</name>
                <ref type="URL"/>
-               <note type="category">query language of the Institut für Maschinelle
+               <note type="description">query language of the Institut für Maschinelle
                   Sprachverarbeitung (IMS) Corpus Workbench</note>
+               <note type="category">general</note>
             </item>
             <item xml:id="cwb">
                <name>IMS Corpus Workbench (CWB)</name>
                <ref type="URL"/>
                <note type="description"/>
+               <note type="category">general</note>
             </item>
             <item xml:id="sketchengine">
                <name>Sketch Engine</name>
                <ref type="URL">https://www.sketchengine.co.uk</ref>
                <note type="description"/>
+               <note type="category">general</note>
             </item>
             <item xml:id="readingtei">
                <name>readingTEI</name>
                <ref type="URL">https://github.com/umd-mith/sg-readingTEI</ref>
                <note type="description"/>
+               <note type="category">research</note>
             </item>
             <item xml:id="apachecocoon">
                <name>Apache Cocoon</name>
@@ -1890,6 +1939,7 @@
                <name>Lexico</name>
                <ref type="URL"/>
                <note type="description"/>
+               <note type="category">research</note>
             </item>
             <item xml:id="jekyll">
                <name>Jekyll</name>
@@ -1910,86 +1960,104 @@
                <ref type="URL"/>
                <idno type="wikidata"/>
                <note type="description"/>
-               <note type="category"/>
+               <note type="category">general</note>
             </item>
             <item xml:id="islandora">
                <name>Islandora</name>
                <ref type="URL"/>
                <idno type="wikidata"/>
-               <note type="description"/>
-               <note type="category"/>
+               <note type="description">TEI Editor</note>
+               <note type="category">research</note>
             </item>
             <item xml:id="fedora">
                <name>Fedora</name>
                <ref type="URL">https://github.com/fcrepo/fcrepo</ref>
                <idno type="wikidata"/>
-               <note type="description">Open source repository system for the management and dissemination of digital content. </note>
-               <note type="category"/>
+               <note type="description">Open source repository system for the management and
+                  dissemination of digital content. </note>
+               <note type="category">research</note>
             </item>
             <item xml:id="alexandria">
                <name>Alexandria</name>
                <ref type="URL">https://huygensing.github.io/alexandria/</ref>
                <note type="description"/>
+               <note type="category">research</note>
             </item>
             <item xml:id="teipelican">
                <name>TEI Pelican</name>
                <ref type="URL">https://teihub.netlify.app/</ref>
                <note type="description"/>
+               <note type="category">research</note>
             </item>
             <item xml:id="odd2odd">
                <name>TEI standard odd2odd stylesheet</name>
                <ref type="URL"/>
                <note type="description"/>
+               <note type="category">research</note>
             </item>
             <item xml:id="zenodo">
                <name>Zenodo</name>
                <ref type="URL"/>
                <note type="description"/>
+               <note type="category">general</note>
             </item>
             <item xml:id="parlaclarinscripts">
-               <name>Parla-CLARIN programs that convert the ODD into the XML schemas and to the HTML of the prose and schema definitions</name>
+               <name>Parla-CLARIN programs that convert the ODD into the XML schemas and to the HTML
+                  of the prose and schema definitions</name>
                <ref type="URL">https://github.com/clarin-eric/parla-clarin/</ref>
                <note type="description"/>
+               <note type="category">research</note>
             </item>
             <item xml:id="teicat">
                <name>TEI Critical Apparatus Toolbox</name>
                <ref type="URL">http://teicat.huma-num.fr/</ref>
                <note type="description"/>
+               <note type="category">research</note>
             </item>
             <item xml:id="digipal">
                <name>DigiPal</name>
                <ref type="URL"/>
                <note type="description"/>
+               <note type="category">research</note>
             </item>
             <item xml:id="archetype">
                <name>Archetype</name>
                <ref type="URL">http://archetype.ink/</ref>
                <note type="description"/>
+               <note type="category">research</note>
             </item>
             <item xml:id="textlab">
                <name>TextLab</name>
                <ref type="URL">https://www.textlab.org/</ref>
                <note type="description"/>
+               <note type="category">research</note>
             </item>
             <item xml:id="faircopy">
                <name>Faircopy</name>
                <ref type="URL">https://faircopyeditor.com/</ref>
                <note type="description"/>
+               <note type="category">general</note>
             </item>
             <item xml:id="xmlmind">
                <name>XMLmind XML Editor</name>
                <ref type="URL">https://www.xmlmind.com/index.html</ref>
                <note type="description"/>
+               <note type="category">general</note>
             </item>
             <item xml:id="unicaenapparat">
                <name/>
-               <ref type="URL">http://www.unicaen.fr/recherche/mrsh/document_numerique/outils/apparat</ref>
-               <note type="description">A framework for critical editing in TEI Parallel Segmentation based on XMLmind XML Editor</note>
+               <ref type="URL"
+                  >http://www.unicaen.fr/recherche/mrsh/document_numerique/outils/apparat</ref>
+               <note type="description">A framework for critical editing in TEI Parallel
+                  Segmentation based on XMLmind XML Editor</note>
+               <note type="category">research</note>
             </item>
             <item xml:id="sosol">
                <name>SUDA Online (SoSOL) application</name>
                <ref type="URL">https://github.com/sosol/sosol</ref>
-               <note type="description">Son of Suda Online (SoSOL) is a tool for the tagless creation and editing of EpiDoc XML by papyrologists and epigraphers, originally developed by the Integrating Digital Papyrology project.</note>
+               <note type="description">Son of Suda Online (SoSOL) is a tool for the tagless
+                  creation and editing of EpiDoc XML by papyrologists and epigraphers, originally
+                  developed by the Integrating Digital Papyrology project.</note>
                <note type="category">research</note>
             </item>
          </list>
