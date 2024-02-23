@@ -6,39 +6,41 @@
     
     <!-- evaluate citation types by year -->
     
+    <xsl:include href="global-parameters.xsl"/>
+    
     <xsl:template match="/">
         
         <xsl:variable name="citation-types" select="unparsed-text('../csv/citation-types.csv','UTF-8')"/>
-        <xsl:variable name="NEWLINE"><xsl:text>
-</xsl:text></xsl:variable>
-        <xsl:variable name="SEP" select="','" as="xs:string"/>
         
         <xsl:variable name="year-counts">
             <counts>
-                <xsl:analyze-string select="$citation-types" regex="{concat((:SoftwareID:)'^([^',$SEP,']+)',$SEP,(:Dateipfad:)'([^',$SEP,']+)',$SEP,'[^',$SEP,']+',$SEP,(:Name.Only:)'([^',$SEP,']+)',$SEP,'[^',$SEP,']+',$SEP,(:Bib.Ref:)'([^',$SEP,']+)',$SEP,'[^',$SEP,']+',$SEP,(:Bib.Soft:)'([^',$SEP,']+)',$SEP,'[^',$SEP,']+',$SEP,(:Agent:)'([^',$SEP,']+)',$SEP,'[^',$SEP,']+',$SEP,(:URL:)'([^',$SEP,']+)',$SEP,'[^',$SEP,']+',$SEP,(:PID:)'([^',$SEP,']+)',$SEP,'[^',$SEP,']+',$SEP,(:Ver:)'([^',$SEP,']+)$')}" flags="m">
+                <!-- CSV
+                SoftwareID,Dateipfad,soft.bib,,soft.bib.ref,soft.bib.ref (bool),soft.name,,soft.agent,soft.agent (bool),soft.url,soft.url (bool),,soft.ver,
+                Toolbox,../data/JTEI/10_2016-19,0,0,0,0,25,1,0,0,0,0,0,0,0,0
+                ...
+                -->
+                <xsl:variable name="regex" select="string-join((for $i in 1 to (count($SOFTWARE-MENTION-TYPES) * 2 + 2) return concat('^([^',$CSV-SEP,']+)')), $CSV-SEP)" as="xs:string"/>
+                <xsl:message select="$regex"></xsl:message>
+                <xsl:analyze-string select="$citation-types" regex="{$regex}" flags="m">
                     <!-- regex-groups:
                     1: SoftwareID
                     2: Dateipfad
-                    3: Name.Only (bool)
-                    4: Bib.Ref (bool)
-                    5: Bib.Soft (bool)
-                    6: Agent (bool)
-                    7: URL (bool)
-                    8: PID (bool)
-                    9: Ver (bool)
+                    4: soft.bib (bool)
+                    6: soft.bib.ref (bool)
+                    8: soft.name (bool)
+                    10: soft.agent (bool)
+                    12: soft.url (bool)
+                    14: soft.pid,soft.pid (bool)
+                    16: soft.ver (bool)
                     -->
                     <xsl:matching-substring>
                         <xsl:if test="position() > 1">
                             <entry>
                                 <name><xsl:value-of select="normalize-space(regex-group(1))"/></name>
                                 <path><xsl:value-of select="regex-group(2)"/></path>
-                                <value type="Name.Only"><xsl:value-of select="regex-group(3)"/></value>
-                                <value type="Bib.Ref"><xsl:value-of select="regex-group(4)"/></value>
-                                <value type="Bib.Soft"><xsl:value-of select="regex-group(5)"/></value>
-                                <value type="Agent"><xsl:value-of select="regex-group(6)"/></value>
-                                <value type="URL"><xsl:value-of select="regex-group(7)"/></value>
-                                <value type="PID"><xsl:value-of select="regex-group(8)"/></value>
-                                <value type="Ver"><xsl:value-of select="regex-group(9)"/></value>
+                                <xsl:for-each select="$SOFTWARE-MENTION-TYPES">
+                                    <value type="{.}"><xsl:value-of select="regex-group((position() + 1) * 2)"/></value>
+                                </xsl:for-each>
                             </entry>
                         </xsl:if>
                     </xsl:matching-substring>
@@ -49,11 +51,12 @@
         
         <!-- create CSV with values per year -->
         <xsl:result-document href="../csv/citation-types-years.csv" encoding="UTF-8" method="text">
-            <xsl:text>Year;Name.Only.abs;Name.Only.rel;Bib.Ref.abs;Bib.Ref.rel;Bib.Soft.abs;Bib.Soft.rel;Agent.abs;Agent.rel;URL.abs;URL.rel;PID.abs;PID.rel;Ver.abs;Ver.rel</xsl:text>
+            <xsl:value-of select="concat('Year;', string-join((for $type in $SOFTWARE-MENTION-TYPES return concat($type, '.abs;', $type, '.rel')), ';'))"/>
             <xsl:value-of select="$NEWLINE"/>
             
             <xsl:for-each-group select="$year-counts//entry" group-by="substring-before(substring-after(path,'ADHO-DH/'), '/tei')">
-                <xsl:variable name="group-size" select="count(current-group())"/>
+                <xsl:variable name="current-group" select="current-group()"/>
+                <xsl:variable name="group-size" select="count($current-group)"/>
                 
                 <xsl:variable name="sum-Name.Only" select="sum(current-group()/number(value[@type='Name.Only']))"/>
                 <xsl:variable name="sum-Bib.Ref" select="sum(current-group()/number(value[@type='Bib.Ref']))"/>
@@ -64,34 +67,13 @@
                 <xsl:variable name="sum-Ver" select="sum(current-group()/number(value[@type='Ver']))"/>
                 
                 <xsl:value-of select="current-grouping-key()"/>
-                <xsl:value-of select="$SEP"/>
-                <xsl:value-of select="$sum-Name.Only"/>
-                <xsl:value-of select="$SEP"/>
-                <xsl:value-of select="$sum-Name.Only div $group-size"/>
-                <xsl:value-of select="$SEP"/>
-                <xsl:value-of select="$sum-Bib.Ref"/>
-                <xsl:value-of select="$SEP"/>
-                <xsl:value-of select="$sum-Bib.Ref div $group-size"/>
-                <xsl:value-of select="$SEP"/>
-                <xsl:value-of select="$sum-Bib.Soft"/>
-                <xsl:value-of select="$SEP"/>
-                <xsl:value-of select="$sum-Bib.Soft div $group-size"/>
-                <xsl:value-of select="$SEP"/>
-                <xsl:value-of select="$sum-Agent"/>
-                <xsl:value-of select="$SEP"/>
-                <xsl:value-of select="$sum-Agent div $group-size"/>
-                <xsl:value-of select="$SEP"/>
-                <xsl:value-of select="$sum-URL"/>
-                <xsl:value-of select="$SEP"/>
-                <xsl:value-of select="$sum-URL div $group-size"/>
-                <xsl:value-of select="$SEP"/>
-                <xsl:value-of select="$sum-PID"/>
-                <xsl:value-of select="$SEP"/>
-                <xsl:value-of select="$sum-PID div $group-size"/>
-                <xsl:value-of select="$SEP"/>
-                <xsl:value-of select="$sum-Ver"/>
-                <xsl:value-of select="$SEP"/>
-                <xsl:value-of select="$sum-Ver div $group-size"/>
+                <xsl:value-of select="$CSV-SEP"/>
+                <xsl:for-each select="$SOFTWARE-MENTION-TYPES">
+                    <xsl:variable name="sum" select="sum($current-group/number(value[@type=current()]))"/>
+                    <xsl:value-of select="$sum"/>
+                    <xsl:value-of select="$CSV-SEP"/>
+                    <xsl:value-of select="$sum div $group-size"/>
+                </xsl:for-each>
                 <xsl:if test="position() != last()">
                     <xsl:value-of select="$NEWLINE"/>
                 </xsl:if>
