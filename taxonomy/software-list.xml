@@ -1929,62 +1929,62 @@
             <item xml:id="alexandria">
                <name>Alexandria</name>
                <ref type="URL">https://huygensing.github.io/alexandria/</ref>
-               <ref type="description"/>
+               <note type="description"/>
             </item>
             <item xml:id="teipelican">
                <name>TEI Pelican</name>
                <ref type="URL">https://teihub.netlify.app/</ref>
-               <ref type="description"/>
+               <note type="description"/>
             </item>
             <item xml:id="odd2odd">
                <name>TEI standard odd2odd stylesheet</name>
                <ref type="URL"/>
-               <ref type="description"/>
+               <note type="description"/>
             </item>
             <item xml:id="zenodo">
                <name>Zenodo</name>
                <ref type="URL"/>
-               <ref type="description"/>
+               <note type="description"/>
             </item>
             <item xml:id="parlaclarinscripts">
                <name>Parla-CLARIN programs that convert the ODD into the XML schemas and to the HTML of the prose and schema definitions</name>
                <ref type="URL">https://github.com/clarin-eric/parla-clarin/</ref>
-               <ref type="description"/>
+               <note type="description"/>
             </item>
             <item xml:id="teicat">
                <name>TEI Critical Apparatus Toolbox</name>
                <ref type="URL">http://teicat.huma-num.fr/</ref>
-               <ref type="description"/>
+               <note type="description"/>
             </item>
             <item xml:id="digipal">
                <name>DigiPal</name>
                <ref type="URL"/>
-               <ref type="description"/>
+               <note type="description"/>
             </item>
             <item xml:id="archetype">
                <name>Archetype</name>
                <ref type="URL">http://archetype.ink/</ref>
-               <ref type="description"/>
+               <note type="description"/>
             </item>
             <item xml:id="textlab">
                <name>TextLab</name>
                <ref type="URL">https://www.textlab.org/</ref>
-               <ref type="description"/>
+               <note type="description"/>
             </item>
             <item xml:id="faircopy">
                <name>Faircopy</name>
                <ref type="URL">https://faircopyeditor.com/</ref>
-               <ref type="description"/>
+               <note type="description"/>
             </item>
             <item xml:id="xmlmind">
                <name>XMLmind XML Editor</name>
                <ref type="URL">https://www.xmlmind.com/index.html</ref>
-               <ref type="description"/>
+               <note type="description"/>
             </item>
             <item xml:id="unicaenapparat">
                <name/>
                <ref type="URL">http://www.unicaen.fr/recherche/mrsh/document_numerique/outils/apparat</ref>
-               <ref type="description">A framework for critical editing in TEI Parallel Segmentation based on XMLmind XML Editor</ref>
+               <note type="description">A framework for critical editing in TEI Parallel Segmentation based on XMLmind XML Editor</note>
             </item>
          </list>
       </body>
