@@ -41,12 +41,12 @@ Consistent with software citation principles, we formulate the following criteri
 
 The annotation was done on all text within the TEI-Text element including abstract, headers, legends and bibliography. Below there is a code snippet of a bibliographic entry referring to the software for phonetic analysis, Praat. According to the characterization taxonomy of mentioned software (see Table 1 above), the snippet contains a reference to an agent, Paul Boersma, to the name of the software itself, and, of course, to a reference publication about the software—the bibliographic entry itself.
 
-![](Images\annotationexample_raw.png)
+![](Images/annotationexample_raw.png)
 *Figure 1: original snippet used in the Annotation Example 1 from Parisse et al. (2020).*
 
 In order to annotate the code snippet according to our schema, a pointer element, <ptr/>, is created just before the software mention, in this case before the bibliographic reference. This pointer is responsible for identifying, on a more general level, that a software is being referenced and, on a more specific level, the exact software, linking is to a list of software. An xml:id value, used to link single characteristics of the software, is assigned to the pointer. Each attribute of the software is annotated within a <rs> element, which identifies the type of characterization and a ref value that links the attribute to the pointer. In the example below, Annotation Example 1, the pointer identifies the 192nd software mention within a specific publication. Then the entirety of the bibliographic reference is accordingly identified as soft.bib.ref and the further descriptive attributes “Boersma, Paul” and “Praat” are identified as soft.agent and soft.name respectively.
 
-![](Images\annotationexample.png)
+![](Images/annotationexample.png)
 *Figure 2: Annotation Example 1 (Parisse et al. 2020).*
 
 The types of characterization are defined in the taxonomy (see Table 1 above) and the ref points to the pointer (ptr/@xml:id). The pointer, in turn, collects all attributes of this specific mention of Praat and its @target attribute points to the software list containing all identified software mentioned in the annotated Journal of the Text Encoding Initiative publications as well as software previously identified in other stages of the research.
@@ -55,13 +55,13 @@ The types of characterization are defined in the taxonomy (see Table 1 above) an
 
 The characterizations Soft.Bib and Soft.Bib.Ref both refer to bibliographic entries in the publication and can, therefore, easily be confused. Soft.Bib is a bibliographic entry referring to the software itself; it lists the developers as authors, an URL that points to the software and, in ideal cases, a persistent identifier and the specific version. Soft.Bib.Ref on the other hand, is a bibliographic entry that identifies a reference publication, in most cases a scientific paper, about the software. Figure 1 shows a typical Soft.Bib.Ref occurrence; the bibliographic entry refers to a publication by Paul Boersma, titled “Speak and unSpeak with PRAAT”, in which he reports on the functionalities and use cases for the software PRAAT, developed by him and Vincent van Heuven. Figure 3 (see below) conversely shows a bibliographic entry that refers directly to a publication of the software Catma on Zenodo, being therefore classified as Soft.Bib.
 
-![](Images\annotationexample_raw_soft.bib.png)
+![](Images/annotationexample_raw_soft.bib.png)
 *Figure 3: original snippet used in the Annotation Example 2 from Adelmann et al. (2019).*
 
 Annotation for the snippet shown above would be carried out just as shown in Annotation Example 1. Each of the agents is individually tagged with a <rs> element. The name of the software and the persistent identifier are also accordingly tagged (see Annotation Example 2 below).
 
 
-![](Images\annotationexample_soft.bib.png)
+![](Images/annotationexample_soft.bib.png)
 *Figure 4: Annotation Example 2 (Adelmann et al. 2019).*
 
 Both in cases of Soft.Bib and Soft.Bib.Ref it is important to annotate not only the bibliographic entry itself but also all the specific information that might be contained in the reference, such as agents, PID, URL and version.
@@ -70,19 +70,19 @@ Both in cases of Soft.Bib and Soft.Bib.Ref it is important to annotate not only 
 
 Most occurrences of software are based solely on the mention of a name, as it is shown in Annotation Example 3 below. This often occurs within the context of a sentence or paragraph and in these cases the pointer element is inserted immediately before the name of the software. The name of the software is then accordingly tagged within the <rs> element.
 
-![](Images\annotationexample_name.png)
+![](Images/annotationexample_name.png)
 *Figure 5: Annotation Example 3 from Parisse et al. (2020).*
 
 The automatic annotator used in the first stage of the workflow does not differentiate between different textual elements, such as figure legends or code snippets, since it matches the occurrences of software names already registered in the software list. In the manual annotation stage, we have opted to tag all software mentions that occur within the <text> element, not differentiating between the textual parts. According to this criterion, we also annotate code snippets such as the one shown below:
 
-![](Images\annotationcodesnippet.png)
+![](Images/annotationcodesnippet.png)
 *Figure 6: code snippet with software mentions from Parisse et al. (2020).*
 
 ### 3.3. Soft.Agent
 
 When the software mention includes the naming of the developer(s) involved, they should be identified with the <rs> element of type Soft.Agent. These are often identified as authors in bibliographic entries of the Soft.Bib type or explicitly characterized as such in the text body. In the following text excerpt, there is a reference to an unnamed tool identified as a “set of XSLT transformations” and also by the developer: “This process consists of a set of XSLT transformations authored by Wendell Piez, who served as a consultant to the S-GA project in 2013”( Muñoz et al. 2014). The tool in question is Reading TEI, as can be inferred from the URL within the <ref> element. The annotation of the excerpt would be carried out in the following manner:
 
-![](Images\annotationagent.png)
+![](Images/annotationagent.png)
 *Figure 7: Annotation Example 4 from Muñoz et al. (2014).*
 
 Note that, in this case, the <ref> element and its attributes were already a part of the original document provided by jTEI.
@@ -92,7 +92,7 @@ Note that, in this case, the <ref> element and its attributes were already a par
 URLs that point directly to the software’s website should be identified as Soft.URL. Note that URLs that point to a reference publication about a software should not be identified as Soft.URL.
 In the example given above, the URL is given as the content of the attribute target of the reference element, <ref>. In this case, the identifying tag used for annotating the software mentions and their characterizations, the referencing string, should wrap <ref> and its content. In jTEI publications the URL is also usually given in a pointer element, <ptr>, in which cases the same approach of wrapping with the annotation tags is to be adopted.
 
-![](Images\annotationurl.png)
+![](Images/annotationurl.png)
 *Figure 8: Annotation Example 5 from Parisse et al. (2020).*
 
 Annotation Example 5 above shows the characterization of the software Stanford Core NLP with a URL given in the notes within a pointer element. The annotated URL refers to the software which is named outside of the <note> element, connected by the id given in the xml:id and ref attributes in the pointer and referencing string respectively.
@@ -106,7 +106,7 @@ In Annotation Example 2 (see Figure 4 above), the software Catma is referenced a
 
 Referring to the specific version of a software used within a research setting can be highly relevant for enabling reproducibility. When a software is characterized with a version, it should be identified as Soft.Ver. The text identified should include all alphanumeric characters belonging to the version, including abbreviations of the word “version” as in, for example, “v.2.0”.
 
-![](Images\annotationversion.png)
+![](Images/annotationversion.png)
 *Figure 9: Annotation Example 6 from del Turco et al. (2014).*
 
 ## 4.	Special Cases
