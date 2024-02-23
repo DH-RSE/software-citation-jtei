@@ -791,6 +791,7 @@
                <note type="description">a programming language and graphical environment for
                   computer science education</note>
                <note type="category">research</note>
+               <note type="category">programming language</note>
             </item>
             <item xml:id="turtlegraphics">
                <name>Turtle Graphics</name>
@@ -1909,6 +1910,7 @@
                <note type="description">query language of the Institut für Maschinelle
                   Sprachverarbeitung (IMS) Corpus Workbench</note>
                <note type="category">general</note>
+               <note type="category">query language</note>
             </item>
             <item xml:id="cwb">
                <name>IMS Corpus Workbench (CWB)</name>
