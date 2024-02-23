@@ -2502,6 +2502,7 @@
                            <valItem mode="add" ident="#faircopy"/>
                            <valItem mode="add" ident="#xmlmind"/>
                            <valItem mode="add" ident="#unicaenapparat"/>
+                           <valItem mode="add" ident="#sosol"/>
                         </valList>
                         <dataRef name="anyURI" restriction="http.+|#.+|@.+|hdl.+|mailto.+"/>
                      </alternate>
