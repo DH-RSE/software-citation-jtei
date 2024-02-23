@@ -3,16 +3,33 @@
 ## 1. Overview
 
 
-This document presents the annotation guidelines adopted to annotate publications of the Journal of the Text Encoding Initiative. The aim of  the research is to identify what specific information is included when authors reference tools and software in their texts. 
+This document presents the annotation guidelines adopted to annotate instances of software mentions in publications of the Journal of the Text Encoding Initiative. The aim of the analysis is to identify what specific information is included when authors reference tools and software in their texts. The annotation model is based on the TEI inventory, using a combination of pointers `<ptr>` and referencing strings `<rs>`. Furthermore, an extensive list of software serves as the reference for software and can be used for semi-automatic pre-annotation of the software mentions.
 
-The categories derive from previous work by the authors focused on references of software and tools in abstracts of the Digital Humanities Konferenz im deutschsprachigen Raum and the annual conference of the Alliance of Digital Humanities Organizations. The formulation of the guidelines and the workflow for their development are based on the recommendations of Nils Reiter (Reiter 2020). 
+The annotation focuses on identifying software mentions and the individual instances of information associated with the software, such as software name, version, persistent identifier, developers, etc. These categories of information derive from previous work focused on references of software and tools in abstracts of the *Digital Humanities Konferenz im deutschsprachigen Raum* and the annual conference of the Alliance of Digital Humanities Organizations. The formulation of the guidelines and the workflow for their development are based on the recommendations of Nils Reiter (Reiter 2020). 
 
 ## 2. Software
 
-The annotation focuses on identifying software mentioned in text and in what level of detail it is described. When annotating these citations, we work with a broad definition of software as any type of computer program, including desktop and web applications, server software, plugins and extensions and sets of scripts. 
+The annotation focuses on identifying software mentioned in the texts and in what level of detail it is described. When annotating these citations, we work with a broad definition of software as any type of computer program, including desktop and web applications, server software, plugins and extensions and sets of scripts. 
 
-This includes distinct cases of software widely used in DH, such as CLAN, oXygen, eXist-db, and Omeka. And it also includes software developed within research projects, 
+This covers different cases of software widely used in DH, ranging from software developed within research projects to general software used in a research environment. We also annotate programming languages which, although not software, are rarely mentioned outside a software-oriented context (see section 2.1. for details on annotation of programming languages). In many cases, there are unproblematic identification of software mentions, such as in the example below:
 
+>**ReMetCa** is a computer-based metrical repertoire of Medieval Castilian poetry. It gathers all poetic witnesses, from the very beginnings of Spanish lyrics at the end of the twelfth century through the rich and varied poetic manifestations of the fifteenth and sixteenth century, the “Cancioneros.” When complete, it will include over 10,000 texts and offer a systematic metrical analysis of each poem. **ReMetCa** is the first digital tool to analyze Medieval Spanish poetry. (González-Blanco and Rodríguez 2014)
+
+In the excerpt above, the mentioned tool ReMetCa is described both as a "computer-based metrical repertoire" and a "digital tool". Based on the description given by the authors, the identification of both occurrences of ReMetCa as a software mention is easily identifiable. However, the interpretation of what consists as a software is highly dependent on context. We have relied on the information given in the context of the articles themselves and on genral information on Wikidata entries, particularly in cases in which the tool was developed within the scope of a project or is not familiar to the annotator. Popularly used tools are generally easier to identify and annotate.
+
+>The term Virtual Research Environment in the title of the project refers to **TextGrid**, which we use in combination with the **oXygen XML Editor** to produce our TEI-encoded transcription as well as to store both the digital images and the XML files permanently. (La Iglesia and Göbel 2014)
+
+Even relying exclusively on the text excerpt above, the reference to the popular oXygen XML can be easily spotted and directly identified as a software mention. The reference to TextGrid, however, can potentially lead to more complex discussions about the nature of the mention, since TextGrid could refer to the Lab, Repository and Community instances of the project. Due to the context of the sentences, we have decided to annotate both tools.
+
+Along with popular tools and software in Digital Humanities, we often find common technologies and methodological approaches which can sometimes be confused with the software themselves. This is the case of the example below:
+
+>The encoding process for places and names is implemented in two phases: first a **Named Entity Recognition (NER) system** extracts references from primary sources (Isaksen et al. 2012); then these references are edited by human experts. (Ciotti et al. 2014)
+
+The mention to a "Named Entity Recognition (NER) system" makes a clear reference to a piece of software, made evident by the usage of the word "system" in context, that works with the specific task of Named Entity Recognition. The mere reference to NER does not configure a specific piece of software. Moreover, despite the allusion to NER software there are no characterizing components of this software since it is not even named. This makes it impossible for different mentions of the tool to be aggregated under the same software and we have opted to not annotate such occurences. Similarly, if oXygen XML Editor would be referred to as an "XML editing tool" without any further characterization that allows the identification of the description with a specific piece of software, it would not be annotated.
+
+> The transformation script may be written in any language. We use both **PHP** and **Python**, having developed the scripts from other software. (Emsley and De Roure 2016)
+
+Finally, in the example above, the authors refer to scripts developed in the programming languages PHP and Python. While PHP and Python are the technologies used to develop a specific piece of software used in the research and the software is not characterized or named by the authors, the allusion to the programming languages serve as an anchor that identifies contexts in which unnamed software are referred to. More details about the annotation of programming languages and common technologies can be found in the subsection below.
 
 ### 2.1.	Programming Languages and Common Technologies
 
@@ -41,10 +58,11 @@ Consistent with software citation principles, we formulate the following criteri
 
 The annotation was done on all text within the TEI-Text element including abstract, headers, legends and bibliography. Below there is a code snippet of a bibliographic entry referring to the software for phonetic analysis, Praat. According to the characterization taxonomy of mentioned software (see Table 1 above), the snippet contains a reference to an agent, Paul Boersma, to the name of the software itself, and, of course, to a reference publication about the software—the bibliographic entry itself.
 
+
 ![](Images/annotationexample_raw.png)
 *Figure 1: original snippet used in the Annotation Example 1 from Parisse et al. (2020).*
 
-In order to annotate the code snippet according to our schema, a pointer element, <ptr/>, is created just before the software mention, in this case before the bibliographic reference. This pointer is responsible for identifying, on a more general level, that a software is being referenced and, on a more specific level, the exact software, linking is to a list of software. An xml:id value, used to link single characteristics of the software, is assigned to the pointer. Each attribute of the software is annotated within a <rs> element, which identifies the type of characterization and a ref value that links the attribute to the pointer. In the example below, Annotation Example 1, the pointer identifies the 192nd software mention within a specific publication. Then the entirety of the bibliographic reference is accordingly identified as soft.bib.ref and the further descriptive attributes “Boersma, Paul” and “Praat” are identified as soft.agent and soft.name respectively.
+In order to annotate the code snippet according to our schema, a pointer element, `<ptr/>`, is created just before the software mention, in this case before the bibliographic reference. This pointer is responsible for identifying, on a more general level, that a software is being referenced and, on a more specific level, the exact software, linking is to a list of software. An xml:id value, used to link single characteristics of the software, is assigned to the pointer. Each attribute of the software is annotated within a `<rs>` element, which identifies the type of characterization and a ref value that links the attribute to the pointer. In the example below, Annotation Example 1, the pointer identifies the 192nd software mention within a specific publication. Then the entirety of the bibliographic reference is accordingly identified as soft.bib.ref and the further descriptive attributes “Boersma, Paul” and “Praat” are identified as soft.agent and soft.name respectively.
 
 ![](Images/annotationexample.png)
 *Figure 2: Annotation Example 1 (Parisse et al. 2020).*
@@ -58,7 +76,7 @@ The characterizations Soft.Bib and Soft.Bib.Ref both refer to bibliographic entr
 ![](Images/annotationexample_raw_soft.bib.png)
 *Figure 3: original snippet used in the Annotation Example 2 from Adelmann et al. (2019).*
 
-Annotation for the snippet shown above would be carried out just as shown in Annotation Example 1. Each of the agents is individually tagged with a <rs> element. The name of the software and the persistent identifier are also accordingly tagged (see Annotation Example 2 below).
+Annotation for the snippet shown above would be carried out just as shown in Annotation Example 1. Each of the agents is individually tagged with a `<rs>` element. The name of the software and the persistent identifier are also accordingly tagged (see Annotation Example 2 below).
 
 
 ![](Images/annotationexample_soft.bib.png)
@@ -68,29 +86,29 @@ Both in cases of Soft.Bib and Soft.Bib.Ref it is important to annotate not only 
 
 ### 3.2. Soft.Name
 
-Most occurrences of software are based solely on the mention of a name, as it is shown in Annotation Example 3 below. This often occurs within the context of a sentence or paragraph and in these cases the pointer element is inserted immediately before the name of the software. The name of the software is then accordingly tagged within the <rs> element.
+Most occurrences of software are based solely on the mention of a name, as it is shown in Annotation Example 3 below. This often occurs within the context of a sentence or paragraph and in these cases the pointer element is inserted immediately before the name of the software. The name of the software is then accordingly tagged within the `<rs>` element.
 
 ![](Images/annotationexample_name.png)
 *Figure 5: Annotation Example 3 from Parisse et al. (2020).*
 
-The automatic annotator used in the first stage of the workflow does not differentiate between different textual elements, such as figure legends or code snippets, since it matches the occurrences of software names already registered in the software list. In the manual annotation stage, we have opted to tag all software mentions that occur within the <text> element, not differentiating between the textual parts. According to this criterion, we also annotate code snippets such as the one shown below:
+The automatic annotator used in the first stage of the workflow does not differentiate between different textual elements, such as figure legends or code snippets, since it matches the occurrences of software names already registered in the software list. In the manual annotation stage, we have opted to tag all software mentions that occur within the `<text>` element, not differentiating between the textual parts. According to this criterion, we also annotate code snippets such as the one shown below:
 
 ![](Images/annotationcodesnippet.png)
 *Figure 6: code snippet with software mentions from Parisse et al. (2020).*
 
 ### 3.3. Soft.Agent
 
-When the software mention includes the naming of the developer(s) involved, they should be identified with the <rs> element of type Soft.Agent. These are often identified as authors in bibliographic entries of the Soft.Bib type or explicitly characterized as such in the text body. In the following text excerpt, there is a reference to an unnamed tool identified as a “set of XSLT transformations” and also by the developer: “This process consists of a set of XSLT transformations authored by Wendell Piez, who served as a consultant to the S-GA project in 2013”( Muñoz et al. 2014). The tool in question is Reading TEI, as can be inferred from the URL within the <ref> element. The annotation of the excerpt would be carried out in the following manner:
+When the software mention includes the naming of the developer(s) involved, they should be identified with the `<rs>` element of type Soft.Agent. These are often identified as authors in bibliographic entries of the Soft.Bib type or explicitly characterized as such in the text body. In the following text excerpt, there is a reference to an unnamed tool identified as a “set of XSLT transformations” and also by the developer: “This process consists of a set of XSLT transformations authored by Wendell Piez, who served as a consultant to the S-GA project in 2013”( Muñoz et al. 2014). The tool in question is Reading TEI, as can be inferred from the URL within the `<ref>` element. The annotation of the excerpt would be carried out in the following manner:
 
 ![](Images/annotationagent.png)
 *Figure 7: Annotation Example 4 from Muñoz et al. (2014).*
 
-Note that, in this case, the <ref> element and its attributes were already a part of the original document provided by jTEI.
+Note that, in this case, the `<ref>` element and its attributes were already a part of the original document provided by jTEI.
 
 ### 3.4. Soft.URL
 
 URLs that point directly to the software’s website should be identified as Soft.URL. Note that URLs that point to a reference publication about a software should not be identified as Soft.URL.
-In the example given above, the URL is given as the content of the attribute target of the reference element, <ref>. In this case, the identifying tag used for annotating the software mentions and their characterizations, the referencing string, should wrap <ref> and its content. In jTEI publications the URL is also usually given in a pointer element, <ptr>, in which cases the same approach of wrapping with the annotation tags is to be adopted.
+In the example given above, the URL is given as the content of the attribute target of the reference element, `<ref>`. In this case, the identifying tag used for annotating the software mentions and their characterizations, the referencing string, should wrap `<ref>` and its content. In jTEI publications the URL is also usually given in a pointer element, `<ptr>`, in which cases the same approach of wrapping with the annotation tags is to be adopted.
 
 ![](Images/annotationurl.png)
 *Figure 8: Annotation Example 5 from Parisse et al. (2020).*
@@ -100,7 +118,7 @@ Annotation Example 5 above shows the characterization of the software Stanford C
 ### 3.5. Soft.PID
 
 Persistent identifiers, such as DOIs, are identified as Soft.PID. Similarly to occurrences of URLs, it is important to check that the PID identifies the software and not a reference publication.
-In Annotation Example 2 (see Figure 4 above), the software Catma is referenced as a bibliographic reference and accordingly identified with its DOI. We annotate this DOI with a <rs> string of type Soft.PID.
+In Annotation Example 2 (see Figure 4 above), the software Catma is referenced as a bibliographic reference and accordingly identified with its DOI. We annotate this DOI with a `<rs>` string of type Soft.PID.
 
 ### 3.6. Soft.Ver
 
@@ -125,39 +143,51 @@ Nonetheless, we are aware that the possibility of annotating abstract software m
 
 ### 4.2. Software citation components split between text, footnote and bibliography
 
-Often there is no clear recommendation for how software should be referenced in scientific publications, as a consequence, there is a wide variety of in the ways software are mentioned and characterized in these publications. A common way of giving further details about something mentioned in the body of a text without deviating too much from core arguments is to add a footnote. For the purposes of this annotation schema, we consider the footnote to be an extension from the text excerpt it derives from. In such cases the pointer element is added before the first occurring citation component, usually a software name, and all further components refer back to the pointer in the body of the text, including those present in the footnotes. Annotation Example 5 (see Figure 8 above) depicts one such case: the URL of Stanford Core NLP is given in a footnote and accordingly annotated with the <rs> element pointing back to the <ptr> element given in the body of the text, right before the first citation component (i.e., the name of the software) occurs.
+Often there is no clear recommendation for how software should be referenced in scientific publications, as a consequence, there is a wide variety of in the ways software are mentioned and characterized . A common way of giving further details about something mentioned in the body of a text without deviating too much from core arguments is to add a footnote. For the purposes of this annotation schema, we consider the footnote to be an extension from the text excerpt it derives from. In such cases the pointer element is added before the first occurring citation component, usually a software name, and all further components refer back to the pointer in the body of the text, including those present in the footnotes. Annotation Example 5 (see Figure 8 above) depicts one such case: the URL of Stanford Core NLP is given in a footnote and accordingly annotated with the `<rs>` element pointing back to the `<ptr>` element given in the body of the text, right before the first citation component (i.e., the name of the software) occurs.
+
+Ideally, software mentions would be always accompanied by a bibliographic reference that identifies the developers, the version, and a persistent identifier. While we do find occurrences of bibliographic references that identify a software we more often find bibliographic entries that indicate reference papers about a software, these are identified in our annotation schema as soft.bib and soft.bib.ref, respectively. When a software mention in the body of the text is accompanied by an author-date bibliographic reference, the author-date reference is annotated within an `<rs>` element as an soft.bib or soft.bib.ref referring to the pointer added before the first citation component. The complete bibliographic reference at the end of the text, however, receives its own pointer that collects all citation components given within the reference (see Annotation Example 1 - Figure 2).
 
 
-### 4.3. Mentions of tools not framed as software
+### 4.3. Mentions of Website
 
-In the different stages of our analysis, we found highly varying contexts in which authors mention software. In many cases, tools 
+Within our definition of software, we consider websites to be software, especially when they are discussed in the context of their development or the functionalities they provide, such as curated access to data or user interaction. In the different stages of our analysis, we found very different contexts in which authors mention websites. In many cases they are not mentioned as software but as online resources, such as the occurrences of DARIAHTeach and TEI-C in the example below. In such cases we have chosen not to annotate the mentions.
 
 >En relación con los recursos que los participantes utilizan para enseñar o aprender la TEI, dimos las siguientes opciones: 1. Tutoriales y recursos en línea; 2. TEI By Example; 3. TTHub; 4. DARIAHTeach; 5. Materiales proporcionados por instructores; 6. Artículos académicos; 7. Recursos del sitio web TEI-C, y 8. Otros. (del Riande et al. 2023, emphasis added by the authors)
 
-123
+In other cases, the websites mentioned are described in relation to their operational capabilities, such as the functionalities of converting, processing, editing data. The mentions of OxGarage and Roma in the following passage are examples of such cases. When websites are mentioned in relation to their usability as software, we have chosen to annotate them.
 
 >Online tools they claimed to have used included OxGarage, Roma, TEI by Example, and the TEI Guidelines, as well as the university-hosted resources published by the Brown University Women Writers Project (Bauman and Flanders 2013) and Humboldt University in Berlin. (Dee 2014)
 
-123
 
 
 ## References
 Adelmann, Benedikt; Andresen, Melanie; Begerow, Anke; Franken, Lina; Gius, Evelyn; Vauth, Michael (Eds.) (2019): Evaluation of a Semantic Field-Based Approach to Identifying Text Sections about Specific Topics. Zenodo.
 
+Ciotti, Fabio; Lana, Maurizio; Tomasi, Francesca (2014): TEI, Ontologies, Linked Open Data: Geolat and Beyond. In jtei (Issue 8). DOI: 10.4000/jtei.1365.
+
 Dee, Stella (2014): Learning the TEI in a Digital Environment. In jtei (Issue 7). DOI: 10.4000/jtei.968.
 
 Del Riande, Gimena Rio; Allés-Torrent, Susanna (2023): ¿Quién conforma la comunidad de la TEI en español? Análisis de los datos de una encuesta. In jtei (16). DOI: 10.4000/jtei.4927.
+
+Del Turco, Roberto Rosselli; Buomprisco, Giancarlo; Di Pietro, Chiara; Kenny, Julia; Masotti, Raffaele; Pugliese, Jacopo (2014): Edition Visualization Technology: A Simple Tool to Visualize TEI-based Digital Editions. In jtei (Issue 8). DOI: 10.4000/jtei.1077.
+
+Emsley, Iain; Roure, David de (2016): “It will discourse most eloquent music”: Sonifying Variants of Hamlet. In jtei (Issue 10). DOI: 10.4000/jtei.1535.
+
+González-Blanco, Elena; Rodríguez, José Luis (2014): ReMetCa: A Proposal for Integrating RDBMS and TEI-Verse. In jtei (Issue 8). DOI: 10.4000/jtei.1274.
 
 Henny-Krahmer, Ulrike; Jettka, Daniel (2021): Softwarezitation in den Digital Humanities. (Version 0.1). Zenodo. http://doi.org/10.5281/zenodo.5106.
 
 Jettka, Daniel; Henny-Krahmer, Ulrike; Ferger, Anne; Alvares Freire, Fernanda (2022): Software citation in the Digital Humanities. (Version 0.1) GitHub.com. https://github.com/DH-RSE/software-citation [last accessed: 04.11.2022]
 
+La Iglesia, Martin de; Göbel, Mathias (2014): From Entity Description to Semantic Analysis: The Case of Theodor Fontane’s Notebooks. In jtei (Issue 8). DOI: 10.4000/jtei.1253.
+
 Muñoz, Trevor; Viglianti, Raffaele (2014): Texts and Documents: New Challenges for TEI Interchange and Lessons from the Shelley-Godwin Archive. In jtei (Issue 8). DOI: 10.4000/jtei.1270.
 
 Parisse, Christophe; Etienne, Carole; Liégeois, Loïc (2020): TEICORPO: A Conversion Tool for Spoken Language Transcription with a Pivot File in TEI. In jtei (Issue 13). DOI: 10.4000/jtei.3464.
+
+Piez, Wendell (2014): TEI in LMNL: Implications for Modeling. In jtei (Issue 8). DOI: 10.4000/jtei.1337.
 
 Reiter, Nils (2020): Anleitung zur Erstellung von Annotationsrichtlinien. In Nils Reiter, Axel Pichler, Jonas Kuhn (Eds.): Reflektierte algorithmische Textanalyse: De Gruyter, pp. 193–202.
 
 Toscano et al. (2020): Evolución y escenario actual de las Humanidades Digitales en España. In: Laura Estill, Jennifer Guiliano, and Constance Crompton eds. DH2020 Book of Abstracts. 
 
-Del Turco, Roberto Rosselli; Buomprisco, Giancarlo; Di Pietro, Chiara; Kenny, Julia; Masotti, Raffaele; Pugliese, Jacopo (2014): Edition Visualization Technology: A Simple Tool to Visualize TEI-based Digital Editions. In jtei (Issue 8). DOI: 10.4000/jtei.1077.
