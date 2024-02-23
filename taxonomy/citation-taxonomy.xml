@@ -40,7 +40,7 @@
             <publisher>AG DH-RSE</publisher>
             <date when="2024">2024</date>
             <idno type="URL"
-               >https://github.com/DH-RSE/software-citation/blob/main/taxonomy/citation-taxonomy.xml</idno>
+               >https://github.com/DH-RSE/software-citation-jtei/blob/main/taxonomy/citation-taxonomy.xml</idno>
             <availability>
                <licence target="http://creativecommons.org/licenses/by/4.0/"/>
             </availability>

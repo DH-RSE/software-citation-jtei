@@ -6,7 +6,7 @@
     
     <!--
     How to call the script:
-    java -jar /home/ulrike/Programme/saxon/saxon9he.jar /home/ulrike/Git/software-citation/taxonomy/software-list.xml /home/ulrike/Git/software-citation/evaluation/xsl/count-abstracts.xsl
+    java -jar /home/ulrike/Programme/saxon/saxon9he.jar /home/ulrike/Git/software-citation-jtei/taxonomy/software-list.xml /home/ulrike/Git/software-citation-jtei/evaluation/xsl/count-abstracts.xsl
     -->
     
     
