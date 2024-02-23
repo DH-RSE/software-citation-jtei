@@ -1703,8 +1703,8 @@
             </item>
             <item xml:id="git">
                <name>Git</name>
-               <ref type="URL"/>
-               <note type="description"/>
+               <ref type="URL">https://git-scm.com/</ref>
+               <note type="description">Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency. </note>
             </item>
             <item xml:id="emacs">
                <name>Emacs</name>
@@ -1985,6 +1985,12 @@
                <name/>
                <ref type="URL">http://www.unicaen.fr/recherche/mrsh/document_numerique/outils/apparat</ref>
                <note type="description">A framework for critical editing in TEI Parallel Segmentation based on XMLmind XML Editor</note>
+            </item>
+            <item xml:id="sosol">
+               <name>SUDA Online (SoSOL) application</name>
+               <ref type="URL">https://github.com/sosol/sosol</ref>
+               <note type="description">Son of Suda Online (SoSOL) is a tool for the tagless creation and editing of EpiDoc XML by papyrologists and epigraphers, originally developed by the Integrating Digital Papyrology project.</note>
+               <note type="category">research</note>
             </item>
          </list>
       </body>
