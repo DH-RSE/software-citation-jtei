@@ -5,7 +5,7 @@
     version="2.0">
     
     <xsl:template match="/">
-        <xsl:for-each select="collection('/home/ulrike/Git/software-citation/data/JTEI?select=*.xml;recurse=yes')//TEI">
+        <xsl:for-each select="collection('/home/ulrike/Git/software-citation-jtei/data/JTEI?select=*.xml;recurse=yes')//TEI">
             <xsl:value-of select="base-uri(.)"/>: <xsl:value-of select="count(.//rs[starts-with(@type,'soft')])"/><xsl:text>
                 
             </xsl:text>

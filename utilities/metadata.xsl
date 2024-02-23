@@ -11,7 +11,7 @@
     <xsl:template match="/">
         <xsl:text>DHQ-id,year,vol,issue,type,lang</xsl:text><xsl:text>
 </xsl:text>
-        <xsl:for-each select="collection('/home/ulrike/Git/software-citation/data/DHQ/source')//TEI">
+        <xsl:for-each select="collection('/home/ulrike/Git/software-citation-jtei/data/DHQ/source')//TEI">
             <xsl:value-of select="//idno[@type='DHQarticle-id']"/><xsl:text>,</xsl:text>
             <xsl:value-of select="substring(//publicationStmt/date/@when,1,4)"/><xsl:text>,</xsl:text>
             <xsl:value-of select="//idno[@type='volume']"/><xsl:text>,</xsl:text>
