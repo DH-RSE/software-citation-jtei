@@ -2069,7 +2069,6 @@
                      <sequence>
                         <elementRef key="title" minOccurs="1" maxOccurs="unbounded"/>
                         <elementRef key="author" minOccurs="1" maxOccurs="unbounded"/>
-                        
                      </sequence>
                   </content>
                   <constraintSpec ident="jtei.sch-title" scheme="schematron">
