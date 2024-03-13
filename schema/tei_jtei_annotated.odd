@@ -2069,6 +2069,7 @@
                      <sequence>
                         <elementRef key="title" minOccurs="1" maxOccurs="unbounded"/>
                         <elementRef key="author" minOccurs="1" maxOccurs="unbounded"/>
+                        
                      </sequence>
                   </content>
                   <constraintSpec ident="jtei.sch-title" scheme="schematron">
@@ -3558,8 +3559,15 @@
                   </constraintSpec>
                </elementSpec>
                <elementSpec ident="rs" mode="change">
+                  <content>
+                     <sequence>
+                        <classRef key="model.biblPart" minOccurs="0" maxOccurs="unbounded"/>
+                        <classRef key="model.imprintPart" minOccurs="0" maxOccurs="unbounded"/>
+                        <macroRef key="macro.phraseSeq"/>
+                     </sequence>
+                  </content>
                   <attList>
-              <!-- To do: Pointers should point to ../taxonomy/citation-taxonomy.xml and multiple values divided by whitespaces are also allowed -->
+              <!-- Pointers point to ../taxonomy/citation-taxonomy.xml To do: multiple values divided by whitespaces are also allowed -->
                      <attDef ident="type" mode="change" usage="req">
                         <valList type="closed" mode="change">
                            <valItem mode="add" ident="cit:soft.bib"/>
