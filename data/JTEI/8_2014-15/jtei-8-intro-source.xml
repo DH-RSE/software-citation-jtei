@@ -66,6 +66,19 @@
           humanities and social sciences, open to quality periodicals looking to publish full-text
           articles online.</p>
       </projectDesc>
+      <listPrefixDef>
+        <prefixDef ident="softw" matchPattern="([a-z]+)"
+          replacementPattern="https://raw.githubusercontent.com/DH-RSE/software-citation-jtei/main/taxonomy/software-list.xml#$1">
+          <p>In the context of this project, private URIs with the prefix softw point to software
+            items in the software-list.xml file, which are encoded with <gi>item</gi> elements and
+            identified in <att>xml:id</att>.</p>
+        </prefixDef>
+        <prefixDef ident="cit" matchPattern="([a-z]+)"
+          replacementPattern="https://raw.githubusercontent.com/DH-RSE/software-citation-jtei/main/taxonomy/citation-taxonomy.xml#$1">
+          <p>In the context of this project, private URIs with the prefix cit point to
+              <gi>category</gi> elements in the citation-taxonomy.xml file.</p>
+        </prefixDef>
+      </listPrefixDef>
     </encodingDesc>
     <profileDesc>
       <langUsage>
@@ -190,12 +203,12 @@
           Similarly, Boschetti and Del Grosso describe the design and development of <title
             level="m"><ptr type="software" xml:id="R3" target="#teicophilib"/><rs type="soft.name"
               ref="#R3">TeiCoPhiLib</rs></title>, a library of <ptr type="software" xml:id="R4"
-            target="#java"/><rs type="soft.name" ref="#R4">Java</rs> software components devoted
-          to editing, processing, and visualising TEI documents in the domain of philological
-          studies. This tool is particularly suited to fostering collaborative philological work.
-          This cluster is closed by Dalmau and Hawkins’s article, the focus of which is not on
-          specific tools or platforms, but rather on the impact and adoption of TEI and text
-          encoding practices in the library community.</p>
+            target="#java"/><rs type="soft.name" ref="#R4">Java</rs> software components devoted to
+          editing, processing, and visualising TEI documents in the domain of philological studies.
+          This tool is particularly suited to fostering collaborative philological work. This
+          cluster is closed by Dalmau and Hawkins’s article, the focus of which is not on specific
+          tools or platforms, but rather on the impact and adoption of TEI and text encoding
+          practices in the library community.</p>
         <p>We conclude this introduction with a few words about how this issue fits within the
           current developments of TEI and of the Digital Humanities community more generally. Every
           now and then it is healthy to ask where the TEI is going and why we care about it. With

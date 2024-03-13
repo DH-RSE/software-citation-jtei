@@ -63,6 +63,19 @@
           in the humanities and social sciences, open to quality periodicals looking to publish
           full-text articles online.</p>
       </projectDesc>
+      <listPrefixDef>
+        <prefixDef ident="softw" matchPattern="([a-z]+)"
+          replacementPattern="https://raw.githubusercontent.com/DH-RSE/software-citation-jtei/main/taxonomy/software-list.xml#$1">
+          <p>In the context of this project, private URIs with the prefix softw point to software
+            items in the software-list.xml file, which are encoded with <gi>item</gi> elements and
+            identified in <att>xml:id</att>.</p>
+        </prefixDef>
+        <prefixDef ident="cit" matchPattern="([a-z]+)"
+          replacementPattern="https://raw.githubusercontent.com/DH-RSE/software-citation-jtei/main/taxonomy/citation-taxonomy.xml#$1">
+          <p>In the context of this project, private URIs with the prefix cit point to
+              <gi>category</gi> elements in the citation-taxonomy.xml file.</p>
+        </prefixDef>
+      </listPrefixDef>
     </encodingDesc>
     <profileDesc>
       <langUsage>
@@ -234,10 +247,10 @@
           <p>Many software packages dedicated to editing spoken language transcription contain
             utilities that can convert many formats: for example, <ptr type="software" xml:id="R15"
               target="#exmaralda"/>
-            <rs type="soft.name" ref="#R15">EXMARaLDA</rs> ( <rs type="soft.bib.ref" ref="#R15"
-                ><ref type="bibl" target="#schmidt2004">Schmidt 2004</ref>
-            </rs>; see <rs type="soft.url" ref="#R15"><ptr target="https://exmaralda.org"
-            /></rs>), <ptr type="software" xml:id="R16" target="#anvil"/>
+            <rs type="soft.name" ref="#R15">EXMARaLDA</rs> ( <rs type="soft.bib.ref" ref="#R15"><ref
+                type="bibl" target="#schmidt2004">Schmidt 2004</ref>
+            </rs>; see <rs type="soft.url" ref="#R15"><ptr target="https://exmaralda.org"/></rs>),
+              <ptr type="software" xml:id="R16" target="#anvil"/>
             <rs type="soft.name" ref="#R16">Anvil</rs> (<rs type="soft.bib.ref" ref="#R16">
               <ref type="bibl" target="#kipp2001">Kipp 2001</ref></rs>; see <rs type="soft.url"
               ref="#R16"><ptr target="https://www.anvil-software.org"/></rs>), and <ptr
@@ -262,7 +275,7 @@
               xml:id="R19" target="#exmaralda"/><rs type="soft.name" ref="#R19">EXMARaLDA</rs> and
               <ptr type="software" xml:id="R241" target="#folker"/>FOLKER (<rs type="soft.bib.ref"
               ref="#R19"><ref type="bibl" target="#schmidts2010">Schmidt and Schütte
-              2010</ref></rs>; see <rs type="soft.url" ref="#R241"><ptr
+            2010</ref></rs>; see <rs type="soft.url" ref="#R241"><ptr
                 target="https://exmaralda.org/en/folker-en/"/></rs>), but this was only because the
             conversion tools from and to <ptr type="software" xml:id="R20" target="#EXMARaLDA"/><rs
               type="soft.name" ref="#R20">EXMARaLDA</rs>, <ptr type="software" xml:id="R21"
@@ -278,9 +291,9 @@
               xml:id="R24" target="#EXMARaLDA"/><rs type="soft.name" ref="#R24">EXMARaLDA</rs> and
               <ptr type="software" xml:id="R25" target="#folker"/>
             <rs type="soft.name" ref="#R25">FOLKER</rs> software fit within the process chain of
-              <ptr type="software" xml:id="R26" target="#teicorpo"/><rs type="soft.name"
-              ref="#R26"> TEICORPO</rs>. This demonstrates the usefulness of a well-known and
-            efficient format such as TEI.</p>
+              <ptr type="software" xml:id="R26" target="#teicorpo"/><rs type="soft.name" ref="#R26">
+              TEICORPO</rs>. This demonstrates the usefulness of a well-known and efficient format
+            such as TEI.</p>
           <p>There are, however, differences between the two projects that make them nonredundant
             but complementary, each project having specificities that can be useful or damaging
             depending on the user’s needs. One minor difference is that the <ptr type="software"
@@ -521,7 +534,8 @@
             common tool that could be used by the whole linguistic community. The goal was to make
             open-source software with proper maintenance freely available on <ptr type="software"
               xml:id="R67" target="#teicorpo"/>
-            <rs type="soft.url" ref="#R67"><ptr target="http://ct3.ortolang.fr/teicorpo/"/></rs>.</p>
+            <rs type="soft.url" ref="#R67"><ptr target="http://ct3.ortolang.fr/teicorpo/"
+            /></rs>.</p>
         </div>
         <div xml:id="conversion">
           <head>Conversion to and from TEI</head>
@@ -1009,8 +1023,8 @@
               target="#letrameur"/>
             <rs type="soft.name" ref="#R119">Le Trameur</rs> (<rs type="soft.bib.ref" ref="#R119"
                 ><ref type="bibl" target="#fleury2014">Fleury and Zimina 2014</ref></rs>; see <rs
-              type="soft.url" ref="#R119"><ptr target="http://www.tal.univ-paris3.fr/trameur/"/></rs>),
-            and <ptr type="software" xml:id="R120" target="#iramuteq"/>
+              type="soft.url" ref="#R119"><ptr target="http://www.tal.univ-paris3.fr/trameur/"
+              /></rs>), and <ptr type="software" xml:id="R120" target="#iramuteq"/>
             <rs type="soft.name" ref="#R120">Iramuteq</rs> (see <rs type="soft.url" ref="#R120"><ptr
                 target="http://iramuteq.org/"/></rs> and <rs type="soft.bib.ref" ref="#R120"><ref
                 type="bibl" target="#souza2018">de Souza et al. 2018</ref></rs>), providing a
@@ -1150,13 +1164,13 @@
               syntactic model. For French data, we used the PERCEO model (<ref type="bibl"
                 target="#benzitoun2012">Benzitoun, Fort, and Sagot 2012</ref>).</p>
             <p>The command line to be used is: <ptr type="software" xml:id="R240" target="#java"/><code>
-              <rs type="soft.name" ref="#R240">java</rs> -cp <ptr type="software" xml:id="R208"
+                <rs type="soft.name" ref="#R240">java</rs> -cp <ptr type="software" xml:id="R208"
                   target="#teicorpo"/>
                 <rs type="soft.name" ref="#R208">TEICORPO</rs>.jar fr.ortolang.<ptr type="software"
                   xml:id="R209" target="#teicorpo"/>
-              <rs type="soft.name" ref="#R209">TEICORPO</rs>.<ptr type="software" xml:id="R239" target="#treetagger"/>
-             Tei <rs type="soft.name" ref="#R239">TreeTagger</rs> filenames...</code>
-              with additional parameters:</p>
+                <rs type="soft.name" ref="#R209">TEICORPO</rs>.<ptr type="software" xml:id="R239"
+                  target="#treetagger"/> Tei <rs type="soft.name" ref="#R239">TreeTagger</rs>
+                filenames...</code> with additional parameters:</p>
             <table xml:id="table2">
               <row role="label">
                 <cell><p><code>-syntaxformat</code>
@@ -1332,10 +1346,12 @@
               parameters can be used in a similar way to specify the grammatical model to be used
               and the output format. A command line example is:</p>
             <p><code><ptr type="software" xml:id="R236" target="#java"/>
-              <rs type="soft.name" ref="#R236">java</rs> -cp "<ptr type="software" xml:id="R237" target="#teicorpo"/>
-              <rs type="soft.name" ref="#R237">teicorpo</rs>.jar:directory_for_SNLP/*" fr.ortolang.<ptr type="software" xml:id="R238" target="#teicorpo"/>
-              <rs type="soft.name" ref="#R238">teicorpo</rs>.TeiSNLP
-                -syntaxformat svalue -model filename.tei_corpo.xml</code></p>
+                <rs type="soft.name" ref="#R236">java</rs> -cp "<ptr type="software" xml:id="R237"
+                  target="#teicorpo"/>
+                <rs type="soft.name" ref="#R237">teicorpo</rs>.jar:directory_for_SNLP/*"
+                  fr.ortolang.<ptr type="software" xml:id="R238" target="#teicorpo"/>
+                <rs type="soft.name" ref="#R238">teicorpo</rs>.TeiSNLP -syntaxformat svalue -model
+                filename.tei_corpo.xml</code></p>
             <p>The <term>directory_for_SNLP</term> is the name of the location on a computer where
               all the <ptr type="software" xml:id="R212" target="#stanfordcorenlp"/>
               <rs type="soft.name" ref="#R212">CoreNLP</rs> JAR files can be found. Note that using
@@ -1397,8 +1413,8 @@
           <p>Export can be done from TEI into a format used by textometric software (see <ptr
               target="#example_code_11" type="crossref"/>). This is the case for <ptr
               type="software" xml:id="R160" target="#txm"/><rs type="soft.name" ref="#R160">TXM</rs>,<note>
-              <p>See the Textométrie website, last updated June 29, 2020, <rs type="soft.url" ref="#R160"
-                    ><ptr target="http://textometrie.ens-lyon.fr/?lang=en"/></rs>.</p>
+              <p>See the Textométrie website, last updated June 29, 2020, <rs type="soft.url"
+                  ref="#R160"><ptr target="http://textometrie.ens-lyon.fr/?lang=en"/></rs>.</p>
             </note> a textometric software application. In this case, instead of using a partition
             representation, the information from the grammatical analysis is inserted at the word
             level in an XML structure. For example, in the case below, the <ptr type="software"
@@ -1767,11 +1783,10 @@
                   Russel</author></rs>, <rs type="soft.agent" ref="#R235"><author>Alex
                   Klassmann</author></rs>, and <rs type="soft.agent" ref="#R235"><author>Han
                   Sloetjes</author></rs>. <date>2006</date>. <title level="a"><rs type="soft.name
-                    "
-                  ref="#R235">ELAN</rs>: A Professional Framework for Multimodality
-                Research.</title> In Proceedings of LREC 2006, Fifth International Conference on
-              Language Resources and Evaluation, <biblScope unit="page">1556–59</biblScope>. N.p.:
-              European Language Resources Association (ELRA). <ptr
+                    " ref="#R235">ELAN</rs>: A Professional Framework for
+                Multimodality Research.</title> In Proceedings of LREC 2006, Fifth International
+              Conference on Language Resources and Evaluation, <biblScope unit="page"
+                >1556–59</biblScope>. N.p.: European Language Resources Association (ELRA). <ptr
                 target="http://www.lrec-conf.org/proceedings/lrec2006/"/>.</bibl>
           </rs>
         </listBibl>

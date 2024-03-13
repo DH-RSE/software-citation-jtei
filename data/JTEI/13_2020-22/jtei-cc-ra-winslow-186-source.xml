@@ -48,6 +48,19 @@
                journals in the humanities and social sciences, open to quality periodicals looking
                to publish full-text articles online.</p>
          </projectDesc>
+         <listPrefixDef>
+            <prefixDef ident="softw" matchPattern="([a-z]+)"
+               replacementPattern="https://raw.githubusercontent.com/DH-RSE/software-citation-jtei/main/taxonomy/software-list.xml#$1">
+               <p>In the context of this project, private URIs with the prefix softw point to
+                  software items in the software-list.xml file, which are encoded with <gi>item</gi>
+                  elements and identified in <att>xml:id</att>.</p>
+            </prefixDef>
+            <prefixDef ident="cit" matchPattern="([a-z]+)"
+               replacementPattern="https://raw.githubusercontent.com/DH-RSE/software-citation-jtei/main/taxonomy/citation-taxonomy.xml#$1">
+               <p>In the context of this project, private URIs with the prefix cit point to
+                     <gi>category</gi> elements in the citation-taxonomy.xml file.</p>
+            </prefixDef>
+         </listPrefixDef>
       </encodingDesc>
       <profileDesc>
          <langUsage>
@@ -576,8 +589,8 @@
                proposed vocabulary, provided in SKOS (Simple Knowledge Organization System) format
                (as part of the project’s <ref
                   target="https://github.com/GVogeler/CEI2TEI/blob/master/Authentication/authen.skos.ttl">
-                  <ptr type="software" xml:id="R2" target="#github"/><rs type="soft.name"
-                     ref="#R2">GitHub</rs> repository</ref>,<note>Accessed July 13, 2021, <ptr
+                  <ptr type="software" xml:id="R2" target="#github"/><rs type="soft.name" ref="#R2"
+                     >GitHub</rs> repository</ref>,<note>Accessed July 13, 2021, <ptr
                      target="https://github.com/GVogeler/CEI2TEI/blob/master/Authentication/authen.skos.ttl"
                   />.</note> at <ptr
                   target="https://github.com/GVogeler/CEI2TEI/blob/master/Authentication/authen.skos.ttl"

@@ -85,6 +85,19 @@
           humanities and social sciences, open to quality periodicals looking to publish full-text
           articles online.</p>
       </projectDesc>
+      <listPrefixDef>
+        <prefixDef ident="softw" matchPattern="([a-z]+)"
+          replacementPattern="https://raw.githubusercontent.com/DH-RSE/software-citation-jtei/main/taxonomy/software-list.xml#$1">
+          <p>In the context of this project, private URIs with the prefix softw point to software
+            items in the software-list.xml file, which are encoded with <gi>item</gi> elements and
+            identified in <att>xml:id</att>.</p>
+        </prefixDef>
+        <prefixDef ident="cit" matchPattern="([a-z]+)"
+          replacementPattern="https://raw.githubusercontent.com/DH-RSE/software-citation-jtei/main/taxonomy/citation-taxonomy.xml#$1">
+          <p>In the context of this project, private URIs with the prefix cit point to
+              <gi>category</gi> elements in the citation-taxonomy.xml file.</p>
+        </prefixDef>
+      </listPrefixDef>
     </encodingDesc>
     <profileDesc>
       <langUsage>
@@ -645,15 +658,14 @@
               available at <ptr target="https://github.com/TEIC/TEI/issues/1512"/>. In our proposal,
               the <gi>etym</gi> element has to be made recursive in order to allow the fine-grained
               representations we propose here. The corresponding ODD customization, together with
-              reference examples, is available on <ptr type="software" xml:id="R1"
-                target="#github"/><rs type="soft.name" ref="#R1">GitHub</rs>.</note> and the
-            fact that a change occurred within the contemporary lexicon (as opposed to its parent
-            language) is indicated by means of <att>xml:lang</att> on the source form.<note>There
-              may also be cases in which it is unknown whether a given etymological process occurred
-              within the contemporary language or parent system; in such cases the encoder can just
-              use the main language tag for both the diachronic and synchronic portions of the entry
-              as a default (see, for instance, <ptr target="#example11" type="crossref"
-            />).</note></p>
+              reference examples, is available on <ptr type="software" xml:id="R1" target="#github"
+                /><rs type="soft.name" ref="#R1">GitHub</rs>.</note> and the fact that a change
+            occurred within the contemporary lexicon (as opposed to its parent language) is
+            indicated by means of <att>xml:lang</att> on the source form.<note>There may also be
+              cases in which it is unknown whether a given etymological process occurred within the
+              contemporary language or parent system; in such cases the encoder can just use the
+              main language tag for both the diachronic and synchronic portions of the entry as a
+              default (see, for instance, <ptr target="#example11" type="crossref"/>).</note></p>
           <p>In the TEI encoding, the former two can be respectively labeled as: <egXML
               xmlns="http://www.tei-c.org/ns/Examples"><etym type="borrowing">…</etym></egXML> and
               <egXML xmlns="http://www.tei-c.org/ns/Examples"><etym type="inheritance"
@@ -768,7 +780,7 @@
               text.<note>The interested reader may ponder here the possibility to also encode
               scripts by means of the <att>notation</att> attribute instead of using a cluttering of
               language subtags on <att>xml:lang</att>. For more on this issue, see the proposal in
-                the TEI <ptr type="software" xml:id="R2" target="#github"/><rs type="soft.name"
+              the TEI <ptr type="software" xml:id="R2" target="#github"/><rs type="soft.name"
                 ref="#R2">GitHub</rs> (<ptr target="https://github.com/TEIC/TEI/issues/1510"
               />).</note> This is why we have extended the <att>notation</att> attribute to
               <gi>orth</gi> in order to allow for better representation of both language
@@ -1486,23 +1498,23 @@
           extent of knowledge that is truly necessary to create an accurate model of metaphorical
           processes. In order to do this, it is necessary to make use of one or more ontologies,
           which could be locally defined within a project, and of external linked open data sources
-          such as <ptr type="software" xml:id="R4"
-            target="#dbpedia"/><rs type="soft.name soft.url" ref="#R4"><ref target="http://wiki.dbpedia.org/">DBpedia</ref></rs> and <ptr type="software" xml:id="R5"
-              target="#wikidata"/><rs type="soft.name soft.url" ref="#R5"><ref
-                  target="https://www.wikidata.org/">Wikidata</ref></rs>, or some combination thereof. Within
-          TEI dictionary markup, URIs for existing ontological entries can be referenced in the
-            <gi>sense</gi>, <gi>usg</gi>, and <gi>ref</gi> elements as the value of the attribute
-            <att>corresp</att>.</p>
+          such as <ptr type="software" xml:id="R4" target="#dbpedia"/><rs type="soft.name soft.url"
+            ref="#R4"><ref target="http://wiki.dbpedia.org/">DBpedia</ref></rs> and <ptr
+            type="software" xml:id="R5" target="#wikidata"/><rs type="soft.name soft.url" ref="#R5"
+              ><ref target="https://www.wikidata.org/">Wikidata</ref></rs>, or some combination
+          thereof. Within TEI dictionary markup, URIs for existing ontological entries can be
+          referenced in the <gi>sense</gi>, <gi>usg</gi>, and <gi>ref</gi> elements as the value of
+          the attribute <att>corresp</att>.</p>
         <p>Within the etymon, the <gi>oRef</gi> and/or <gi>pRef</gi> can be included with a pointer
           to the source form using the <att>corresp</att> attribute, the value of which is a
           reference to the source entry’s unique identifier (if such an entry exists within the
           dataset). In such cases, the etymon pointing to the source entry can be assumed to inherit
           the source’s domain and sense information, and this information can be automatically
-          extracted with a fairly simple <ptr type="software" xml:id="R6"
-            target="#xslt"/><rs type="soft.name" ref="#R6">XSLT</rs> program; thus the encoders may choose to leave some or
-          all of this information out of the etymon section. However, in the case that the dataset
-          does not actually have entries for the source terms, or the encoder wants to be explicit
-          in all aspects of the etymology, as mentioned above, the source domain and the
+          extracted with a fairly simple <ptr type="software" xml:id="R6" target="#xslt"/><rs
+            type="soft.name" ref="#R6">XSLT</rs> program; thus the encoders may choose to leave some
+          or all of this information out of the etymon section. However, in the case that the
+          dataset does not actually have entries for the source terms, or the encoder wants to be
+          explicit in all aspects of the etymology, as mentioned above, the source domain and the
           ontologically based sense of an etymon can be encoded within <gi>cit</gi> as <gi>ref</gi>
           and <gi>usg</gi> respectively.</p>
       </div>
@@ -1560,8 +1572,8 @@
           URI is referenced in <gi>oRef</gi> and <gi>pRef</gi> as the value of <att>corresp</att>
             (<code>@corresp="#animal"</code>).</p>
         <p>In <gi>sense</gi>, the URI corresponding to the <ptr type="software" xml:id="R7"
-          target="#dbpedia"/><rs type="soft.name" ref="#R7">DBpedia</rs> entry for <q>horse</q> is the
-          value for the attribute <att>corresp</att>. Additionally, the <tag>date
+            target="#dbpedia"/><rs type="soft.name" ref="#R7">DBpedia</rs> entry for <q>horse</q> is
+          the value for the attribute <att>corresp</att>. Additionally, the <tag>date
             notBefore="…"</tag> element–attribute pairing is used to specify that the term has only
           been used for the <q>horse</q> since 1517 at maximum (corresponding to the first Spanish
           expedition into Mexico). Within the actual document, the contents of <gi>note</gi> discuss

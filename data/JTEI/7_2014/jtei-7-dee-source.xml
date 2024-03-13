@@ -35,6 +35,19 @@
           articles online.</p>
       </projectDesc>
       <tagsDecl> </tagsDecl>
+      <listPrefixDef>
+        <prefixDef ident="softw" matchPattern="([a-z]+)"
+          replacementPattern="https://raw.githubusercontent.com/DH-RSE/software-citation-jtei/main/taxonomy/software-list.xml#$1">
+          <p>In the context of this project, private URIs with the prefix softw point to software
+            items in the software-list.xml file, which are encoded with <gi>item</gi> elements and
+            identified in <att>xml:id</att>.</p>
+        </prefixDef>
+        <prefixDef ident="cit" matchPattern="([a-z]+)"
+          replacementPattern="https://raw.githubusercontent.com/DH-RSE/software-citation-jtei/main/taxonomy/citation-taxonomy.xml#$1">
+          <p>In the context of this project, private URIs with the prefix cit point to
+              <gi>category</gi> elements in the citation-taxonomy.xml file.</p>
+        </prefixDef>
+      </listPrefixDef>
     </encodingDesc>
     <profileDesc>
       <langUsage>
@@ -150,15 +163,15 @@
         <p>The survey<note><p>This survey was the research for a master’s dissertation at King’s
               College, London, under the supervision of Dr. Elena Pierazzo.</p></note> was titled
             <title level="u">Learning the TEI</title>. Created using <ptr type="software"
-            xml:id="R1" target="#surveymonkey"/><rs type="soft.name" ref="#R1">SurveyMonkey</rs>
-          software, and live for approximately a month between late June and late August 2013, it
-          collected 95 anonymous responses in total. It was offered only in English. As a
-          consequence, those researchers without professional proficiency in English were probably
-          excluded. The survey asked a combination of open and closed questions, targeting experts
-          as well as novices in the field. Designed for gathering insight to help improve task-based
-          online resources for working with the TEI, I wrote the questions to solicit <quote
-            source="#quoteref2">thickly descriptive</quote> feedback wherever possible (<ref
-            type="bibl" xml:id="quoteref2" target="#geertz73">Geertz 1973</ref>). The survey
+            xml:id="R1" target="softw:surveymonkey"/><rs type="cit:soft.name" ref="#R1"
+            >SurveyMonkey</rs> software, and live for approximately a month between late June and
+          late August 2013, it collected 95 anonymous responses in total. It was offered only in
+          English. As a consequence, those researchers without professional proficiency in English
+          were probably excluded. The survey asked a combination of open and closed questions,
+          targeting experts as well as novices in the field. Designed for gathering insight to help
+          improve task-based online resources for working with the TEI, I wrote the questions to
+          solicit <quote source="#quoteref2">thickly descriptive</quote> feedback wherever possible
+            (<ref type="bibl" xml:id="quoteref2" target="#geertz73">Geertz 1973</ref>). The survey
           included questions focused on acquiring descriptions of the TEI to assess user
           understanding, technical competency of respondents, and the kinds of textual work
           currently being undertaken. I hoped that these questions might reach survey respondents

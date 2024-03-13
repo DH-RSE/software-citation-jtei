@@ -2047,7 +2047,7 @@
                <moduleRef key="corpus" include="particDesc"/>
                <moduleRef key="figures" include="cell figure row table"/>
                <moduleRef key="header"
-                           include="appInfo application availability catRef change classCode edition encodingDesc fileDesc idno keywords langUsage language licence listChange profileDesc projectDesc publicationStmt rendition revisionDesc seriesStmt sourceDesc tagsDecl teiHeader textClass titleStmt"/>
+                  include="appInfo application availability catRef change classCode edition encodingDesc fileDesc idno keywords langUsage language licence listChange profileDesc projectDesc publicationStmt rendition revisionDesc seriesStmt sourceDesc tagsDecl teiHeader textClass titleStmt listPrefixDef prefixDef"/>
                <moduleRef key="namesdates"
                            include="affiliation forename listPerson person placeName orgName roleName surname"/>
                <moduleRef key="tagdocs" include="att code eg egXML gi ident tag val"/>
@@ -2603,10 +2603,10 @@
                      <attDef ident="nymRef" mode="delete"/>
                   </attList>
                </classSpec>
-               <classSpec ident="att.patternReplacement"
+<!--               <classSpec ident="att.patternReplacement"
                            module="header"
                            type="atts"
-                           mode="delete"/>
+                           mode="delete"/>-->
                <classSpec ident="att.personal" module="tei" type="atts" mode="change">
                   <attList>
                      <attDef ident="full" mode="delete"/>

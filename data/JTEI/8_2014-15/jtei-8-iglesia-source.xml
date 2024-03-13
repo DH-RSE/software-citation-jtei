@@ -65,6 +65,19 @@
           humanities and social sciences, open to quality periodicals looking to publish full-text
           articles online.</p>
       </projectDesc>
+      <listPrefixDef>
+        <prefixDef ident="softw" matchPattern="([a-z]+)"
+          replacementPattern="https://raw.githubusercontent.com/DH-RSE/software-citation-jtei/main/taxonomy/software-list.xml#$1">
+          <p>In the context of this project, private URIs with the prefix softw point to software
+            items in the software-list.xml file, which are encoded with <gi>item</gi> elements and
+            identified in <att>xml:id</att>.</p>
+        </prefixDef>
+        <prefixDef ident="cit" matchPattern="([a-z]+)"
+          replacementPattern="https://raw.githubusercontent.com/DH-RSE/software-citation-jtei/main/taxonomy/citation-taxonomy.xml#$1">
+          <p>In the context of this project, private URIs with the prefix cit point to
+              <gi>category</gi> elements in the citation-taxonomy.xml file.</p>
+        </prefixDef>
+      </listPrefixDef>
     </encodingDesc>
     <profileDesc>
       <langUsage>
@@ -675,7 +688,8 @@
               type="doi">10.1093/llc/fqr020</idno>.</bibl>
           <bibl xml:id="leboeuf13"><author>Le Boeuf, Patrick</author>, <author>Martin
             Doerr</author>, <author>Christian Emil Ore</author>, and <author>Stephen Stead</author>.
-              <date>2013</date>. <title level="m">Definition of the CIDOC Conceptual Reference Model</title>, version 5.1.2 (October). <ptr
+              <date>2013</date>. <title level="m">Definition of the CIDOC Conceptual Reference
+              Model</title>, version 5.1.2 (October). <ptr
               target="http://www.cidoc-crm.org/docs/cidoc_crm_version_5.1.2.pdf"/>.</bibl>
           <bibl xml:id="myers10"><editor>Myers, Victoria</editor>, <editor>David
               O’Shaughnessy</editor>, and <editor>Mark Philp</editor>, eds. <date>2010</date>.

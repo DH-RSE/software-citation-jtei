@@ -53,6 +53,19 @@
           in the humanities and social sciences, open to quality periodicals looking to publish
           full-text articles online.</p>
       </projectDesc>
+      <listPrefixDef>
+        <prefixDef ident="softw" matchPattern="([a-z]+)"
+          replacementPattern="https://raw.githubusercontent.com/DH-RSE/software-citation-jtei/main/taxonomy/software-list.xml#$1">
+          <p>In the context of this project, private URIs with the prefix softw point to software
+            items in the software-list.xml file, which are encoded with <gi>item</gi> elements and
+            identified in <att>xml:id</att>.</p>
+        </prefixDef>
+        <prefixDef ident="cit" matchPattern="([a-z]+)"
+          replacementPattern="https://raw.githubusercontent.com/DH-RSE/software-citation-jtei/main/taxonomy/citation-taxonomy.xml#$1">
+          <p>In the context of this project, private URIs with the prefix cit point to
+              <gi>category</gi> elements in the citation-taxonomy.xml file.</p>
+        </prefixDef>
+      </listPrefixDef>
     </encodingDesc>
     <profileDesc>
       <langUsage>
@@ -110,11 +123,11 @@
           ways in which the variant taxonomy may be linked to the body of the edition.</p>
         <p>Although this paper is TEI-centered, other XML technologies will be mentioned. <ptr
             type="crossref" target="#validation"/> includes a brief commentary on using <ptr
-            type="software" xml:id="R1" target="#xslt"/><rs type="soft.name" ref="#R1">XSLT</rs>
-          to transform a TEI-conformant definition of constraints into schema rules. However, the
+            type="software" xml:id="R1" target="#xslt"/><rs type="soft.name" ref="#R1">XSLT</rs> to
+          transform a TEI-conformant definition of constraints into schema rules. However, the
           greatest attention to an additional technology is in <ptr type="crossref"
             target="#analyses"/>, which discusses the use of <ptr type="software" xml:id="R2"
-              target="#xquery"/><rs type="soft.name" ref="#R2">XQuery</rs> to retrieve particular
+            target="#xquery"/><rs type="soft.name" ref="#R2">XQuery</rs> to retrieve particular
             <foreign>loci critici</foreign> and to deploy quantitative analyses.</p>
       </div>
       <div xml:id="rationale">
@@ -212,16 +225,16 @@
             neutralized.<note>This statement is especially significant when dealing with corpora
             that have been compiled over a long period of time. As is clearly explained in the
             introduction to the Helsinki Corpus that Irma Taavitsainen and Päivi Pahta prepared for
-            the <ptr type="software" xml:id="R3"
-              target="#cord"/><rs type="soft.name url" ref="#R3"><ref
+            the <ptr type="software" xml:id="R3" target="#cord"/><rs type="soft.name url" ref="#R3"
+                ><ref
+                target="http://www.helsinki.fi/varieng/CoRD/corpora/HelsinkiCorpus/meintro.html"
+                >Corpus Resource Database</ref> (CoRD)</rs> (<rs type="soft.bib" ref="#R3"><bibl
+                xml:id="quoteref1"><title level="a">Placing the Helsinki Corpus Middle English
+                  Section Introduction into Context</title>, <ptr
                   target="http://www.helsinki.fi/varieng/CoRD/corpora/HelsinkiCorpus/meintro.html"
-                  >Corpus Resource Database</ref> (CoRD)</rs> (<rs type="soft.bib" ref="#R3"><bibl xml:id="quoteref1"><title level="a"
-                    >Placing the Helsinki Corpus Middle English Section Introduction into
-                    Context</title>, <ptr
-                      target="http://www.helsinki.fi/varieng/CoRD/corpora/HelsinkiCorpus/meintro.html"
-                    /></bibl></rs>): <quote source="#quoteref1">The idea of basing corpus texts directly on
-              manuscript sources has been presented more recently<gap/> The principles of preparing
-              manuscript texts for print have undergone changes during the history of
+                /></bibl></rs>): <quote source="#quoteref1">The idea of basing corpus texts directly
+              on manuscript sources has been presented more recently<gap/> The principles of
+              preparing manuscript texts for print have undergone changes during the history of
               editing<gap/></quote>.</note></p>
         <p>Depending on the historical period to which a tradition belongs, even graphic variants,
           often dismissed as nonsignificant variation because they may not be <emph>textually</emph>
@@ -544,17 +557,17 @@
             >parallel segmentation</ref> method (<ref type="bibl" target="#TEI16">TEI Consortium
             2016, 12.2.3</ref>) seems to be a popular encoding technique for multi-witness editions,
           in terms of both the specific tools that have been created for this method and the number
-          of projects that apply it.<note>Tools include <ptr
-                type="software" xml:id="R6" target="#versioningmachine"/><rs
-                  type="soft.name soft.url" ref="#R6"><ref target="http://v-machine.org/">Versioning Machine</ref></rs>, <ptr type="software" xml:id="R7"
-                    target="#collatex"/><rs type="soft.name soft.url" ref="#R7"><ref
-              target="https://collatex.net/">CollateX</ref></rs> (both
-            the <ptr type="software" xml:id="R8" target="#java"/><rs type="soft.name" ref="#R8"
-              >Java</rs> and <ptr type="software" xml:id="R9" target="#python"/><rs
-              type="soft.name" ref="#R9">Python</rs> versions), and <ptr type="software" xml:id="R10"
-                target="#juxta"/><rs type="soft.name soft.url" ref="#R10"><ref
-              target="http://www.juxtasoftware.org/">Juxta</ref></rs>. For
-            representative projects using the parallel segmentation method see <ref
+          of projects that apply it.<note>Tools include <ptr type="software" xml:id="R6"
+              target="#versioningmachine"/><rs type="soft.name soft.url" ref="#R6"><ref
+                target="http://v-machine.org/">Versioning Machine</ref></rs>, <ptr type="software"
+              xml:id="R7" target="#collatex"/><rs type="soft.name soft.url" ref="#R7"><ref
+                target="https://collatex.net/">CollateX</ref></rs> (both the <ptr type="software"
+              xml:id="R8" target="#java"/><rs type="soft.name" ref="#R8">Java</rs> and <ptr
+              type="software" xml:id="R9" target="#python"/><rs type="soft.name" ref="#R9"
+              >Python</rs> versions), and <ptr type="software" xml:id="R10" target="#juxta"/><rs
+              type="soft.name soft.url" ref="#R10"><ref target="http://www.juxtasoftware.org/"
+                >Juxta</ref></rs>. For representative projects using the parallel segmentation
+            method see <ref
               target="http://scholarlyediting.org/2015/editions/lowelledition_wit-Courier.html"
               >Satire in Circulation: James editions Russell Lowell’s Letter from a volunteer in
               Saltillo</ref>, <ref target="http://digitalthoreau.org/fluid-text-toc">Walden: A

@@ -110,6 +110,19 @@
                journals in the humanities and social sciences, open to quality periodicals looking
                to publish full-text articles online.</p>
          </projectDesc>
+         <listPrefixDef>
+            <prefixDef ident="softw" matchPattern="([a-z]+)"
+               replacementPattern="https://raw.githubusercontent.com/DH-RSE/software-citation-jtei/main/taxonomy/software-list.xml#$1">
+               <p>In the context of this project, private URIs with the prefix softw point to
+                  software items in the software-list.xml file, which are encoded with <gi>item</gi>
+                  elements and identified in <att>xml:id</att>.</p>
+            </prefixDef>
+            <prefixDef ident="cit" matchPattern="([a-z]+)"
+               replacementPattern="https://raw.githubusercontent.com/DH-RSE/software-citation-jtei/main/taxonomy/citation-taxonomy.xml#$1">
+               <p>In the context of this project, private URIs with the prefix cit point to
+                     <gi>category</gi> elements in the citation-taxonomy.xml file.</p>
+            </prefixDef>
+         </listPrefixDef>
       </encodingDesc>
       <profileDesc>
          <langUsage>
@@ -183,9 +196,9 @@
                   2018</ref>), an initiative launched in 2016 under the auspices of the DARIAH
                Working Group on Lexical Resources, which aims to define a pivot format for the
                integration and querying of heterogeneous TEI-based lexical resources.<note>See the
-                  project’s <ptr type="software" xml:id="R1" target="#github"/><rs
-                     type="soft.name" ref="#R1">GitHub</rs> repository, accessed June 17, 2022,
-                     <ptr target="https://github.com/DARIAH-ERIC/lexicalresources"/>.</note>
+                  project’s <ptr type="software" xml:id="R1" target="#github"/><rs type="soft.name"
+                     ref="#R1">GitHub</rs> repository, accessed June 17, 2022, <ptr
+                     target="https://github.com/DARIAH-ERIC/lexicalresources"/>.</note>
             </p>
             <p>The scope of our proposal covers the usage of the following concepts central to
                etymological description:</p>

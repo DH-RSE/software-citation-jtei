@@ -54,6 +54,19 @@
                journals in the humanities and social sciences, open to quality periodicals looking
                to publish full-text articles online.</p>
          </projectDesc>
+         <listPrefixDef>
+            <prefixDef ident="softw" matchPattern="([a-z]+)"
+               replacementPattern="https://raw.githubusercontent.com/DH-RSE/software-citation-jtei/main/taxonomy/software-list.xml#$1">
+               <p>In the context of this project, private URIs with the prefix softw point to
+                  software items in the software-list.xml file, which are encoded with <gi>item</gi>
+                  elements and identified in <att>xml:id</att>.</p>
+            </prefixDef>
+            <prefixDef ident="cit" matchPattern="([a-z]+)"
+               replacementPattern="https://raw.githubusercontent.com/DH-RSE/software-citation-jtei/main/taxonomy/citation-taxonomy.xml#$1">
+               <p>In the context of this project, private URIs with the prefix cit point to
+                     <gi>category</gi> elements in the citation-taxonomy.xml file.</p>
+            </prefixDef>
+         </listPrefixDef>
       </encodingDesc>
       <profileDesc>
          <textClass>
@@ -655,19 +668,19 @@
                components used by any ELTeC schema at any level. This ODD also contains
                documentation and specifies usage constraints applicable across every schema. This
                base ODD is then processed using the <ptr type="software" xml:id="R8"
-                  target="#odd2odd"/><rs type="soft.name" ref="#R8">TEI standard odd2odd stylesheet</rs> to produce a
-               stand-alone set of TEI specifications which we call eltec-library. Three different
-               ODDs, eltec-0, eltec-1, and eltec-2, then derive specific schemas and documentation
-               for each of the three ELTeC levels, using this library of specifications as a base
-               rather than using the whole of the TEI. This enables us to customize the TEI across
-               the whole project, while at the same time respecting three different views of the
-               resulting encoding standard. As with other ODDs, we are then able to produce
-               documentation and formal schemas which reflect exactly the scope of each encoding
-               level.</p>
+                  target="#odd2odd"/><rs type="soft.name" ref="#R8">TEI standard odd2odd
+                  stylesheet</rs> to produce a stand-alone set of TEI specifications which we call
+               eltec-library. Three different ODDs, eltec-0, eltec-1, and eltec-2, then derive
+               specific schemas and documentation for each of the three ELTeC levels, using this
+               library of specifications as a base rather than using the whole of the TEI. This
+               enables us to customize the TEI across the whole project, while at the same time
+               respecting three different views of the resulting encoding standard. As with other
+               ODDs, we are then able to produce documentation and formal schemas which reflect
+               exactly the scope of each encoding level.</p>
             <p>The ODD sources and their outputs are maintained on <ptr type="software" xml:id="R4"
                   target="#GitHub"/><rs type="soft.name" ref="#R4">GitHub</rs> and are also <ptr
-                     target="http://doi.org/10.5281/zenodo.3546326"/>published on <ptr type="software" xml:id="R9"
-                        target="#zenodo"/><rs type="soft.name" ref="#R9">Zenodo</rs> (<ref
+                  target="http://doi.org/10.5281/zenodo.3546326"/>published on <ptr type="software"
+                  xml:id="R9" target="#zenodo"/><rs type="soft.name" ref="#R9">Zenodo</rs> (<ref
                   type="bibl" target="#odebrecht2019">Odebrecht et al. 2019</ref>) along with the
                ELTeC corpora.<note>The <ptr type="software" xml:id="R5" target="#GitHub"/><rs
                      type="soft.name" ref="#R5">GitHub</rs> repository for the ELTeC collection

@@ -45,6 +45,19 @@
                journals in the humanities and social sciences, open to quality periodicals looking
                to publish full-text articles online.</p>
          </projectDesc>
+         <listPrefixDef>
+            <prefixDef ident="softw" matchPattern="([a-z]+)"
+               replacementPattern="https://raw.githubusercontent.com/DH-RSE/software-citation-jtei/main/taxonomy/software-list.xml#$1">
+               <p>In the context of this project, private URIs with the prefix softw point to
+                  software items in the software-list.xml file, which are encoded with <gi>item</gi>
+                  elements and identified in <att>xml:id</att>.</p>
+            </prefixDef>
+            <prefixDef ident="cit" matchPattern="([a-z]+)"
+               replacementPattern="https://raw.githubusercontent.com/DH-RSE/software-citation-jtei/main/taxonomy/citation-taxonomy.xml#$1">
+               <p>In the context of this project, private URIs with the prefix cit point to
+                     <gi>category</gi> elements in the citation-taxonomy.xml file.</p>
+            </prefixDef>
+         </listPrefixDef>
       </encodingDesc>
       <profileDesc>
          <langUsage>
@@ -271,15 +284,15 @@
                also happened in 2017: the appearance of a powerful new tool for digital epigraphy,
                EpiDoc Front-End Services (<ptr type="software" xml:id="R6" target="#efes"/><rs
                   type="soft.name" ref="#R6">EFES</rs>).<note><p>GitHub repository, accessed July
-                     21, 2021, <rs type="soft.url" ref="#R6"><ptr target="https://github.com/EpiDoc/EFES"
-                        /></rs>.</p></note> Although I was already aware of the many benefits
-               deriving from a semantic markup of the inscriptions,<note><p>On which see <ptr
-                        type="crossref" target="#EpiDoc_EFES"/> and <ptr type="crossref"
-                        target="#encodingInstitutions"/>.</p></note> what really persuaded me to
-               adopt a TEI-based approach for the creation of my epigraphic editions was actually
-               the great facilitation that <ptr type="software" xml:id="R7" target="#efes"/><rs
-                  type="soft.name" ref="#R7">EFES</rs> offered in using TEI-EpiDoc, which I will
-               discuss in the following section.</p>
+                     21, 2021, <rs type="soft.url" ref="#R6"><ptr
+                           target="https://github.com/EpiDoc/EFES"/></rs>.</p></note> Although I was
+               already aware of the many benefits deriving from a semantic markup of the
+                     inscriptions,<note><p>On which see <ptr type="crossref" target="#EpiDoc_EFES"/>
+                     and <ptr type="crossref" target="#encodingInstitutions"/>.</p></note> what
+               really persuaded me to adopt a TEI-based approach for the creation of my epigraphic
+               editions was actually the great facilitation that <ptr type="software" xml:id="R7"
+                  target="#efes"/><rs type="soft.name" ref="#R7">EFES</rs> offered in using
+               TEI-EpiDoc, which I will discuss in the following section.</p>
          </div>
          <div xml:id="EpiDoc_EFES">
             <head>The Benefits of Using EpiDoc and <ptr type="software" xml:id="R8" target="#efes"
@@ -327,12 +340,13 @@
                inscriptions. The <ptr type="software" xml:id="R9" target="#epidocxslt"/><rs
                   type="soft.name" ref="#R9">EpiDoc Reference XSLT Stylesheets</rs>, created <q>for
                   transformation of EpiDoc XML files into HTML</q>,<note><p>Accessed July 21, 2021,
-                        <rs type="soft.url" ref="#R9"><ptr target="https://github.com/EpiDoc/Stylesheets"
-                        /></rs>.</p></note> require relatively advanced knowledge of XSLT to use
-               them to produce a satisfying HTML edition for online publication or to generate a
-               printable PDF. Not to mention the creation of a complete searchable database to be
-               published online, equipped with indexes and appropriate search filters: this is far
-               beyond the IT skills of the average epigraphist.</p>
+                        <rs type="soft.url" ref="#R9"><ptr
+                           target="https://github.com/EpiDoc/Stylesheets"/></rs>.</p></note> require
+               relatively advanced knowledge of XSLT to use them to produce a satisfying HTML
+               edition for online publication or to generate a printable PDF. Not to mention the
+               creation of a complete searchable database to be published online, equipped with
+               indexes and appropriate search filters: this is far beyond the IT skills of the
+               average epigraphist.</p>
             <p>The situation is a little better for those who use EpiDoc as a tool for simplifying
                their research work on a collection of ancient documents, without aiming at the
                publication of the encoded inscriptions. The querying of a set of EpiDoc inscriptions
@@ -360,8 +374,8 @@
                         Digital Publishing Tool: EpiDoc Front-End Services</title>, September 1,
                      2017, <ptr
                         target="https://ics.sas.ac.uk/about-us/news/new-digital-publishing-tool-epidoc-front-end-services"
-                     />; see also the Kiln GitHub repository, accessed July 21, 2021,<rs type="soft.url"
-                        ref="#R14">
+                     />; see also the Kiln GitHub repository, accessed July 21, 2021,<rs
+                        type="soft.url" ref="#R14">
                         <ptr target="https://kcl-ddh.github.io/kiln/"/></rs>.</p></note> is a
                platform that simplifies the creation and management of databases of inscriptions
                encoded following the EpiDoc Guidelines. More specifically, <ptr type="software"

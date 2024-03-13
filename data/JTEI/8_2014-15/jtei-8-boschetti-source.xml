@@ -63,6 +63,19 @@
           humanities and social sciences, open to quality periodicals looking to publish full-text
           articles online.</p>
       </projectDesc>
+      <listPrefixDef>
+        <prefixDef ident="softw" matchPattern="([a-z]+)"
+          replacementPattern="https://raw.githubusercontent.com/DH-RSE/software-citation-jtei/main/taxonomy/software-list.xml#$1">
+          <p>In the context of this project, private URIs with the prefix softw point to software
+            items in the software-list.xml file, which are encoded with <gi>item</gi> elements and
+            identified in <att>xml:id</att>.</p>
+        </prefixDef>
+        <prefixDef ident="cit" matchPattern="([a-z]+)"
+          replacementPattern="https://raw.githubusercontent.com/DH-RSE/software-citation-jtei/main/taxonomy/citation-taxonomy.xml#$1">
+          <p>In the context of this project, private URIs with the prefix cit point to
+              <gi>category</gi> elements in the citation-taxonomy.xml file.</p>
+        </prefixDef>
+      </listPrefixDef>
     </encodingDesc>
     <profileDesc>
       <langUsage>
@@ -240,8 +253,9 @@
             </list>. The continuous integration and release are supported by open source Integrated
             Development Environments (IDEs) like <ptr type="software" xml:id="R10" target="#eclipse"/>
             <rs type="soft.name" ref="#R10">Eclipse</rs> or <ptr type="software" xml:id="R11"
-              target="#netbeans"/> <rs type="soft.name" ref="#R11">NetBeans</rs> and by a software
-            configuration management tool such as <ptr type="software" xml:id="R13" target="#svn"/>
+              target="#netbeans"/>
+            <rs type="soft.name" ref="#R11">NetBeans</rs> and by a software configuration management
+            tool such as <ptr type="software" xml:id="R13" target="#svn"/>
             <rs type="soft.name" ref="#R13">SVN</rs> or <ptr type="software" xml:id="R12"
               target="#git"/>
             <rs type="soft.name" ref="#R12">Git</rs> for versioning and revision control.</p>
@@ -276,9 +290,9 @@
             objects. The resources are stored and maintained in a native XML database management
             system (i.e., <ptr type="software" xml:id="R15" target="#existdb"/><rs type="soft.name"
               ref="#R15">eXist-db</rs>). The APIs and services provided by <ptr type="software"
-              xml:id="R55" target="#lucene"/><rs type="soft.name" ref="#R55">Lucene</rs>, a
-            software library developed and hosted by the Apache Foundation, have been used for
-            indexing the textual data.</p>
+              xml:id="R55" target="#lucene"/><rs type="soft.name" ref="#R55">Lucene</rs>, a software
+            library developed and hosted by the Apache Foundation, have been used for indexing the
+            textual data.</p>
           <p>For instance, the information conveyed by the following TEI snippet is distributed
             among the appropriate <ptr type="software" xml:id="R16" target="#Java"/><rs
               type="soft.name" ref="#R16">Java</rs> objects that handle the four levels described

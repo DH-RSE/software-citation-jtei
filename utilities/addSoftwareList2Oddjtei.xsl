@@ -19,7 +19,7 @@
         match="//tei:TEI/tei:text/tei:back/tei:div/tei:schemaSpec/tei:dataSpec[@ident='software.mention.target']/tei:content[1]/tei:alternate[1]/tei:valList[1]">
         <valList type="closed">
         <xsl:for-each select="distinct-values($softwarelist//tei:list/tei:item/@xml:id)">
-            <valItem mode="add" ident="{concat('#',.)}"/>
+            <valItem mode="add" ident="{concat('softw:',.)}"/>
         </xsl:for-each>
         </valList>
     </xsl:template>
@@ -31,7 +31,7 @@
       match="//tei:TEI/tei:text/tei:back/tei:div/tei:schemaSpec/tei:elementSpec[@ident='rs']/tei:attList/tei:attDef[@ident='type']/tei:valList[1]">
       <valList type="closed" mode="change">
         <xsl:for-each select="distinct-values($softwaretaxonomy/tei:TEI/tei:teiHeader/tei:encodingDesc/tei:classDecl/tei:taxonomy/tei:category/@xml:id)">
-          <valItem mode="add" ident="{lower-case(.)}"/>
+          <valItem mode="add" ident="{concat('cit:',lower-case(.))}"/>
         </xsl:for-each>
       </valList>
     </xsl:template>

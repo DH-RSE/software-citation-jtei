@@ -89,6 +89,19 @@
           articles online.</p>
       </projectDesc>
       <tagsDecl> </tagsDecl>
+      <listPrefixDef>
+        <prefixDef ident="softw" matchPattern="([a-z]+)"
+          replacementPattern="https://raw.githubusercontent.com/DH-RSE/software-citation-jtei/main/taxonomy/software-list.xml#$1">
+          <p>In the context of this project, private URIs with the prefix softw point to software
+            items in the software-list.xml file, which are encoded with <gi>item</gi> elements and
+            identified in <att>xml:id</att>.</p>
+        </prefixDef>
+        <prefixDef ident="cit" matchPattern="([a-z]+)"
+          replacementPattern="https://raw.githubusercontent.com/DH-RSE/software-citation-jtei/main/taxonomy/citation-taxonomy.xml#$1">
+          <p>In the context of this project, private URIs with the prefix cit point to
+              <gi>category</gi> elements in the citation-taxonomy.xml file.</p>
+        </prefixDef>
+      </listPrefixDef>
     </encodingDesc>
     <profileDesc>
       <langUsage>
@@ -587,10 +600,9 @@
             type="software" xml:id="R44" target="#EVT"/>
           <rs type="soft.name" ref="#R44">EVT</rs>. Some of the planned features will require
           fundamental changes to the software architecture to be implemented effectively: this is
-          probably the case for the <ptr type="software" xml:id="R121"
-            target="#digitallightbox"/>
-          <rs type="soft.name" ref="#R121">Digital Lightbox</rs> (see <ptr type="crossref" target="#lightbox"
-          />), which requires a client-server architecture (<ptr type="crossref"
+          probably the case for the <ptr type="software" xml:id="R121" target="#digitallightbox"/>
+          <rs type="soft.name" ref="#R121">Digital Lightbox</rs> (see <ptr type="crossref"
+            target="#lightbox"/>), which requires a client-server architecture (<ptr type="crossref"
             target="#architecture"/>), instead of the current client-only model, to perform some of
           the existing and planned actions. The currently developed search engine (<ptr
             type="crossref" target="#searchengine"/>) may prove too limited when dealing with larger
@@ -635,19 +647,18 @@
             felt that it was not sufficiently user-friendly, which is a critical goal of the entire
             project. In fact, forcing the editor to install and configure specific server software
             is a cumbersome requirement. Moreover, thanks to its client-only architecture, up to
-            this point <ptr
-              type="software" xml:id="R114" target="#EVT"/>
-            <rs type="soft.name" ref="#R114">EVT</rs> could work as a desktop application or an off-line web application that
-            could be accessed anywhere, and possibly distributed in optical formats (CD or DVD).
-            Forcing the prerequisites of an Internet connection and of dependency on a server-based
-            XML database would have undermined our original goal. Going the database route was no
-            longer an option for a client-only <ptr type="software" xml:id="R51" target="#EVT"/>
+            this point <ptr type="software" xml:id="R114" target="#EVT"/>
+            <rs type="soft.name" ref="#R114">EVT</rs> could work as a desktop application or an
+            off-line web application that could be accessed anywhere, and possibly distributed in
+            optical formats (CD or DVD). Forcing the prerequisites of an Internet connection and of
+            dependency on a server-based XML database would have undermined our original goal. Going
+            the database route was no longer an option for a client-only <ptr type="software"
+              xml:id="R51" target="#EVT"/>
             <rs type="soft.name" ref="#R51">EVT</rs> and we immediately felt the need to go back to
             our original architecture to meet this standard. This sudden turnaround marked another
             chapter in the research process and brought us to the current implementation of <ptr
               type="software" xml:id="R115" target="#EVT"/>
-            <rs type="soft.name" ref="#R115">EVT</rs>
-            Search.</p>
+            <rs type="soft.name" ref="#R115">EVT</rs> Search.</p>
           <p>However, this new vision also had obvious limitations and issues. An XML database could
             provide us with crucial functionality typical of every information retrieval system: an
             indexer, a powerful and flexible server-side language (XQuery), and some useful built-in
@@ -676,7 +687,8 @@
               collections of web pages. It can function both offline and online, and it does not
               necessarily require a web server or a server-side programming/query language (such as
               SQL, PHP, or Python) in order to work. While technically a plug-in, its architecture
-              is quite interesting and versatile: <ptr type="software" xml:id="R116" target="#tipuesearch"/>
+              is quite interesting and versatile: <ptr type="software" xml:id="R116"
+                target="#tipuesearch"/>
               <rs type="soft.name" ref="#R116">Tipue</rs> uses a combination of client-side <ptr
                 type="software" xml:id="R57" target="#JavaScript"/><rs type="soft.name" ref="#R57"
                 >JavaScript</rs> for the actual bulk of the work, and JSON (or <ptr type="software"
@@ -875,17 +887,17 @@
               target="http://lightbox-dev.dighum.kcl.ac.uk"><ptr type="software" xml:id="R79"
                 target="#digitallightbox"/>
               <rs type="soft.name" ref="#R79">Digital Lightbox</rs></ref><note><p>A beta version is
-                available at  <rs type="soft.url" ref="#R79"><ptr target="http://lightbox-dev.dighum.kcl.ac.uk"/></rs>.</p></note> is a
-            web-based visualization framework which aims to support historians, paleographers, art
-            historians, and others in analyzing and studying digital reproductions of cultural
-            heritage objects. The methodology of research inspiring development of this tool is to
-            study paleographic elements in a qualitative way, helping scholars’ interpretations as
-            much as possible, and therefore to reject any automatic methods such as pattern
-            recognition and clustering which are supposed to return quantitative and objective
-            results. Although ongoing projects making use of these computational methods are very
-            promising, the results that may be obtained at this time are still significantly less
-            precise (with regard to specific image features, at least) than those produced through
-            human interpretation.</p>
+                available at <rs type="soft.url" ref="#R79"><ptr
+                    target="http://lightbox-dev.dighum.kcl.ac.uk"/></rs>.</p></note> is a web-based
+            visualization framework which aims to support historians, paleographers, art historians,
+            and others in analyzing and studying digital reproductions of cultural heritage objects.
+            The methodology of research inspiring development of this tool is to study paleographic
+            elements in a qualitative way, helping scholars’ interpretations as much as possible,
+            and therefore to reject any automatic methods such as pattern recognition and clustering
+            which are supposed to return quantitative and objective results. Although ongoing
+            projects making use of these computational methods are very promising, the results that
+            may be obtained at this time are still significantly less precise (with regard to
+            specific image features, at least) than those produced through human interpretation.</p>
           <p>Initially developed exclusively for paleographic research, the <ptr type="software"
               xml:id="R80" target="#digitallightbox"/>
             <rs type="soft.name" ref="#R80">Digital Lightbox</rs> may be used with any type of image
@@ -957,29 +969,30 @@
             <rs type="soft.name" ref="#R91">EVT</rs> provides a rich and usable interface to browse
             and study manuscript texts together with the corresponding images, the tools offered by
             the <ptr type="software" xml:id="R116" target="#digitallightbox"/>
-            <rs type="soft.name" ref="#R116">Digital Lightbox</rs> allow users to identify, gather, and analyze visual details which
-            can be found within the images, and which are important for inquiries relating, for
-            instance, to the style of the handwriting, decorations on manuscript folia, or page
-            layout.</p>
-          <p>An effort to adapt and integrate the <ptr type="software" xml:id="R117" target="#digitallightbox"/>
+            <rs type="soft.name" ref="#R116">Digital Lightbox</rs> allow users to identify, gather,
+            and analyze visual details which can be found within the images, and which are important
+            for inquiries relating, for instance, to the style of the handwriting, decorations on
+            manuscript folia, or page layout.</p>
+          <p>An effort to adapt and integrate the <ptr type="software" xml:id="R117"
+              target="#digitallightbox"/>
             <rs type="soft.name" ref="#R117">Digital Lightbox</rs> into <ptr type="software"
               xml:id="R92" target="#EVT"/>
             <rs type="soft.name" ref="#R92">EVT</rs> is already underway, making it available as a
-            separate, image-centered view, but there is a major hurdle to overcome: some of the <ptr type="software" xml:id="R118" target="#digitallightbox"/>
-            <rs type="soft.name" ref="#R118">DL</rs>
-            features are only possible within a client-server architecture. Since <ptr
-              type="software" xml:id="R93" target="#EVT"/>
+            separate, image-centered view, but there is a major hurdle to overcome: some of the <ptr
+              type="software" xml:id="R118" target="#digitallightbox"/>
+            <rs type="soft.name" ref="#R118">DL</rs> features are only possible within a
+            client-server architecture. Since <ptr type="software" xml:id="R93" target="#EVT"/>
             <rs type="soft.name" ref="#R93">EVT</rs> or, more precisely, a separate version of <ptr
               type="software" xml:id="R94" target="#EVT"/>
             <rs type="soft.name" ref="#R94">EVT</rs> will migrate to this architecture, at some
-            point in the future it will be possible to integrate a full version of the <ptr type="software" xml:id="R119" target="#digitallightbox"/>
-            <rs type="soft.name" ref="#R119">DL</rs>. Plans for
-            the current, client-only version envision implementing all those features that do not
-            depend on server software: even if this means giving up interesting features such as
-            collaborative work and annotation, we believe that even a subset of the available tools
-            will be an invaluable help for manuscript image analysis. Furthermore, as noted above,
-            thanks to HTML5 and CSS3 it will become more and more feasible to implement features in
-            a client-only mode.</p>
+            point in the future it will be possible to integrate a full version of the <ptr
+              type="software" xml:id="R119" target="#digitallightbox"/>
+            <rs type="soft.name" ref="#R119">DL</rs>. Plans for the current, client-only version
+            envision implementing all those features that do not depend on server software: even if
+            this means giving up interesting features such as collaborative work and annotation, we
+            believe that even a subset of the available tools will be an invaluable help for
+            manuscript image analysis. Furthermore, as noted above, thanks to HTML5 and CSS3 it will
+            become more and more feasible to implement features in a client-only mode.</p>
         </div>
         <div xml:id="architecture">
           <head>New Architecture</head>
@@ -1077,7 +1090,8 @@
           <item>Giancarlo Buomprisco</item>
         </list>
         <p><ptr type="software" xml:id="R121" target="#EVT"/>
-          <rs type="soft.name" ref="#R121">EVT</rs> website: <rs type="soft.url" ref="#R121"><ptr target="http://sourceforge.net/projects/evt-project/"/></rs></p>
+          <rs type="soft.name" ref="#R121">EVT</rs> website: <rs type="soft.url" ref="#R121"><ptr
+              target="http://sourceforge.net/projects/evt-project/"/></rs></p>
       </div>
       <div type="bibliography">
         <listBibl>
