@@ -105,8 +105,8 @@
           them online, mostly under free licenses. Scholars all over the world are now able to use
           huge datasets for further research. There are now many digital editions available, but
           only a few tools to analyze them. This article explores how web technologies (XML and
-          related technologies as well as <ptr type="software" xml:id="R1" target="#JavaScript"/><rs
-            type="soft.name" ref="#R1">JavaScript</rs>) can be used to enrich the forthcoming
+          related technologies as well as <ptr type="software" xml:id="R1" target="softw:JavaScript"/><rs
+            type="cit:soft.name" ref="#R1">JavaScript</rs>) can be used to enrich the forthcoming
           edition of Theodor Fontane’s notebooks with data-driven visualizations of named entities
           and how at the same time applications can be built on these visualizations which are
           reusable for other edition projects in the TEI world. Because of the density and
@@ -142,13 +142,13 @@
           term <term>hybrid edition</term> indicates that it is going to be published both online,
           in open access form, and as a printed book by Walter de Gruyter. The term <term>Virtual
             Research Environment</term> in the title of the project refers to <ptr type="software"
-            xml:id="R2" target="#textgrid"/><ref target="http://textgrid.de/"><rs type="soft.name"
-              ref="#R2">TextGrid</rs></ref>,<note><rs type="soft.name" ref="#R2">TextGrid</rs>: A
-            Virtual Research Environment for the Humanities, <rs type="soft.url" ref="#R2"><ptr
+            xml:id="R2" target="softw:textgrid"/><ref target="http://textgrid.de/"><rs type="cit:soft.name"
+              ref="#R2">TextGrid</rs></ref>,<note><rs type="cit:soft.name" ref="#R2">TextGrid</rs>: A
+            Virtual Research Environment for the Humanities, <rs type="cit:soft.url" ref="#R2"><ptr
                 target="http://textgrid.de/"/></rs></note> which we use in combination with the <ref
-            target="http://www.oxygenxml.com/"><ptr type="software" xml:id="R3" target="#oxygen"
-              /><rs type="soft.name" ref="#R3">oXygen XML Editor</rs></ref><note>Syncro Soft, <rs
-              type="soft.url" ref="#R3"><ptr target="http://www.oxygenxml.com/"/></rs></note> to
+            target="http://www.oxygenxml.com/"><ptr type="software" xml:id="R3" target="softw:oxygen"
+              /><rs type="cit:soft.name" ref="#R3">oXygen XML Editor</rs></ref><note>Syncro Soft, <rs
+              type="cit:soft.url" ref="#R3"><ptr target="http://www.oxygenxml.com/"/></rs></note> to
           produce our TEI-encoded transcription as well as to store both the digital images and the
           XML files permanently. The project is funded by the German Research Foundation (DFG) and
           carried out by the Theodor Fontane Research Centre at Göttingen University, in cooperation
@@ -162,7 +162,7 @@
           (e.g., <gi>sourceDoc</gi> and <gi>surface</gi>) specified by the metadata specialist. This
           TEI code is then XSL-transformed into HTML and integrated into the project’s website by
           the IT specialist. This transformation can be invoked from within the <ptr type="software"
-            xml:id="R4" target="#textgrid"/><rs type="soft.name" ref="#R4">TextGrid</rs> environment
+            xml:id="R4" target="softw:textgrid"/><rs type="cit:soft.name" ref="#R4">TextGrid</rs> environment
           at any time. Thus, the HTML file not only is used for publication on the website, but also
           supports the editors in transcribing and encoding the text of the notebooks by providing
           an on-the-fly visualization of their work which is often easier to check for errors than
@@ -296,14 +296,14 @@
             historical figures? In the latter case, in which period did they live? Answering these
             questions will give us an idea of the different historical strata treated in this
             notebook. Our tool for this purpose will be the <ptr type="software" xml:id="R5"
-              target="#timeline"/><ref target="http://www.simile-widgets.org/timeline/"><rs
-                type="soft.name" ref="#R5">Timeline Widget</rs></ref><note><rs type="soft.name"
+              target="softw:timeline"/><ref target="http://www.simile-widgets.org/timeline/"><rs
+                type="cit:soft.name" ref="#R5">Timeline Widget</rs></ref><note><rs type="cit:soft.name"
                 ref="#R5">Timeline</rs>: Web Widget for Visualizing Temporal Data, <rs
-                type="soft.url" ref="#R5"><ptr target="http://www.simile-widgets.org/timeline/"
+                type="cit:soft.url" ref="#R5"><ptr target="http://www.simile-widgets.org/timeline/"
                 /></rs>.</note> from the SIMILE (Semantic Interoperability of Metadata and
             Information in unLike Environments) collection of open source data visualization tools,
-            originally developed at MIT.<ptr type="software" xml:id="R6" target="#timeline"/> A <rs
-              type="soft.name" ref="#R6">SIMILE Timeline</rs> consists of events, associated with
+            originally developed at MIT.<ptr type="software" xml:id="R6" target="softw:timeline"/> A <rs
+              type="cit:soft.name" ref="#R6">SIMILE Timeline</rs> consists of events, associated with
             either a point in time or a duration, which are plotted on a chronological, in this case
             horizontal, axis. If we want to visualize the persons mentioned in the notebook on such
             a timeline, and use their lifespans as durations, where do we get their birth and death
@@ -317,9 +317,9 @@
             rather than individuals, such as <q>the German emperors</q> or <q>the Thuringian
               landgraves</q>. Although the GND does provide records for some of these entities, they
             do not contain much useful information for further investigation.</p>
-          <p>The <ptr type="software" xml:id="R7" target="#timeline"/><rs type="soft.name" ref="#R7"
+          <p>The <ptr type="software" xml:id="R7" target="softw:timeline"/><rs type="cit:soft.name" ref="#R7"
               >SIMILE Timeline</rs> widget consists of an HTML document that uses <ptr
-              type="software" xml:id="R8" target="#JavaScript"/><rs type="soft.name" ref="#R8"
+              type="software" xml:id="R8" target="softw:JavaScript"/><rs type="cit:soft.name" ref="#R8"
               >JavaScript</rs> to process an XML file written in a simple XML markup language
             specific to SIMILE.</p>
           <figure xml:id="example3">
@@ -331,8 +331,8 @@
             </egXML>
             <head type="legend">Example of <ident>SIMILE XML</ident>.</head>
           </figure>
-          <p>We have written an <ptr type="software" xml:id="R9" target="#XSLT"/><rs
-              type="soft.name" ref="#R9">XSLT</rs> stylesheet in order to produce the HTML document
+          <p>We have written an <ptr type="software" xml:id="R9" target="softw:XSLT"/><rs
+              type="cit:soft.name" ref="#R9">XSLT</rs> stylesheet in order to produce the HTML document
             and at the same time generate the required XML data from the TEI code of our notebook.
             During the transformation, this stylesheet picks up the GND identifiers of all person
             entities in the TEI code and looks up the corresponding GND record online at the German
@@ -374,8 +374,8 @@
             than a notebook, but both contain a sufficient number of references to person entities
             that we can display on a timeline. To narrow the material down, we selected a single
             year’s worth of diary entries, for the year 1835, which is the last complete year within
-            the scope of Godwin’s diaries. The <ptr type="software" xml:id="R10" target="#XSLT"/><rs
-              type="soft.name" ref="#R10">XSLT</rs> code to create the timeline has to be adjusted
+            the scope of Godwin’s diaries. The <ptr type="software" xml:id="R10" target="softw:XSLT"/><rs
+              type="cit:soft.name" ref="#R10">XSLT</rs> code to create the timeline has to be adjusted
             to the Godwin TEI code, though only slightly. The main difference is that birth and
             death dates are already contained within the <gi>person</gi> elements, and do not need
             to be retrieved from elsewhere. Again, a filter was applied for missing birth and death
@@ -386,8 +386,8 @@
             of writing.)</p>
           <figure xml:id="figure2">
             <graphic url="images/jtei-8-077-image_02.png" width="827px" height="2518px"/>
-            <head type="legend"><ptr type="software" xml:id="R11" target="#timeline"/><rs
-                type="soft.name" ref="#R11">SIMILE Timeline</rs> for William Godwin’s diary entries
+            <head type="legend"><ptr type="software" xml:id="R11" target="softw:timeline"/><rs
+                type="cit:soft.name" ref="#R11">SIMILE Timeline</rs> for William Godwin’s diary entries
               of the year 1835</head>
           </figure>
           <p>The comparison of the two timelines shows a marked difference: while Fontane
@@ -412,10 +412,10 @@
             automatic systems to identify the historical places would not be feasible, as they are
             sometimes referred to in the notebooks by uncommon phrases which require human
             interpretation to match them to corresponding modern-day identifiers. Another <ptr
-              type="software" xml:id="R12" target="#XSLT"/><rs type="soft.name" ref="#R12">XSLT</rs>
+              type="software" xml:id="R12" target="softw:XSLT"/><rs type="cit:soft.name" ref="#R12">XSLT</rs>
             script is used to transform the TEI dataset to a Keyhole Markup Language (KML) file, the
             typical input format for geospatial visualization tools. The <ptr type="software"
-              xml:id="R13" target="#XSLT"/><rs type="soft.name" ref="#R13">XSLT</rs> resolves the
+              xml:id="R13" target="softw:XSLT"/><rs type="cit:soft.name" ref="#R13">XSLT</rs> resolves the
             IDs and retrieves the coordinates from the respective database. OSM is able to deliver
             polygons instead of geographic coordinates from a single URL in the resulting file: for
             example, for All Saints’ Church in Wittenberg or the Saint Augustine Monastery at
@@ -423,14 +423,14 @@
             information—KML—is also expressed as XML. This approach tries to provide a possible
             combination of place names that appear in the neighborhood of <gi>date</gi> elements.
             The geospatial-temporal visualization tool of our choice is the <ptr type="software"
-              xml:id="R14" target="#dariahgeobrowser"/><ref
-              target="http://geobrowser.de.dariah.eu/embed/?"><rs type="soft.name" ref="#R14">DARIAH
+              xml:id="R14" target="softw:dariahgeobrowser"/><ref
+              target="http://geobrowser.de.dariah.eu/embed/?"><rs type="cit:soft.name" ref="#R14">DARIAH
                 Geo-Browser</rs></ref>,<note>DARIAH-DE Konsortium, <rs type="url" ref="#R14"><ptr
                   target="http://geobrowser.de.dariah.eu/embed/?"/></rs>.</note> which offers a
             timeline with a map interface together with different features for selecting data.</p>
           <p>A notable feature is the use of historical maps to provide better context. The
             selection of historical maps in the <ptr type="software" xml:id="R15"
-              target="#dariahgeobrowser"/><rs type="soft.name" ref="#R15">Geo-Browser</rs> is still
+              target="softw:dariahgeobrowser"/><rs type="cit:soft.name" ref="#R15">Geo-Browser</rs> is still
             limited, but it is also possible to load one’s own overlays. Furthermore, the data are
             presented in tabular form with a search function. In addition to the mandatory data—at
             least one place name with latitude and longitude—HTML code can be inserted in the KML
@@ -439,10 +439,10 @@
             hyper-references will appear directly in the geographical information system. We
             integrated an embedded version of this tool via <gi>html:iframe</gi> into our website
             which is built on an <ref target="http://exist-db.org/"><ptr type="software"
-                xml:id="R18" target="#existdb"/><rs type="soft.name" ref="#R18">eXist
-              database</rs></ref>.<note><rs type="soft.url" ref="#R15"><ptr
+                xml:id="R18" target="softw:existdb"/><rs type="cit:soft.name" ref="#R18">eXist
+              database</rs></ref>.<note><rs type="cit:soft.url" ref="#R15"><ptr
                   target="http://exist-db.org/"/></rs>.</note> An <ptr type="software" xml:id="R16"
-              target="#xquery"/><rs type="soft.name" ref="#R16">XQuery</rs> script executes the
+              target="softw:xquery"/><rs type="cit:soft.name" ref="#R16">XQuery</rs> script executes the
             transformation, stores the KML file in the database, and generates the required
               <gi>html:iframe</gi> element. The <gi>html:src</gi> attribute value contains the
             parameters to control the Geo-Browser. A URL-encoded string which points to the
@@ -461,8 +461,8 @@
             terms like the Holy Roman Empire (<q>HRR</q>) or Thuringia, and the authority files we
             use are not able to provide the required data, especially not for the desired time.</p>
           <p>The dates returned by this algorithm are also used to select a background map provided
-            by the <ptr type="software" xml:id="R17" target="#dariahgeobrowser"/><rs
-              type="soft.name" ref="#R17">Geo-Browser</rs>. The arithmetic mean of the temporal data
+            by the <ptr type="software" xml:id="R17" target="softw:dariahgeobrowser"/><rs
+              type="cit:soft.name" ref="#R17">Geo-Browser</rs>. The arithmetic mean of the temporal data
             in this example is 1451.25 CE and 11 out of 17 dates with spatial reference specify the
             early sixteenth century. A suitable background map with the borders from 1492 can be
             selected via parameter
@@ -472,8 +472,8 @@
             selection for notebook C07.</p>
           <figure xml:id="figure3">
             <graphic url="images/jtei-8-077-image_03.png" width="1144px" height="114px"/>
-            <head type="legend"><ptr type="software" xml:id="R19" target="#dariahgeobrowser"/><rs
-                type="soft.name" ref="#R19">DARIAH-DE-Geo-Browser</rs>’s timeline with the data from
+            <head type="legend"><ptr type="software" xml:id="R19" target="softw:dariahgeobrowser"/><rs
+                type="cit:soft.name" ref="#R19">DARIAH-DE-Geo-Browser</rs>’s timeline with the data from
               notebook C07</head>
           </figure>
           <p>Placenames corresponding to a selection in the timeline are displayed in a table below,
@@ -493,14 +493,14 @@
               visualizing social networks extracted from a TEI-encoded corpus</quote> (<ref
               type="bibl" xml:id="quoteref1" target="#bingenheimer11">p. 271</ref>) consisting of
             biographic data. The interface is realized with a proprietary plug-in built upon the
-              <ref target="http://prefuse.org/"><ptr type="software" xml:id="R20" target="#prefuse"
-                /><rs type="soft.name" ref="#R20">Prefuse</rs></ref><note>UC Berkeley Visualization
-              Lab, <rs type="soft.url" ref="#R20"><ptr target="http://prefuse.org/"/></rs>.</note>
+              <ref target="http://prefuse.org/"><ptr type="software" xml:id="R20" target="softw:prefuse"
+                /><rs type="cit:soft.name" ref="#R20">Prefuse</rs></ref><note>UC Berkeley Visualization
+              Lab, <rs type="cit:soft.url" ref="#R20"><ptr target="http://prefuse.org/"/></rs>.</note>
             software library. One of our goals is to implement the aggregations within the digital
             edition, and for this we would like to use web technologies only. The <ref
-              target="http://d3js.org/"><ptr type="software" xml:id="R21" target="#d3js"/><rs
-                type="soft.name" ref="#R21">D3.js</rs></ref> (Data Driven Documents Javascript
-            library) created by <rs type="soft.agent" ref="#R21">Mike Bostock</rs> provides a
+              target="http://d3js.org/"><ptr type="software" xml:id="R21" target="softw:d3js"/><rs
+                type="cit:soft.name" ref="#R21">D3.js</rs></ref> (Data Driven Documents Javascript
+            library) created by <rs type="cit:soft.agent" ref="#R21">Mike Bostock</rs> provides a
             framework for different visualizations. The <ref
               target="https://github.com/mbostock/d3/wiki/Gallery">list of examples</ref><note><ptr
                 target="https://github.com/mbostock/d3/wiki/Gallery"/>.</note> is a good starting
@@ -510,14 +510,14 @@
                 target="http://bl.ocks.org/mbostock/4062045"/>.</note> and the <ref
               target="http://bl.ocks.org/mbostock/7607999">Hierarchical Edge
                 Bundling</ref><note><ptr target="http://bl.ocks.org/mbostock/7607999"/>.</note>
-            examples. Again we use an <ptr type="software" xml:id="R22" target="#xslt"/><rs
-              type="soft.name" ref="#R22">XSL transformation</rs> to extract the data from our
+            examples. Again we use an <ptr type="software" xml:id="R22" target="softw:xslt"/><rs
+              type="cit:soft.name" ref="#R22">XSL transformation</rs> to extract the data from our
             source.</p>
           <p>The transformation script matches all entities and generates the required documents.
             The first document is the HTML file, which contains the needed <ptr type="software"
-              xml:id="R23" target="#JavaScript"/><rs type="soft.name" ref="#R23">JavaScript</rs> and
-            a reference to the external <ptr type="software" xml:id="R24" target="#d3js"/><rs
-              type="soft.name" ref="#R24">D3.js</rs> library. The second is a JSON file, which
+              xml:id="R23" target="softw:JavaScript"/><rs type="cit:soft.name" ref="#R23">JavaScript</rs> and
+            a reference to the external <ptr type="software" xml:id="R24" target="softw:d3js"/><rs
+              type="cit:soft.name" ref="#R24">D3.js</rs> library. The second is a JSON file, which
             contains one object per entity and one associated array per object that includes a list
             of connected entities. The tree-like structure of XML allows the transformation of any
             document to a network graph by selecting elements that share the same ancestor. The only
@@ -529,8 +529,8 @@
             the <gi>surface</gi> elements that are direct children of <gi>sourceDoc</gi>, because
             more than one surface may be part of a single page, for example where there are glued-in
             newspaper articles.</p>
-          <p>As in the <ptr type="software" xml:id="R25" target="#dariahgeobrowser"/><rs
-              type="soft.name" ref="#R25">Geo-Browser</rs> example above, we assume that the
+          <p>As in the <ptr type="software" xml:id="R25" target="softw:dariahgeobrowser"/><rs
+              type="cit:soft.name" ref="#R25">Geo-Browser</rs> example above, we assume that the
             proximity of two references to entities suggests a semantic connection. Naturally, such
             a connection may also exist between two entity occurrences separated by a page break.
             Therefore, better criteria for connectedness could be proposed, such as co-occurrence
@@ -558,8 +558,8 @@
             headline is <q>Thüringens Geschichte</q> (History of Thuringia), which is also the topic
             of the following pages. The benefit of the network is that a major topic can be
             identified with a single view.</p>
-          <p>The output of this <ptr type="software" xml:id="R26" target="#d3js"/><rs
-              type="soft.name" ref="#R26">D3.js</rs> application is an SVG graphic which can be
+          <p>The output of this <ptr type="software" xml:id="R26" target="softw:d3js"/><rs
+              type="cit:soft.name" ref="#R26">D3.js</rs> application is an SVG graphic which can be
             further transformed. <gi>svg:title</gi> elements are used to store the node names, which
             modern browsers should display on mouseover. To get a better overview of the entities in
             the notebook, the node names should actually be inserted as nodes, but since there is
@@ -572,8 +572,8 @@
             attribute contains the leaf number with a letter <val>r</val> for recto and <val>v</val>
             for a verso side and this attribute is transformed in a <ident>html:id</ident>, so we
             can go back from a single entity to the leaf of its first occurrence by generating a
-            hyperlink with the help of <ptr type="software" xml:id="R27" target="#JavaScript"/><rs
-              type="soft.name" ref="#R27">JavaScript</rs>. If this part is left out, the objects
+            hyperlink with the help of <ptr type="software" xml:id="R27" target="softw:JavaScript"/><rs
+              type="cit:soft.name" ref="#R27">JavaScript</rs>. If this part is left out, the objects
             will be sorted in alphabetical order and the network will contain more edges to link
             those entities that co-occur on one page. Applying the hierarchy allows these edges to
             be deleted, because the categorization lets the nodes appear together and a bigger gap
@@ -594,7 +594,7 @@
             way to integrate this entity into the network might be the use of another apportionment,
             as the fact that two entities are referenced on the same page may be regarded as
             artificial. Only minor changes would have to be made to the <ptr type="software"
-              xml:id="R28" target="#xslt"/><rs type="soft.name" ref="#R28">XSLT</rs> code to use
+              xml:id="R28" target="softw:xslt"/><rs type="cit:soft.name" ref="#R28">XSLT</rs> code to use
             other divisions of text, such as chapters. As notebooks are not typically organized in
             chapters, we can use paragraphs (encoded with <gi>milestone</gi> here) instead. Instead
             of one specific element, a distinctive number of blank surfaces in series can be
@@ -628,12 +628,12 @@
           and services. The additional effort required to make them work with the TEI data from the
           forthcoming edition of Theodor Fontane’s notebooks (and from the edition of William
           Godwin’s Diary) was minimal. The necessary scripting (mainly <ptr type="software"
-            xml:id="R29" target="#xslt"/><rs type="soft.name" ref="#R29">XSLT</rs>) and code
+            xml:id="R29" target="softw:xslt"/><rs type="cit:soft.name" ref="#R29">XSLT</rs>) and code
           customization were easily carried out in addition to our regular work within the Fontane
           edition project. These efforts were facilitated by a spirit of openness shared by all
-          parties involved: both the <ptr type="software" xml:id="R30" target="#d3js"/><rs
-            type="soft.name" ref="#R30">D3.js</rs> library and the <ptr type="software" xml:id="R31"
-            target="#timeline"/><rs type="soft.name" ref="#R31">SIMILE Timeline</rs> widget are
+          parties involved: both the <ptr type="software" xml:id="R30" target="softw:d3js"/><rs
+            type="cit:soft.name" ref="#R30">D3.js</rs> library and the <ptr type="software" xml:id="R31"
+            target="softw:timeline"/><rs type="cit:soft.name" ref="#R31">SIMILE Timeline</rs> widget are
           open-source software released under a BSD license; the data sources GND, GeoNames, and
           OpenStreetMap have permissive licenses—Creative Commons Zero (CC0), Creative Commons
           Attribution (CC BY), and Open Data Commons Open Database License (ODbL), respectively; and

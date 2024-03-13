@@ -637,7 +637,7 @@
         <p>The so called <soCalled>decoding</soCalled> phase, for corpus analysis and
           interpretation, consisted of importing and processing the TEI XML annotated documents
           within a specialized platform, <ref target="http://textometrie.ens-lyon.fr/?lang=en"><ptr
-              type="software" xml:id="TXM" target="#TXM"/><rs type="soft.name" ref="#TXM"
+              type="software" xml:id="TXM" target="softw:TXM"/><rs type="cit:soft.name" ref="#TXM"
             >TXM</rs></ref> (<ref type="bibl" target="#heiden10">Heiden 2010</ref>),<note><ptr
               target="http://textometrie.ens-lyon.fr/?lang=en"/>.</note> that allows the analysis of
           a large body of texts by means of lexicometrical and statistical methods. The previous
@@ -645,11 +645,11 @@
           or structural elements needed for analysis.</p>
         <div xml:id="importing">
           <head>Importing</head>
-          <p>Since <ptr type="software" xml:id="TXM" target="#TXM"/><rs type="soft.name" ref="#TXM"
+          <p>Since <ptr type="software" xml:id="TXM" target="softw:TXM"/><rs type="cit:soft.name" ref="#TXM"
               >TXM</rs> supports XSLT transformation at the moment of import (XML/w+CSV option), an
             XSLT stylesheet was created to accommodate particular formats or conversions required by
             the software. Therefore, it was not necessary to store different versions of the corpus,
-            one for <ptr type="software" xml:id="TXM" target="#TXM"/><rs type="soft.name" ref="#TXM"
+            one for <ptr type="software" xml:id="TXM" target="softw:TXM"/><rs type="cit:soft.name" ref="#TXM"
               >TXM</rs> analysis, the other for Web publication.</p>
           <p>First, a lowercase conversion<note>All the examples of analysis presented in the paper
               will consequently be displayed in lowercase.</note> was provided for consistency
@@ -667,7 +667,7 @@
               <mentioned>cons</mentioned> and <mentioned>tituant</mentioned> as the software would
             treat it without a <gi>w</gi> tag).</p>
           <p>Part-of-speech tagging via the TreeTagger module integrated into <ptr type="software"
-              xml:id="TXM" target="#TXM"/><rs type="soft.name" ref="#TXM">TXM</rs> was also applied
+              xml:id="TXM" target="softw:TXM"/><rs type="cit:soft.name" ref="#TXM">TXM</rs> was also applied
             to the corpus at import in order to allow lemma and part-of-speech statistics and
             queries.</p>
         </div>
@@ -677,15 +677,15 @@
             contained 6,512 items (unique words) with 76,558 occurrences in the text.<note>A
               subcorpus based on the <code>@lang=&quot;fr&quot;</code> property (an attribute of the
                 <gi>text</gi> element) was created in <ptr type="software" xml:id="TXM"
-                target="#TXM"/><rs type="soft.name" ref="#TXM">TXM</rs> for the analysis of the
+                target="softw:TXM"/><rs type="cit:soft.name" ref="#TXM">TXM</rs> for the analysis of the
               documents’ content, excluding the data from the <gi>teiHeader</gi>. The whole corpus
                 (<gi>teiHeader</gi> included) comprised 7,015 items and 105,897
             occurrences.</note></p>
           <div xml:id="partitioning">
             <head>Partitioning</head>
             <p>Given the identification and annotation of different semantic and structural elements
-              in the encoding phase, <ptr type="software" xml:id="TXM" target="#TXM"/><rs
-                type="soft.name" ref="#TXM">TXM</rs> allows the creation of partitions (<ref
+              in the encoding phase, <ptr type="software" xml:id="TXM" target="softw:TXM"/><rs
+                type="cit:soft.name" ref="#TXM">TXM</rs> allows the creation of partitions (<ref
                 type="bibl" target="#textometrie14">Textométrie 2014, section Construire une
                 partition</ref>) by selecting a <term>Structure</term> unit and a corresponding
                 <term>Property</term> (i.e., an XML element and one of its attributes) from the list
@@ -723,13 +723,13 @@
               comparison of the vocabularies: what is <soCalled>specific</soCalled> (either as
                 <soCalled>overuse</soCalled> or <soCalled>deficit</soCalled>) in a part of a
               partition, as compared with the parent corpus and a certain threshold.<note>In <ptr
-                  type="software" xml:id="TXM" target="#TXM"/><rs type="soft.name" ref="#TXM"
+                  type="software" xml:id="TXM" target="softw:TXM"/><rs type="cit:soft.name" ref="#TXM"
                   >TXM</rs>, it is called the <term>banality threshold</term>, fixed by default at
                 the value of +/- 2.0 for positive and negative specificities scores, respectively.
                 In <ptr type="crossref" target="#figure3"/>, the banality thresholds are rendered by
                 (red) horizontal lines.</note> The feature is based on a probabilistic model (<ref
                 type="bibl" target="#lafon80">Lafon 1980</ref>) used in <ptr type="software"
-                xml:id="TXM" target="#TXM"/><rs type="soft.name" ref="#TXM">TXM</rs> to compute a
+                xml:id="TXM" target="softw:TXM"/><rs type="cit:soft.name" ref="#TXM">TXM</rs> to compute a
               log10 specificity score of a word property (e.g., word form, lemma, or part of speech)
               for a given part. In the analysis of the WEU-Diplo corpus, it was assumed that the
               specificity score may draw attention to forms <soCalled>specific</soCalled> to the
@@ -1103,8 +1103,8 @@
           </div>
           <div xml:id="discussion">
             <head>Results Discussion</head>
-            <p>The TEI XML encoding and <ptr type="software" xml:id="TXM" target="#TXM"/><rs
-                type="soft.name" ref="#TXM">TXM</rs> analysis related to the research questions on
+            <p>The TEI XML encoding and <ptr type="software" xml:id="TXM" target="softw:TXM"/><rs
+                type="cit:soft.name" ref="#TXM">TXM</rs> analysis related to the research questions on
               arms design, production, and control within the WEU have enabled a set of more or less
               predictable results, the latter needing further examination. Among the former, we can
               mention those referring to the SAC and ACA roles. Arms production and control was a
@@ -1134,7 +1134,7 @@
                 Commonwealth Office, Western Organisations Department: Registered Files (W and WD
                 Series). Western European Union (WEU). Future of Standing Armaments Committee of
                 Western European Union. 01/01/1975–31/12/1975, FCO 41/1749 (Former <ptr
-                  type="software" xml:id="Reference" target="#omekareference"/><rs type="soft.name"
+                  type="software" xml:id="Reference" target="softw:omekareference"/><rs type="cit:soft.name"
                   ref="#Reference">Reference</rs> Dep: WDU 11/1 PART B).</note> The interpretation
               of the less predictable results is not straightforward, since they may have been
               determined by an under- or overrepresentation of certain elements in the discourse,
@@ -1145,11 +1145,11 @@
               controls and the need to avoid making statements on the subject. Since the size of the
               corpus was relatively small, and not all the information for the documents on the
               selected topic and their types in the WEU archive was available, extrapolations about
-              the <ptr type="software" xml:id="TXM" target="#TXM"/><rs type="soft.name" ref="#TXM"
+              the <ptr type="software" xml:id="TXM" target="softw:TXM"/><rs type="cit:soft.name" ref="#TXM"
                 >TXM</rs> probabilistic model and the observed linguistic patterns at a larger scale
               than the pilot sample should be avoided at this stage.</p>
-            <p>The TEI XML combined with the <ptr type="software" xml:id="TXM" target="#TXM"/><rs
-                type="soft.name" ref="#TXM">TXM</rs> analysis tools can also reveal inconsistencies
+            <p>The TEI XML combined with the <ptr type="software" xml:id="TXM" target="softw:TXM"/><rs
+                type="cit:soft.name" ref="#TXM">TXM</rs> analysis tools can also reveal inconsistencies
               which may draw attention to the need for further encoding and testing additional
               documents. On the other hand, it is also important to take into consideration how far
               (or how well) the researcher/user knows the content of the documents, as a lack of
@@ -1238,7 +1238,7 @@
             <pubPlace>Chicago</pubPlace>: <publisher>University of Chicago Press</publisher>.
             Excerpt: <ptr target="http://www.press.uchicago.edu/Misc/Chicago/321487.html"/>.</bibl>
           <bibl xml:id="heiden10"><author>Heiden, Serge</author>. <date>2010</date>. <title
-              level="a">The <ptr type="software" xml:id="TXM" target="#TXM"/><rs type="soft.name"
+              level="a">The <ptr type="software" xml:id="TXM" target="softw:TXM"/><rs type="cit:soft.name"
                 ref="#TXM">TXM</rs> Platform: Building Open-Source Textual Analysis Software
               Compatible with the TEI Encoding Scheme</title>. In <title level="m">Proceedings of
               the 24th Pacific Asia Conference on Language, Information and Computation</title>,
@@ -1296,8 +1296,8 @@
             and <editor>Pascaline Winand</editor>, <biblScope unit="page">187–234</biblScope>.
               <pubPlace>Brussels</pubPlace>: <publisher>PIE-Peter-Lang</publisher>.</bibl>
           <bibl xml:id="textometrie14"><orgName>Textométrie</orgName>. <date>2014</date>. <title
-              level="m">Manuel de <ptr type="software" xml:id="TXM" target="#TXM"/><rs
-                type="soft.name" ref="#TXM">TXM</rs></title>, Version 0.7. Accessed March 6, 2016.
+              level="m">Manuel de <ptr type="software" xml:id="TXM" target="softw:TXM"/><rs
+                type="cit:soft.name" ref="#TXM">TXM</rs></title>, Version 0.7. Accessed March 6, 2016.
               <ptr target="http://textometrie.ens-lyon.fr/spip.php?rubrique64"/>.</bibl>
           <bibl xml:id="thornborrow02"><author>Thornborrow, Joanna Sarah</author>. <date>2002</date>
             <title level="m">Power Talk: Language and Interaction in Institutional

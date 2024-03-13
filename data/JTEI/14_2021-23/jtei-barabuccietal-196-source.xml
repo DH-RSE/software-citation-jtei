@@ -126,10 +126,10 @@
             <p>This paper describes how we dealt with the encoding and transformation of the
                punctuation in the Early New High German edition of Marco Polo’s travel account.
                Technically, we implemented a set of general rules (as <ptr type="software"
-                  xml:id="R1" target="#xslt"/><rs type="soft.name" ref="#R1">XSLT</rs> templates)
+                  xml:id="R1" target="softw:xslt"/><rs type="cit:soft.name" ref="#R1">XSLT</rs> templates)
                plus various exceptions (as descriptive instructions in XML attributes), and applied
-               them in an automated fashion (using <ptr type="software" xml:id="R2" target="#xproc"
-                  /><rs type="soft.name" ref="#R2">XProc</rs> pipelines). In addition to this, we
+               them in an automated fashion (using <ptr type="software" xml:id="R2" target="softw:xproc"
+                  /><rs type="cit:soft.name" ref="#R2">XProc</rs> pipelines). In addition to this, we
                discuss the philological foundation of this method and, contextually, we address the
                topic of the transformation of a single original source into different
                transcriptions: from a highly diplomatic edition to an interpretative one, going
@@ -161,7 +161,7 @@
             <list rend="ordered">
                <item>the master TEI file became too big and its structure too complex, thus too hard
                   to navigate and maintain, even when using advanced XML editors such as <ptr
-                     type="software" xml:id="R3" target="#oxygen"/><rs type="soft.name" ref="#R3"
+                     type="software" xml:id="R3" target="softw:oxygen"/><rs type="cit:soft.name" ref="#R3"
                      >Oxygen XML</rs>;</item>
                <item>normalizing punctuation revealed itself as a complex task that required
                   profound changes to the structure of the edited text.</item>
@@ -203,8 +203,8 @@
                approach addresses both issues. In particular we show how normalizing punctuation
                represents a dramatic step beyond the more classical normalization of words. The
                current implementation of our approach, based on <ptr type="software" xml:id="R4"
-                  target="#xproc"/><rs type="soft.name" ref="#R4">XProc</rs> and <ptr
-                  type="software" xml:id="R5" target="#xslt"/><rs type="soft.name" ref="#R5"
+                  target="softw:xproc"/><rs type="cit:soft.name" ref="#R4">XProc</rs> and <ptr
+                  type="software" xml:id="R5" target="softw:xslt"/><rs type="cit:soft.name" ref="#R5"
                   >XSLT</rs>, is also presented in section 3.</p>
             <p>Moving to an editorial workflow with such a level of automation requires a
                reevaluation of the role of the editor, from wordsmith to formalizer of rules (and
@@ -274,11 +274,11 @@
                   text are presented in such a way that the reader is granted more informed access
                   to them.</p>
                <p>The edition will be published online using a specifically tailored version of <ptr
-                     type="software" xml:id="R29" target="#evt"/><rs type="soft.name" ref="#R29"
+                     type="software" xml:id="R29" target="softw:evt"/><rs type="cit:soft.name" ref="#R29"
                      >EVT</rs> (Edition Visualization Technology<note><quote source="#quote1">A
                         light-weight, open source tool specifically designed to create digital
                         editions from XML-encoded texts</quote>
-                     <rs type="soft.bib" ref="#R20">(<ref type="bibl" target="#delturco2013"
+                     <rs type="cit:soft.bib" ref="#R20">(<ref type="bibl" target="#delturco2013"
                            xml:id="quote1">Rosselli Del Turco et al. 2013</ref>)</rs>.</note>) and
                   will present, on the one hand, each witness in its continuum from facsimile to
                   multiple levels of normalization and, on the other hand, the three main witnesses
@@ -802,7 +802,7 @@
                   <item>Multiple editions will be generated automatically from the master TEI file,
                      with no manual intervention on the resulting files.</item>
                   <item>The generated editions files will conform to the TEI subset understood by
-                        <ptr type="software" xml:id="R30" target="#evt"/><rs type="soft.name"
+                        <ptr type="software" xml:id="R30" target="softw:evt"/><rs type="cit:soft.name"
                         ref="#R30">EVT</rs>.</item>
                </list>
                <p>Some of these desiderata clash with each other. For instance, the desire to
@@ -868,7 +868,7 @@
                         target="#delturcond">Roberto Rosselli Del Turco (n.d.)</ref>: here two
                      levels of edition are offered, a diplomatic and a more interpretative one. The
                      user can compare the two editions visualizing them synoptically in the <ptr
-                        type="software" xml:id="R31" target="#evt"/><rs type="soft.name" ref="#R31"
+                        type="software" xml:id="R31" target="softw:evt"/><rs type="cit:soft.name" ref="#R31"
                         >EVT</rs> software used for the edition.</p>
                </div>
             </div>
@@ -899,9 +899,9 @@
                   project, are ephemeral and never modified directly.</item>
             </list>
             <p>The implementation consists of a series of <ptr type="software" xml:id="R6"
-                  target="#xslt"/><rs type="soft.name" ref="#R6">XSLT</rs> transformations, each
+                  target="softw:xslt"/><rs type="cit:soft.name" ref="#R6">XSLT</rs> transformations, each
                representing and implementing a single rule, coordinated by three different <ptr
-                  type="software" xml:id="R7" target="#xproc"/><rs type="soft.name" ref="#R7"
+                  type="software" xml:id="R7" target="softw:xproc"/><rs type="cit:soft.name" ref="#R7"
                   >XProc</rs> pipelines, one for each level of edition. The source code is available
                at <ptr target="https://marcopolo.cceh.uni-koeln.de/"/>.</p>
             <p>This methodology contrasts with the established editorial practice of mingling
@@ -955,14 +955,14 @@
                   system that does not allow for this interaction to happen is not able to deal in
                   properly with normalization in general and punctuation in particular.</p>
                <p>Each rule is implemented as a small and self-contained <ptr type="software"
-                     xml:id="R8" target="#xslt"/><rs type="soft.name" ref="#R8">XSLT</rs>
+                     xml:id="R8" target="softw:xslt"/><rs type="cit:soft.name" ref="#R8">XSLT</rs>
                   transformation. At the time of writing, the ENHG Marco Polo project comprises
                   about a hundred rules, grouped in twenty macro categories. On average, the core of
                   each rule is implemented in less than three lines of <ptr type="software"
-                     xml:id="R9" target="#xslt"/><rs type="soft.name" ref="#R9">XSLT</rs>.</p>
+                     xml:id="R9" target="softw:xslt"/><rs type="cit:soft.name" ref="#R9">XSLT</rs>.</p>
                <p>To give the readers an impression of the simplicity of the rule implementation, we
-                  show here the main parts of the <ptr type="software" xml:id="R10" target="#xslt"
-                     /><rs type="soft.name" ref="#R10">XSLT</rs> that implement one of the example
+                  show here the main parts of the <ptr type="software" xml:id="R10" target="softw:xslt"
+                     /><rs type="cit:soft.name" ref="#R10">XSLT</rs> that implement one of the example
                   rules described above.</p>
                <div xml:id="examplerule">
                   <head>Example: Rule to Join Words Split at the End of a Line</head>
@@ -970,7 +970,7 @@
                      used to mark that a word has been split at the end of a line. In the diplomatic
                      rendition we want to preserve this word division and the forced line break,
                      while in other renditions we want to reconstruct the complete word.</p>
-                  <p>The <ptr type="software" xml:id="R11" target="#xslt"/><rs type="soft.name"
+                  <p>The <ptr type="software" xml:id="R11" target="softw:xslt"/><rs type="cit:soft.name"
                         ref="#R11">XSLT</rs> excerpt in <ref type="crossref" target="#example3"
                         >Example 3</ref> shows how split words are joined when a middle double
                      oblique hyphen is found. The joining is performed in a lossless way: all
@@ -1014,8 +1014,8 @@
                            </xsl:copy>
                         </xsl:template>
                      </egXML>
-                     <head type="legend"><ptr type="software" xml:id="R12" target="#xslt"/><rs
-                           type="soft.name" ref="#R12">XSLT</rs> implementation of the rule <q>Join
+                     <head type="legend"><ptr type="software" xml:id="R12" target="softw:xslt"/><rs
+                           type="cit:soft.name" ref="#R12">XSLT</rs> implementation of the rule <q>Join
                            words split with a double oblique hyphen</q>.</head>
                   </figure>
                   <p>The rule in <ref type="crossref" target="#example3">Example 3</ref> is
@@ -1107,14 +1107,14 @@
                      identify level-specific steps.</head>
                </figure>
                <p>Each pipeline is implemented as an <ptr type="software" xml:id="R13"
-                     target="#xproc"/><rs type="soft.name" ref="#R13">XProc</rs> pipeline. All the
+                     target="softw:xproc"/><rs type="cit:soft.name" ref="#R13">XProc</rs> pipeline. All the
                   pipelines are simple linear flows (i.e., the output of a rule is the input for the
                   next rule). From a methodological point of view, the <ptr type="software"
-                     xml:id="R14" target="#xproc"/><rs type="soft.name" ref="#R14">XProc</rs>
+                     xml:id="R14" target="softw:xproc"/><rs type="cit:soft.name" ref="#R14">XProc</rs>
                   pipeline is a record of all the operations that the scholar performs on the
                   transcription. The creation of an edition level is equivalent to replaying this
                   record. <ref type="crossref" target="#example6">Example 6</ref> shows an excerpt
-                  of the <ptr type="software" xml:id="R15" target="#xproc"/><rs type="soft.name"
+                  of the <ptr type="software" xml:id="R15" target="softw:xproc"/><rs type="cit:soft.name"
                      ref="#R15">XProc</rs> pipeline used to generate the semidiplomatic edition.</p>
                <p>It is important to note that pipelines comprise three kinds of steps:</p>
                <list rend="ordered">
@@ -1163,12 +1163,12 @@
                      </p:declare-step>
                   </egXML>
                   <head type="legend">Excerpt of the <ptr type="software" xml:id="R16"
-                        target="#xproc"/><rs type="soft.name" ref="#R16">XProc</rs> pipeline used to
+                        target="softw:xproc"/><rs type="cit:soft.name" ref="#R16">XProc</rs> pipeline used to
                      generate the semi-diplomatic edition. Steps marked A are steps that implement
                      rules; the step marked B takes care of exceptions.</head>
                </figure>
                <p>The fact that the editorial workflows for all the editions are formalized in <ptr
-                     type="software" xml:id="R17" target="#xproc"/><rs type="soft.name" ref="#R17"
+                     type="software" xml:id="R17" target="softw:xproc"/><rs type="cit:soft.name" ref="#R17"
                      >XProc</rs> pipelines makes it possible, for instance, to compare these
                   pipelines and see in detail (and with utmost precision) how they differ and what
                   is, in this project, the difference between the processes needed to establish a
@@ -1217,19 +1217,19 @@
                like to experiment with creating <term>declarative rule generators</term>. Many rules
                are repetitive in their nature (for example, the normalization of single characters)
                and it should be possible to express them in a declarative fashion. These abstract
-               rules would then be translated into <ptr type="software" xml:id="R18" target="#xslt"
-                  /><rs type="soft.name" ref="#R18">XSLT</rs> transformations. Another aspect we
+               rules would then be translated into <ptr type="software" xml:id="R18" target="softw:xslt"
+                  /><rs type="cit:soft.name" ref="#R18">XSLT</rs> transformations. Another aspect we
                would like to reflect on is how the transformation process directed by the pipelines
                influences the various levels of abstraction of the document being transformed,
                drawing parallels with stratified document models such as CMV+P (<ref type="bibl"
                   target="#barabucci2019">Barabucci 2019</ref>). A final thing we would like to test
-               is the replacement of the <ptr type="software" xml:id="R19" target="#xproc"/><rs
-                  type="soft.name" ref="#R19">XProc</rs> pipelines with pure <ptr type="software"
-                  xml:id="R20" target="#xslt"/><rs type="soft.name" ref="#R20">XSLT</rs> pipelines
+               is the replacement of the <ptr type="software" xml:id="R19" target="softw:xproc"/><rs
+                  type="cit:soft.name" ref="#R19">XProc</rs> pipelines with pure <ptr type="software"
+                  xml:id="R20" target="softw:xslt"/><rs type="cit:soft.name" ref="#R20">XSLT</rs> pipelines
                   (<ref type="bibl" target="#birnbaum2017">Birnbaum 2017</ref>). Replacing <ptr
-                  type="software" xml:id="R21" target="#xproc"/><rs type="soft.name" ref="#R21"
-                  >XProc</rs> with <ptr type="software" xml:id="R22" target="#xslt"/><rs
-                  type="soft.name" ref="#R22">XSLT</rs> pipelines would reduce the number of
+                  type="software" xml:id="R21" target="softw:xproc"/><rs type="cit:soft.name" ref="#R21"
+                  >XProc</rs> with <ptr type="software" xml:id="R22" target="softw:xslt"/><rs
+                  type="cit:soft.name" ref="#R22">XSLT</rs> pipelines would reduce the number of
                technologies that other scholars have to be familiar with in order to understand the
                editorial process in its entirety.</p>
             <p>Another future development that we envision is the deconstruction of the
@@ -1317,7 +1317,7 @@
                      <publisher>Leo S. Olschki</publisher>.</bibl>
                <bibl xml:id="birnbaum2017"><author>Birnbaum, David J</author>. <date>2017</date>.
                      <title level="a">Patterns and Antipatterns in <ptr type="software" xml:id="R23"
-                        target="#xslt"/><rs type="soft.name" ref="#R23">XSLT</rs>
+                        target="softw:xslt"/><rs type="cit:soft.name" ref="#R23">XSLT</rs>
                      Micropipelining.</title> In <title level="m">Proceedings of Balisage: The
                      Markup Conference 2017</title>. <title level="s">Balisage Series on Markup
                      Technologies</title>
@@ -1486,11 +1486,11 @@
                   <title level="m">The Digital Vercelli Book</title>. <biblScope>Beta
                      version</biblScope>. Accessed <date>October 22, 2021</date>. <ptr
                      target="http://vbd.humnet.unipi.it/beta2/"/>.</bibl>
-               <bibl xml:id="delturco2013"><ptr type="software" xml:id="R28" target="#evt"
-                        /><author><rs type="soft.agent" ref="#R28">Rosselli Del Turco,
-                     Roberto</rs></author>, et al. <rs type="soft.bib" ref="#R28">
+               <bibl xml:id="delturco2013"><ptr type="software" xml:id="R28" target="softw:evt"
+                        /><author><rs type="cit:soft.agent" ref="#R28">Rosselli Del Turco,
+                     Roberto</rs></author>, et al. <rs type="cit:soft.bib" ref="#R28">
                      <date>2013</date>. <title level="m">Edition Visualization Technology</title>.
-                  </rs> Accessed <date>April 19, 2021</date>.<rs type="soft.url" ref="#R28"><ptr
+                  </rs> Accessed <date>April 19, 2021</date>.<rs type="cit:soft.url" ref="#R28"><ptr
                         target="http://evt.labcd.unipi.it/"/></rs>.</bibl>
                <bibl xml:id="stella2020"><editor>Stella, Francesco</editor>, ed. <date>2020</date>.
                      <title level="m">Corpus Rhythmorum Musicum.</title> Last modified <date>July

@@ -369,7 +369,7 @@
               mostly</q>; <q>Creating digital editions Creating digital collections
                 <supplied>sic</supplied></q>. Sixty-two percent intended to transform their data
             with an independently-developed stylesheet, 24% with a <ptr type="software" xml:id="R2"
-              target="#teistylesheets"/><rs type="soft.name" ref="#R2">TEI stylesheet</rs>, and only
+              target="softw:teistylesheets"/><rs type="cit:soft.name" ref="#R2">TEI stylesheet</rs>, and only
             10% plan to leave them as TEI XML.</p>
           <p>The respondents from the mailing list gave less consistent answers than the expert
             users, yet still appeared to be using the TEI primarily in service of interoperability
@@ -480,7 +480,7 @@
               resources to be coupled with transformation technologies such as XSLT in the manner of
               Bridget Almas’s NEH Tutorial. As will be discussed later in this subsection, certain
               users find that the absence of integrated <ptr type="software" xml:id="R3"
-                target="#xslt"/><rs type="soft.name" ref="#R3">XSLT</rs> resources on the <title
+                target="softw:xslt"/><rs type="cit:soft.name" ref="#R3">XSLT</rs> resources on the <title
                 level="m">TEI by Example</title> site falls short of their needs.</p>
           </div>
           <div xml:id="learnersperspective">
@@ -490,9 +490,9 @@
               list. Two had reached out to a member of the community for guidance, and both had met
               their mentors in person, one through a summer school TEI training and one through a
               university course. Five had used the TEI website; two had not. Online tools they
-              claimed to have used included <ptr type="software" xml:id="R4" target="#oxgarage"/><rs
-                type="soft.name" ref="#R4">OxGarage</rs>, <ptr type="software" xml:id="R5"
-                target="#roma"/><rs type="soft.name" ref="#R5">Roma</rs>, <title level="m">TEI by
+              claimed to have used included <ptr type="software" xml:id="R4" target="softw:oxgarage"/><rs
+                type="cit:soft.name" ref="#R4">OxGarage</rs>, <ptr type="software" xml:id="R5"
+                target="softw:roma"/><rs type="cit:soft.name" ref="#R5">Roma</rs>, <title level="m">TEI by
                 Example</title>, and the TEI Guidelines, as well as the university-hosted resources
               published by the Brown University Women Writers Project (<ref type="bibl"
                 target="#bauman13">Bauman and Flanders 2013</ref>) and Humboldt University in
@@ -563,7 +563,7 @@
                 <q>Very detailed, there’s a lot to read&gt;too time-consuming <gap/>Important
                 features clearly marked&gt;very helpful</q>. <q>TEI by example very useful for
                 thinking about which tags we need for our project. The <ptr type="software"
-                  xml:id="R6" target="#xslt"/><rs type="soft.name" ref="#R6">XSLT</rs> resources are
+                  xml:id="R6" target="softw:xslt"/><rs type="cit:soft.name" ref="#R6">XSLT</rs> resources are
                 pretty unhelpful, though</q>; <q>The TEI Guidelines are very comprehensive and
                 provide good examples—but no <soCalled>best practices</soCalled> in areas where
                 there is more than one solution. Unfortunately <title level="m">TEI By
@@ -751,18 +751,18 @@
         </div>
         <div xml:id="integratedresources">
           <head>Integrated Resources</head>
-          <p>While initiatives such as <ptr type="software" xml:id="R7" target="#tapas"/><rs
-              type="soft.name" ref="#R7">TAPAS</rs>, <ptr type="software" xml:id="R8"
-              target="#teichi"/><rs type="soft.name" ref="#R8">TEICHI</rs>, and <ptr type="software"
-              xml:id="R9" target="#cwrcwriter"/><rs type="soft.url" ref="#R9"><ref
-                target="https://sites.google.com/site/cwrcwriterhelp/"><rs type="soft.name"
+          <p>While initiatives such as <ptr type="software" xml:id="R7" target="softw:tapas"/><rs
+              type="cit:soft.name" ref="#R7">TAPAS</rs>, <ptr type="software" xml:id="R8"
+              target="softw:teichi"/><rs type="cit:soft.name" ref="#R8">TEICHI</rs>, and <ptr type="software"
+              xml:id="R9" target="softw:cwrcwriter"/><rs type="cit:soft.url" ref="#R9"><ref
+                target="https://sites.google.com/site/cwrcwriterhelp/"><rs type="cit:soft.name"
                   ref="#R9">CWRC-Writer</rs></ref></rs><note><p><title level="a">Welcome to <rs
-                    type="soft.name" ref="#R9">CWRC Writer</rs></title>, <rs type="soft.name"
-                  ref="#R9">CWRC-Writer</rs> Help, accessed September 7, 2013, <rs type="soft.url"
+                    type="cit:soft.name" ref="#R9">CWRC Writer</rs></title>, <rs type="cit:soft.name"
+                  ref="#R9">CWRC-Writer</rs> Help, accessed September 7, 2013, <rs type="cit:soft.url"
                   ref="#R9"><ptr target="https://sites.google.com/site/cwrcwriterhelp/"
               /></rs>.</p></note> have begun to address to different aspects of these needs (<rs
-              type="soft.bib.ref" ref="#R7"><ref type="bibl" target="#flanders13">Flanders and
-                Hamlin 2013</ref></rs>; <rs type="soft.bib.ref" ref="#R8"><ref type="bibl"
+              type="cit:soft.bib.ref" ref="#R7"><ref type="bibl" target="#flanders13">Flanders and
+                Hamlin 2013</ref></rs>; <rs type="cit:soft.bib.ref" ref="#R8"><ref type="bibl"
                 target="#pape12">Pape, Schöch, and Wegner 2013</ref></rs>; <ref type="bibl"
               target="#crane10">Crane 2010</ref>), there has yet to be a deeply comprehensive
             resource intimately linked to the TEI Guidelines themselves. New technical
@@ -815,10 +815,10 @@
               level="a">Give us Editors! Re-inventing the Edition and Re-thinking the
               Humanities</title>. OpenStax CNX, May 13. <ptr
               target="http://cnx.org/content/m34316/latest/"/>.</bibl>
-          <bibl xml:id="flanders13"><ptr type="software" xml:id="R10" target="#tapas"/><rs
-              type="soft.bib.ref" ref="#R10"><rs type="soft.agent" ref="#R10"><author>Flanders,
-                  Julia</author></rs>, and <rs type="soft.agent" ref="#R10"><author>Scott
-                  Hamlin</author></rs>. <date>2013</date>. <title level="a"><rs type="soft.name"
+          <bibl xml:id="flanders13"><ptr type="software" xml:id="R10" target="softw:tapas"/><rs
+              type="cit:soft.bib.ref" ref="#R10"><rs type="cit:soft.agent" ref="#R10"><author>Flanders,
+                  Julia</author></rs>, and <rs type="cit:soft.agent" ref="#R10"><author>Scott
+                  Hamlin</author></rs>. <date>2013</date>. <title level="a"><rs type="cit:soft.name"
                   ref="#R10">TAPAS</rs>: Building a TEI Publishing and Repository Service</title>.
                 <title level="j">Journal of the Text Encoding Initiative</title>
               <biblScope unit="issue">5</biblScope>. <ptr target="http://jtei.revues.org/788"/>.
@@ -849,11 +849,11 @@
               level="m">Introduction to Digital Textual Editing: An UNOFFICIAL Guide to the Value of
               TEI</title>. Slidecast posted June 30, 2013. <ptr
               target="http://www.slideshare.net/mandellc/tei-and-xslt-23711832"/>.</bibl>
-          <bibl xml:id="pape12"><ptr type="software" xml:id="R11" target="#teichi"/><rs
-              type="soft.bib.ref" ref="#R11"><rs type="soft.agent" ref="#R11"><author>Pape,
-                  Sebastian</author></rs>, <rs type="soft.agent" ref="#R11"><author>Christof
-                  Schöch</author></rs>, and <rs type="soft.agent" ref="#R11"><author>Lutz
-                  Wegner</author></rs>. <date>2012</date>. <title level="a"><rs type="soft.name"
+          <bibl xml:id="pape12"><ptr type="software" xml:id="R11" target="softw:teichi"/><rs
+              type="cit:soft.bib.ref" ref="#R11"><rs type="cit:soft.agent" ref="#R11"><author>Pape,
+                  Sebastian</author></rs>, <rs type="cit:soft.agent" ref="#R11"><author>Christof
+                  Schöch</author></rs>, and <rs type="cit:soft.agent" ref="#R11"><author>Lutz
+                  Wegner</author></rs>. <date>2012</date>. <title level="a"><rs type="cit:soft.name"
                   ref="#R11">TEICHI</rs> and the Tools Paradox: Developing a Publishing Framework
                 for Digital Editions</title>. <title level="j">Journal of the Text Encoding
                 Initiative</title>

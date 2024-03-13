@@ -145,8 +145,8 @@
                from manuscripts, to be published alongside the catalogue description of the
                manuscript itself, we have investigated a series of options, among which we have
                chosen to use the <ref target="https://transkribus.eu/Transkribus/"><ptr
-                     type="software" xml:id="Transkribus" target="#transkribus"/><rs
-                     type="soft.name" ref="#Transkribus">Transkribus</rs></ref> sofware by READ
+                     type="software" xml:id="Transkribus" target="softw:transkribus"/><rs
+                     type="cit:soft.name" ref="#Transkribus">Transkribus</rs></ref> sofware by READ
                   Coop.<note>Accessed February 2, 2022, <ptr
                      target="https://transkribus.eu/Transkribus/"/>.</note></p>
             <p>The transcription matches and complements the cataloguing efforts of the project,
@@ -164,7 +164,7 @@
                an historical catalogue that involves copying from the former cataloguer
                transcription. Having a new transcription, based on autopsy or at least on the images
                of the manuscript would be preferable and technology as <ptr type="software"
-                  xml:id="Transkribus" target="#transkribus"/><rs type="soft.name"
+                  xml:id="Transkribus" target="softw:transkribus"/><rs type="cit:soft.name"
                   ref="#Transkribus">Transkribus</rs> allows one to obtain this transcription in an
                almost entirely automated way. Additionally, most of the internal referencing within
                a manuscript is done with the indication of the ranges of folios, and in TEI with
@@ -215,7 +215,7 @@
             <p>The following steps have been taken to carry out an investigation of the
                possibilities for the automated production of text transcriptions based on images of
                manuscripts, before we opted for <ptr type="software" xml:id="Transkribus"
-                  target="#transkribus"/><rs type="soft.name" ref="#Transkribus">Transkribus</rs>
+                  target="softw:transkribus"/><rs type="cit:soft.name" ref="#Transkribus">Transkribus</rs>
                and its integration in the workflow to make texts available in the Beta maṣāḥǝft
                research environment.</p>
          </div>
@@ -304,8 +304,8 @@
                      one script.</p>
                </div>
                <div xml:id="transkri">
-                  <head><ptr type="software" xml:id="Transkribus" target="#transkribus"/><rs
-                        type="soft.name" ref="#Transkribus">Transkribus</rs></head>
+                  <head><ptr type="software" xml:id="Transkribus" target="softw:transkribus"/><rs
+                        type="cit:soft.name" ref="#Transkribus">Transkribus</rs></head>
                   <p>This software is freely accessible and has a subscription model based on
                      credits. The platform was created within the framework of the EU projects
                      tranScriptorium and READ (Recognition and Enrichment of Archival Documents -
@@ -317,8 +317,8 @@
                      platform. The Pattern Recognition and Human Language Technology (PRHLT) group
                      of the Universitat Politècnica de València and the CITlab group of the
                      University of Rostock should be mentioned in particular.</p>
-                  <p><ptr type="software" xml:id="Transkribus" target="#transkribus"/><rs
-                        type="soft.name" ref="#Transkribus">Transkribus</rs> comes as an
+                  <p><ptr type="software" xml:id="Transkribus" target="softw:transkribus"/><rs
+                        type="cit:soft.name" ref="#Transkribus">Transkribus</rs> comes as an
                         <soCalled>expert tool</soCalled> in its downloadable version and its online
                         version,<note>Accessed February 2, 2022, <ptr
                            target="https://transkribus.eu/lite/"/>.</note> and it allows to upload
@@ -350,13 +350,13 @@
                Ethiopic handwriting character recognition.</p>
             <p>Thus, the first stage for developing a model was gathering the data and preparing an
                initial dataset. Also for this aspect, <ptr type="software" xml:id="Transkribus"
-                  target="#transkribus"/><rs type="soft.name" ref="#Transkribus">Transkribus</rs>
+                  target="softw:transkribus"/><rs type="cit:soft.name" ref="#Transkribus">Transkribus</rs>
                proved superior to all other options offering support also for this step. Colleagues
                which we called to contribute could be added to a collection, share their images
                without publishing them and add their transcriptions in the tool with a very mild
                learning curve.</p>
-            <p>Within <ptr type="software" xml:id="Transkribus" target="#transkribus"/><rs
-                  type="soft.name" ref="#Transkribus">Transkribus</rs> we have trained a model
+            <p>Within <ptr type="software" xml:id="Transkribus" target="softw:transkribus"/><rs
+                  type="cit:soft.name" ref="#Transkribus">Transkribus</rs> we have trained a model
                called <title level="u">Manuscripts from Ethiopia and Eritrea in Classical Ethiopic
                   (Gǝʿǝz)</title>.<note>See, accessed February 2, 2022, <ptr
                      target="https://readcoop.eu/model/ethiopic-classical-ethiopic-scripts-from-ethiopia-and-eritrea/"
@@ -420,10 +420,10 @@
          </div>
          <div xml:id="training">
             <head>Training a model in <ptr type="software" xml:id="Transkribus"
-                  target="#transkribus"/><rs type="soft.name" ref="#Transkribus"
+                  target="softw:transkribus"/><rs type="cit:soft.name" ref="#Transkribus"
                >Transkribus</rs></head>
             <p>Gathering data to train an HTR model in <ptr type="software" xml:id="Transkribus"
-                  target="#transkribus"/><rs type="soft.name" ref="#Transkribus">Transkribus</rs>
+                  target="softw:transkribus"/><rs type="cit:soft.name" ref="#Transkribus">Transkribus</rs>
                was not easy. Researchers were directly asked to contribute images of which they had
                already done the correct transcription. Sets of images with the relative
                transcription was thus obtained thanks to the generosity of contributors listed
@@ -450,7 +450,7 @@
                for the available time of the colleagues to fix the work of the machine, since we
                intended to train the model again. After three months with a full-time dedicated
                person, we had more than 50k words in the <ptr type="software" xml:id="Transkribus"
-                  target="#transkribus"/><rs type="soft.name" ref="#Transkribus">Transkribus</rs>
+                  target="softw:transkribus"/><rs type="cit:soft.name" ref="#Transkribus">Transkribus</rs>
                expert tool, and we could train a model which could be made public, since this is the
                unofficial threshold to make a model available to everyone.</p>
             <p>The features of the final model can be seen in <ptr target="#fig_1" type="crossref"
@@ -470,11 +470,11 @@
          </div>
          <div xml:id="transcription">
             <head>Adding transcriptions to Beta maṣāḥǝft from <ptr type="software"
-                  xml:id="Transkribus" target="#transkribus"/><rs type="soft.name"
+                  xml:id="Transkribus" target="softw:transkribus"/><rs type="cit:soft.name"
                   ref="#Transkribus">Transkribus</rs></head>
             <p>Even if a user already worked through each page of a manuscript to produce a
                transcription, doing it again with <ptr type="software" xml:id="Transkribus"
-                  target="#transkribus"/><rs type="soft.name" ref="#Transkribus">Transkribus</rs>
+                  target="softw:transkribus"/><rs type="cit:soft.name" ref="#Transkribus">Transkribus</rs>
                and checking it has many advantages, chiefly the alignment of the text regions and
                lines on the base image to the transcription.<note>Guidelines are provided for this
                   steps to the users in the<ref type="bibl" target="#bmgl">project Guidelines</ref>,
@@ -483,7 +483,7 @@
                   />.</note></p>
             <p>With the transcribed images, either by hand with the help of the tool, or using the
                HTR model, the export functionalities of the <ptr type="software"
-                  xml:id="Transkribus" target="#transkribus"/><rs type="soft.name"
+                  xml:id="Transkribus" target="softw:transkribus"/><rs type="cit:soft.name"
                   ref="#Transkribus">Transkribus</rs> tool, allow to download a TEI encoded version
                of this transcription where we encourage users to use Line Breaks (<gi>lb</gi>)
                instead of <gi>l</gi> and preserve the coordinates of the boxes.</p>
@@ -497,10 +497,10 @@
                manuscript and not of the image set. Most of this can be fixed by preparing the image
                set accurately, but we assume in most real-life use cases this will not be the
                case.</p>
-            <p>We have then prepared a bespoke <ptr type="software" xml:id="XSLT" target="#XSLT"
-                  /><rs type="soft.name" ref="#XSLT">XSLT</rs> transformation which can be used to
+            <p>We have then prepared a bespoke <ptr type="software" xml:id="XSLT" target="softw:XSLT"
+                  /><rs type="cit:soft.name" ref="#XSLT">XSLT</rs> transformation which can be used to
                transform the rich TEI from <ptr type="software" xml:id="Transkribus"
-                  target="#transkribus"/><rs type="soft.name" ref="#Transkribus">Transkribus</rs>,
+                  target="softw:transkribus"/><rs type="cit:soft.name" ref="#Transkribus">Transkribus</rs>,
                called <ref
                   target="https://github.com/BetaMasaheft/Documentation/blob/master/utility/transkribus2bm.xsl"
                   >transkribus2Beta maṣāḥǝft.xsl</ref>. This transformation, given a few parameters,
@@ -523,8 +523,8 @@
          </div>
          <div xml:id="conclusions">
             <head>Conclusions</head>
-            <p>Working with <ptr type="software" xml:id="Transkribus" target="#transkribus"/><rs
-                  type="soft.name" ref="#Transkribus">Transkribus</rs> for the Beta maṣāḥǝft project
+            <p>Working with <ptr type="software" xml:id="Transkribus" target="softw:transkribus"/><rs
+                  type="cit:soft.name" ref="#Transkribus">Transkribus</rs> for the Beta maṣāḥǝft project
                gives the community of users a way to support the process of transcribing to the text
                on source manuscripts without typing it down. This is not intended to substitute the
                work of the editor of a text, but to support it, producing a transcription that still
@@ -557,12 +557,12 @@
                      <date>2018–</date>. <title level="m">Beta Maṣāḥǝft Guidelines.</title>
                   <ptr target="https://betamasaheft.eu/Guidelines/"/>. </bibl>
                <bibl xml:id="calamari">
-                  <ptr type="software" xml:id="R1" target="#calamari"/>
-                  <rs type="soft.bib.ref" ref="#R1"><rs type="soft.agent" ref="#R1"><author>Wick,
-                           Christoph</author></rs>, <rs type="soft.agent" ref="#R1"
-                           ><author>Christian Reul</author></rs>, and <rs type="soft.agent"
+                  <ptr type="software" xml:id="R1" target="softw:calamari"/>
+                  <rs type="cit:soft.bib.ref" ref="#R1"><rs type="cit:soft.agent" ref="#R1"><author>Wick,
+                           Christoph</author></rs>, <rs type="cit:soft.agent" ref="#R1"
+                           ><author>Christian Reul</author></rs>, and <rs type="cit:soft.agent"
                         ref="#R1"><author>Frank Puppe</author></rs>. <date>2020</date>. <title
-                        level="a"><rs type="soft.name" ref="#R1">Calamari</rs> − A High-Performance
+                        level="a"><rs type="cit:soft.name" ref="#R1">Calamari</rs> − A High-Performance
                         Tensorflow-based Deep Learning Package for Optical Character
                         Recognition.</title>
                      <title level="j">Digital Humanities Quarterly</title>, <biblScope unit="volume"
@@ -625,7 +625,7 @@
                      Weidemann</author>, <author>Herbert Wurster</author>, and <author>Konstantinos
                      Zagoris</author>. <date>2019</date>. <title level="a">Transforming scholarship
                      in the archives through handwritten text recognition: <ptr type="software"
-                        xml:id="Transkribus" target="#transkribus"/><rs type="soft.name"
+                        xml:id="Transkribus" target="softw:transkribus"/><rs type="cit:soft.name"
                         ref="#Transkribus">Transkribus</rs> as a case study</title>. <title
                      level="j">Journal of Documentation</title>, <biblScope unit="volume"
                      >75</biblScope> (<biblScope unit="issue">5</biblScope>) <biblScope unit="page"

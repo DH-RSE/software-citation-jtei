@@ -391,7 +391,7 @@
                         type="bibl">Huitfeldt and Sperberg-McQueen 2003</ref>). In GODDAG, all
                      children of the markup nodes are typically ordered, but TexMECS provides a
                      notation to mark certain markup nodes as unordered. The <ptr type="software"
-                        xml:id="R5" target="#goddag"/><rs type="soft.name" ref="#R5">GODDAG
+                        xml:id="R5" target="softw:goddag"/><rs type="cit:soft.name" ref="#R5">GODDAG
                         processor</rs> ignores the default linear order of these elements’ children,
                      and therefore TexMECS supports the representation of nonlinear structures. No
                      known working implementation of TexMECS, however, is currently available. At
@@ -558,7 +558,7 @@
                      TAGML is more expressive. For instance, in XML all annotation values are of
                      type string, but TAGML offers data-typing of annotations. These data types are
                      expressed in UTF-8 and interpreted by the <ptr type="software" xml:id="R6"
-                        target="#tagmlparser"/><rs type="soft.name" ref="#R6">TAGML parser</rs> as
+                        target="softw:tagmlparser"/><rs type="cit:soft.name" ref="#R6">TAGML parser</rs> as
                      different data types. Encoders can distinguish between integer, string, or
                      Boolean values (<ptr target="#tagml1" type="crossref"/>). <figure
                         xml:id="tagml1">
@@ -589,15 +589,15 @@
                      process as natural as possible. The markup language has the same compactness as
                      XML and is independent of the user environment.<note>TAGML can be edited in any
                         editor, but the open source text editor <ptr type="software" xml:id="R7"
-                           target="#sublime"/><rs type="soft.name" ref="#R7">Sublime</rs> has <ptr
-                           type="software" xml:id="R8" target="#sublimepackage"/><rs type="soft.url"
+                           target="softw:sublime"/><rs type="cit:soft.name" ref="#R7">Sublime</rs> has <ptr
+                           type="software" xml:id="R8" target="softw:sublimepackage"/><rs type="cit:soft.url"
                            ref="#R7"><ref
                               target="https://huygensing.github.io/tagml-sublime-syntax/"> a <rs
-                                 type="soft.name" ref="#R8">TAGML syntax highlighting
+                                 type="cit:soft.name" ref="#R8">TAGML syntax highlighting
                               package</rs></ref></rs>, and the <ptr type="software" xml:id="R9"
-                           target="#alexandria"/><rs type="soft.url" ref="#R9"><ref
+                           target="softw:alexandria"/><rs type="cit:soft.url" ref="#R9"><ref
                               target="https://huygensing.github.io/alexandria/">reference
-                              implementation <rs type="soft.name" ref="#R9"
+                              implementation <rs type="cit:soft.name" ref="#R9"
                            >Alexandria</rs></ref></rs> can be used to parse and validate TAGML
                         documents and store them as a TAG hypergraph.</note> Following the argument
                      of <ref type="bibl" target="#sper2008">Sperberg-McQueen and Huitfeldt</ref> and
@@ -1071,7 +1071,7 @@
                retrieving the disjointed quotations as one (merged) utterance would only be possible
                with additional, vocabulary-specific coding. Processing the two <gi>q</gi> elements
                as a single <gi>q</gi> requires a set of <ptr type="software" xml:id="R1"
-                  target="#XSLT"/><rs type="soft.name" ref="#R1">XSLT</rs> instructions that check
+                  target="softw:XSLT"/><rs type="cit:soft.name" ref="#R1">XSLT</rs> instructions that check
                the values of the <att>xml:id</att> and the <att>next</att> and <att>prev</att>
                attributes in order to know which <gi>q</gi> elements should be stitched together. In
                TAGML, both scenarios would be equally straightforward. The hypergraph can be queried
@@ -1113,15 +1113,15 @@
                   <head type="legend">TEI transcription of <ptr target="#discont4" type="crossref"
                      /></head>
                </figure> To process the text of this fragment correctly, one needs to write a rather
-               complicated set of <ptr type="software" xml:id="R2" target="#XSLT"/><rs
-                  type="soft.name" ref="#R2">XSLT</rs> instructions. At the very least, these
+               complicated set of <ptr type="software" xml:id="R2" target="softw:XSLT"/><rs
+                  type="cit:soft.name" ref="#R2">XSLT</rs> instructions. At the very least, these
                instructions need to match the values of the <att>xml:id</att> and <att>prev</att> in
                order to process the first part of the deletion, look for the second part of the
                deletion, and then concatenate their textual content. At the same time, one has to
                prevent the second part from being processed twice (first as the second part of the
                deletion, and the second time together with the regular <gi>del</gi> elements). After
                some experimenting and consulting several <ptr type="software" xml:id="R3"
-                  target="#XSLT"/><rs type="soft.name" ref="#R3">XSLT</rs> specialists, we have come
+                  target="softw:XSLT"/><rs type="cit:soft.name" ref="#R3">XSLT</rs> specialists, we have come
                to no less than three different sets of instructions.<note>The authors are grateful
                   to Peter Boot, Vincent Neyt, and Frederike Neuber for sharing their expertise and
                   invaluable insights.</note> And considering the ingenuity and technical expertise

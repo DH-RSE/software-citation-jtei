@@ -157,7 +157,7 @@
           the study and advancement of the field of Classical textual fragmentary heritage and the
           development of a collaborative environment for crowdsourced annotations. These goals are
           being achieved by implementing the <ptr type="software" xml:id="R1"
-            target="#perseidsplatform"/><rs type="soft.name" ref="#R1">Perseids Platform</rs> and by
+            target="softw:perseidsplatform"/><rs type="cit:soft.name" ref="#R1">Perseids Platform</rs> and by
           encoding the <title level="m">Fragmenta Historicorum Graecorum</title>, one of the most
           important and comprehensive collections of fragmentary authors.</p>
       </div>
@@ -217,11 +217,11 @@
               and</item>
             <item>to produce born-digital editions of fragmentary works</item>
           </list>. In order to achieve these goals, LOFTS is implementing a <ptr type="software"
-            xml:id="R2" target="#fragmentarytextseditor"/><rs type="soft.name" ref="#R2">Fragmentary
-            Texts Editor</rs> within the <ptr type="software" xml:id="R3" target="#perseidsplatform"
-            /><rs type="soft.name" ref="#R3">Perseids Platform</rs><note>For a prototype interface,
-            see <rs type="soft.url" ref="#R2"><ptr target="http://perseids.org/sites/berti_demo/"
-              /></rs>.</note> (<rs type="soft.bib.ref" ref="#R2"><ref type="bibl" target="#almas13b"
+            xml:id="R2" target="softw:fragmentarytextseditor"/><rs type="cit:soft.name" ref="#R2">Fragmentary
+            Texts Editor</rs> within the <ptr type="software" xml:id="R3" target="softw:perseidsplatform"
+            /><rs type="cit:soft.name" ref="#R3">Perseids Platform</rs><note>For a prototype interface,
+            see <rs type="cit:soft.url" ref="#R2"><ptr target="http://perseids.org/sites/berti_demo/"
+              /></rs>.</note> (<rs type="cit:soft.bib.ref" ref="#R2"><ref type="bibl" target="#almas13b"
               >Almas and Berti 2013</ref></rs>) and is producing a digital edition of the <title
             level="m">Fragmenta Historicorum Graecorum</title> edited by Karl Müller in the
           nineteenth century (<ref type="bibl" target="#müller85">Müller 1878–85</ref>; DFHG
@@ -249,11 +249,11 @@
             target="#berti14">Berti and Stoyanova 2014</ref>).</p>
         <p>The present paper is divided into two parts. The first part (<ptr type="crossref"
             target="#perseids"/>) describes the implementation of a <ptr type="software" xml:id="R5"
-            target="#fragmentarytextseditor"/><rs type="soft.name" ref="#R5">fragmentary texts
-            editor</rs> within <ptr type="software" xml:id="R6" target="#perseidsplatform"/><rs
-            type="soft.name" ref="#R6">Perseids</rs>, the editorial platform developed by the
+            target="softw:fragmentarytextseditor"/><rs type="cit:soft.name" ref="#R5">fragmentary texts
+            editor</rs> within <ptr type="software" xml:id="R6" target="softw:perseidsplatform"/><rs
+            type="cit:soft.name" ref="#R6">Perseids</rs>, the editorial platform developed by the
           Perseus Project for collaborative annotation of classical source documents. <ptr
-            type="software" xml:id="R7" target="#perseidsplatform"/><rs type="soft.name" ref="#R7"
+            type="software" xml:id="R7" target="softw:perseidsplatform"/><rs type="cit:soft.name" ref="#R7"
             >Perseids</rs> facilitates the annotation of text reuses, the production of syntactic
           annotations, the alignment of multiple texts, and the production of digital commentaries
           on fragmentary works. This section also elaborates on the complex nature of fragmentary
@@ -264,18 +264,18 @@
           Perseus catalog.</p>
       </div>
       <div xml:id="perseids">
-        <head><ptr type="software" xml:id="R8" target="#perseidsplatform"/><rs type="soft.name"
+        <head><ptr type="software" xml:id="R8" target="softw:perseidsplatform"/><rs type="cit:soft.name"
             ref="#R8">Perseids Platform</rs></head>
-        <p>The <ptr type="software" xml:id="R9" target="#perseidsplatform"/><rs type="soft.url"
-            ref="#R9"><ref target="http://perseids.org/"><rs type="soft.name" ref="#R9">Perseids
+        <p>The <ptr type="software" xml:id="R9" target="softw:perseidsplatform"/><rs type="cit:soft.url"
+            ref="#R9"><ref target="http://perseids.org/"><rs type="cit:soft.name" ref="#R9">Perseids
                 Platform</rs></ref></rs> supports collaborative editing, annotation, and publication
-          of born-digital editions of source documents in the classics.<note><rs type="soft.url"
+          of born-digital editions of source documents in the classics.<note><rs type="cit:soft.url"
               ref="#R9"><ptr target="http://perseids.org/"/></rs>.</note>
-          <ptr type="software" xml:id="R10" target="#perseidsplatform"/><rs type="soft.name"
+          <ptr type="software" xml:id="R10" target="softw:perseidsplatform"/><rs type="cit:soft.name"
             ref="#R10">Perseids</rs> is not one single application but an integrated environment
           built from a loose coupling of heterogeneous tools and services from a variety of sources.
-          The development of the <ptr type="software" xml:id="R11" target="#perseidsplatform"/><rs
-            type="soft.name" ref="#R11">Perseids platform</rs> was inspired and motivated by the
+          The development of the <ptr type="software" xml:id="R11" target="softw:perseidsplatform"/><rs
+            type="cit:soft.name" ref="#R11">Perseids platform</rs> was inspired and motivated by the
           work of several pre-existing projects: the <ref
             target="http://www.library.tufts.edu/tisch/ematlocalstorage/miscellany_collection/home.html"
             >Tufts Miscellany Collection</ref> at Tufts University,<note><ptr
@@ -285,22 +285,22 @@
               target="http://www.homermultitext.org/"/>.</note> and the <ref
             target="http://www.papyri.info/">Papyri.info</ref> project<note><ptr
               target="http://www.papyri.info/"/>.</note> (<ref type="bibl" target="#almas13">Almas
-            and Beaulieu 2013</ref>). The <ptr type="software" xml:id="R12" target="#sosol"/><rs
-            type="soft.name" ref="#R12">Son of SUDA Online (SoSOL) application</rs> sits at the core
-          of the <ptr type="software" xml:id="R13" target="#perseidsplatform"/><rs type="soft.name"
-            ref="#R13">Perseids platform</rs>. <ptr type="software" xml:id="R14" target="#sosol"
-            /><rs type="soft.name" ref="#R14">SoSOL</rs> is a <ptr type="software" xml:id="R15"
-            target="#rubyonrails"/><rs type="soft.url" ref="#R15"><rs type="soft.name" ref="#R15"
+            and Beaulieu 2013</ref>). The <ptr type="software" xml:id="R12" target="softw:sosol"/><rs
+            type="cit:soft.name" ref="#R12">Son of SUDA Online (SoSOL) application</rs> sits at the core
+          of the <ptr type="software" xml:id="R13" target="softw:perseidsplatform"/><rs type="cit:soft.name"
+            ref="#R13">Perseids platform</rs>. <ptr type="software" xml:id="R14" target="softw:sosol"
+            /><rs type="cit:soft.name" ref="#R14">SoSOL</rs> is a <ptr type="software" xml:id="R15"
+            target="softw:rubyonrails"/><rs type="cit:soft.url" ref="#R15"><rs type="cit:soft.name" ref="#R15"
                 ><ref target="http://rubyonrails.org/">Ruby on Rails</ref></rs></rs><note><rs
-              type="soft.url" ref="#R15"><ptr target="http://rubyonrails.org/"/></rs>.</note>
+              type="cit:soft.url" ref="#R15"><ptr target="http://rubyonrails.org/"/></rs>.</note>
           application, originally developed by the Papyri.info project, that serves as front end for
-          a <ptr type="software" xml:id="R16" target="#git"/><rs type="soft.url" ref="#R16"><rs
-              type="soft.name" ref="#R16"><ref target="http://git-scm.com/"
-              >Git</ref></rs></rs><note><rs type="soft.url" ref="#R16"><ptr
+          a <ptr type="software" xml:id="R16" target="softw:git"/><rs type="cit:soft.url" ref="#R16"><rs
+              type="cit:soft.name" ref="#R16"><ref target="http://git-scm.com/"
+              >Git</ref></rs></rs><note><rs type="cit:soft.url" ref="#R16"><ptr
                 target="http://git-scm.com/"/></rs>.</note> repository of documents, metadata, and
           annotations. It includes a workflow engine that enables documents and data of different
           types to pass through flexible review and approval processes. The <ptr type="software"
-            xml:id="R17" target="#sosol"/><rs type="soft.name" ref="#R17">SoSOL application</rs>
+            xml:id="R17" target="softw:sosol"/><rs type="cit:soft.name" ref="#R17">SoSOL application</rs>
           includes user interfaces for editing XML documents, metadata, and annotations. While it
           does not include a full-featured XML editor, it supports alternative text-based input of
           XML markup, and can enforce XML schema validation rules on the documents being edited.</p>
@@ -870,7 +870,7 @@
             <p>The editorial board provides the final review for each file. EpiDoc-encoded DFHG
               files are being progressively added to the <ref
                 target="https://github.com/OpenGreekAndLatin/dfhg-dev/wiki">DFHG <ptr
-                  type="software" xml:id="GitHub" target="#GitHub"/><rs type="soft.name"
+                  type="software" xml:id="GitHub" target="softw:github"/><rs type="cit:soft.name"
                   ref="#GitHub">GitHub</rs> repository</ref><note><ptr
                   target="https://github.com/OpenGreekAndLatin/dfhg-dev/wiki"/>.</note> for everyone
               to download, improve, and share in accordance with our <ref
@@ -910,9 +910,9 @@
             <biblScope unit="volume">28</biblScope>(<biblScope unit="issue">4</biblScope>):
               <biblScope unit="page">493–503</biblScope>. doi:<idno type="doi"
               >10.1093/llc/fqt046</idno>.</bibl>
-          <bibl xml:id="almas13b"><ptr type="software" xml:id="R4" target="#fragmentarytextseditor"
-              /><rs type="soft.bib.ref" ref="#R4"><rs type="soft.agent" ref="#R4"><author>Almas,
-                  Bridget</author></rs>, and <rs type="soft.agent" ref="#R4"><author>Monica
+          <bibl xml:id="almas13b"><ptr type="software" xml:id="R4" target="softw:fragmentarytextseditor"
+              /><rs type="cit:soft.bib.ref" ref="#R4"><rs type="cit:soft.agent" ref="#R4"><author>Almas,
+                  Bridget</author></rs>, and <rs type="cit:soft.agent" ref="#R4"><author>Monica
                   Berti</author></rs>. <date>2013</date>. <title level="a">Perseids Collaborative
                 Platform for Annotating Text Re-uses of Fragmentary Authors</title>. In <title
                 level="m">DH-Case 2013. Proceedings of the 1st International Workshop on

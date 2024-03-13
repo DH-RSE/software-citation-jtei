@@ -334,7 +334,7 @@
               sentences were originally located directly inside the <gi>body</gi>, we have now
               settled for a clearer distinction between the two. Since most of our dictionary data
               is created and maintained using the <ptr type="software" xml:id="R1"
-                target="#vienneseeditor"/><rs type="soft.name" ref="#R1">Viennese Lexicographic
+                target="softw:vienneseeditor"/><rs type="cit:soft.name" ref="#R1">Viennese Lexicographic
                 Editor</rs> and held in a relational database (described in <ref type="bibl"
                 target="#budin12">Budin, Majewski, and Mörth 2012</ref>), format changes like this
               can be applied transparently on all of our dictionaries, making it easy to ensure
@@ -819,10 +819,10 @@
             </egXML>
             <p>The <gi>query</gi> element contains the query string. It should also have a
                 <att>type</att> attribute indicating the applied query language. In the example
-              above, <ptr type="software" xml:id="R2" target="#cqp"/><rs type="soft.name" ref="#R2"
+              above, <ptr type="software" xml:id="R2" target="softw:cqp"/><rs type="cit:soft.name" ref="#R2"
                 >CQP (Corpus Query Processor)</rs> refers to the query language of the IMS<note>
                 Institut für Maschinelle Sprachverarbeitung, Stuttgart.</note>
-              <ptr type="software" xml:id="R3" target="#cwb"/><rs type="soft.name" ref="#R3">Corpus
+              <ptr type="software" xml:id="R3" target="softw:cwb"/><rs type="cit:soft.name" ref="#R3">Corpus
                 Workbench</rs>. The element <gi>evalMode</gi> can be filled with either
                 <val>none</val>, which implies that the data was retrieved automatically, or
                 <val>manual</val>, which should be applied when some kind of postprocessing has been
@@ -861,8 +861,8 @@
               offering functions to embed them in the markup. Until implementations have reached
               this level of integration, we have to rely on a combination of components to support
               this functionality. An example for this is the commercial product <ptr type="software"
-                xml:id="R4" target="#sketchengine"/><rs type="soft.name" ref="#R4"> Sketch
-                Engine</rs>,<note><rs type="soft.url" ref="#R4"><ptr
+                xml:id="R4" target="softw:sketchengine"/><rs type="cit:soft.name" ref="#R4"> Sketch
+                Engine</rs>,<note><rs type="cit:soft.url" ref="#R4"><ptr
                     target="https://www.sketchengine.co.uk"/></rs>.</note>which includes a web
               interface for querying language corpora. In particular, it offers the ability to
               download the resulting frequency data (as well as concordances) in its own,

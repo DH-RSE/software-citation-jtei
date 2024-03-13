@@ -181,11 +181,11 @@
                   este grupo de trabajo en: fecha de consulta 16 de julio de 2023, <ptr
                      target="https://tei-c.org/activities/workgroups/internationalization-i18n-workgroup/"
                   />. </note> en primer lugar, el desarrollo de una nueva infraestructura, <ptr
-                  type="software" xml:id="R1" target="#translatetei"/><rs type="soft.name" ref="#R1"
-                  >TranslateTEI</rs>,<note><rs type="soft.name" ref="#R1">TranslateTEI</rs> ha sido
-                  desarrollada por <rs type="soft.agent" ref="#R1">Hugh Cayless</rs> (Duke
+                  type="software" xml:id="R1" target="softw:translatetei"/><rs type="cit:soft.name" ref="#R1"
+                  >TranslateTEI</rs>,<note><rs type="cit:soft.name" ref="#R1">TranslateTEI</rs> ha sido
+                  desarrollada por <rs type="cit:soft.agent" ref="#R1">Hugh Cayless</rs> (Duke
                   University) y está disponible en: fecha de consulta 16 de julio de 2023, <rs
-                     type="soft.url" ref="#R1"><ptr target="https://translate.tei-c.org/doc_en.html"
+                     type="cit:soft.url" ref="#R1"><ptr target="https://translate.tei-c.org/doc_en.html"
                      /></rs>
                </note> para mejorar la experiencia de usuario al colaborar con traducciones
                multilingües de las especificaciones de la TEI;<note>Las especificaciones de la TEI
@@ -252,9 +252,9 @@
                investigación que trabajan con la codificación o edición de textos en español con TEI
                desde cualquier país o institución.</p>
             <p>El software utilizado para crear y distribuir la encuesta fue <ptr type="software"
-                  xml:id="R2" target="#qualtrics"/><rs type="soft.name" ref="#R2"
-                     >Qualtrics</rs>,<note><rs type="soft.name" ref="#R2">Qualtrics</rs>, fecha de
-                  consulta 16 de julio de 2023, <rs type="soft.url" ref="#R2"><ptr
+                  xml:id="R2" target="softw:qualtrics"/><rs type="cit:soft.name" ref="#R2"
+                     >Qualtrics</rs>,<note><rs type="cit:soft.name" ref="#R2">Qualtrics</rs>, fecha de
+                  consulta 16 de julio de 2023, <rs type="cit:soft.url" ref="#R2"><ptr
                         target="https://www.qualtrics.com"/></rs></note> y la licencia de uso fue
                proporcionada por la Universidad de Miami. 135 participantes iniciaron la encuesta,
                aunque sólo 107 respondieron a todas las secciones y preguntas. 77 de estas 107
@@ -475,12 +475,12 @@
                   sus proyectos, proponiéndoles respuestas múltiples que incluían: 1.
                   Personalizaciones de los módulos TEI, 2. Utilización de esquemas (ODD, RelaxNG,
                   etc.), 3. Bases de datos XML, 4. Bases de datos relacionales (<ptr type="software"
-                     xml:id="R3" target="#mysql"/><rs type="soft.name" ref="#R3">MySQL</rs>, <ptr
-                     type="software" xml:id="R4" target="#postgresql"/><rs type="soft.name"
+                     xml:id="R3" target="softw:mysql"/><rs type="cit:soft.name" ref="#R3">MySQL</rs>, <ptr
+                     type="software" xml:id="R4" target="softw:postgresql"/><rs type="cit:soft.name"
                      ref="#R4">PostgreSQL</rs>, etc.), 5. Transformaciones <ptr type="software"
-                     xml:id="R5" target="#xslt"/><rs type="soft.name" ref="#R5">XSLT</rs>, 6.
-                  Transformaciones <ptr type="software" xml:id="R6" target="#xquery"/><rs
-                     type="soft.name" ref="#R6">XQuery</rs>, 7. Vocabularios controlados o tesauros,
+                     xml:id="R5" target="softw:xslt"/><rs type="cit:soft.name" ref="#R5">XSLT</rs>, 6.
+                  Transformaciones <ptr type="software" xml:id="R6" target="softw:xquery"/><rs
+                     type="cit:soft.name" ref="#R6">XQuery</rs>, 7. Vocabularios controlados o tesauros,
                   8. Tecnologías sobre Sistemas de Información Geográfica (SIG), 9. Tecnologías de
                   la información y la comunicación, 9. Tecnologías sobre Procesamiento del Lenguaje
                   Natural (PLN), 10. Tecnologías sobre web semántica, 11. Visualización de datos,
@@ -495,26 +495,26 @@
                   parece haber un mayor uso de bases de datos XML (23) por delante de las bases de
                   datos relacionales más tradicionales (18). Esto está en consonancia con la
                   evolución reciente y la llegada de productos de bases de datos XML de código
-                  abierto como <ptr type="software" xml:id="R7" target="#existdb"/><rs
-                     type="soft.name" ref="#R7">eXist</rs>.<note><rs type="soft.name" ref="#R7"
+                  abierto como <ptr type="software" xml:id="R7" target="softw:existdb"/><rs
+                     type="cit:soft.name" ref="#R7">eXist</rs>.<note><rs type="cit:soft.name" ref="#R7"
                         >Exist Database</rs>, fecha de consulta 16 de julio de 2023, <rs
-                        type="soft.url" ref="#R7"><ptr target="http://exist-db.org/"/></rs></note>
+                        type="cit:soft.url" ref="#R7"><ptr target="http://exist-db.org/"/></rs></note>
                </p>
                <p>En lo que respecta a la transformación y renderizado de XML, el lenguaje más
                   utilizado parece seguir siendo el ya veterano <ptr type="software" xml:id="R8"
-                     target="#xslt"/><rs type="soft.name" ref="#R8">XSLT</rs> (29),<note><rs
-                        type="soft.name" ref="#R8">XSLT</rs>, fecha de consulta 16 de julio de 2023,
-                        <rs type="soft.url" ref="#R8"><ptr target="https://www.w3.org/TR/xslt/"
+                     target="softw:xslt"/><rs type="cit:soft.name" ref="#R8">XSLT</rs> (29),<note><rs
+                        type="cit:soft.name" ref="#R8">XSLT</rs>, fecha de consulta 16 de julio de 2023,
+                        <rs type="cit:soft.url" ref="#R8"><ptr target="https://www.w3.org/TR/xslt/"
                         /></rs>.</note> mientras que las transformaciones <ptr type="software"
-                     xml:id="R9" target="#xquery"/><rs type="soft.name" ref="#R9">XQuery</rs>
-                        (11)<note><rs type="soft.name" ref="#R9">XQuery</rs>, fecha de consulta 16
-                     de julio de 2023, <rs type="soft.url" ref="#R9"><ptr
+                     xml:id="R9" target="softw:xquery"/><rs type="cit:soft.name" ref="#R9">XQuery</rs>
+                        (11)<note><rs type="cit:soft.name" ref="#R9">XQuery</rs>, fecha de consulta 16
+                     de julio de 2023, <rs type="cit:soft.url" ref="#R9"><ptr
                            target="https://www.w3.org/XML/Query/"/></rs>.</note> se utilizan menos.
                   Esto no parece coincidir del todo con la pregunta anterior sobre el uso de bases
                   de datos XML, ya que la mayoría de las bases de datos XML nativas utilizan <ptr
-                     type="software" xml:id="R10" target="#xquery"/><rs type="soft.name" ref="#R10"
+                     type="software" xml:id="R10" target="softw:xquery"/><rs type="cit:soft.name" ref="#R10"
                      >XQuery</rs> como principal herramienta de recuperación de datos, en lugar de
-                     <ptr type="software" xml:id="R11" target="#xslt"/><rs type="soft.name"
+                     <ptr type="software" xml:id="R11" target="softw:xslt"/><rs type="cit:soft.name"
                      ref="#R11">XSLT</rs>. Entre los participantes existe una curiosa mezcla entre
                   las formas <term>antiguas</term> y las <term>nuevas</term>.</p>
                <p>Otras prácticas que los participantes adoptan cuando trabajan con TEI son la
@@ -523,9 +523,9 @@
                   (11), y el Procesamiento del Lenguaje Natural (12%). En <term>Otros</term>,
                   algunos participantes explicaron que utilizaban scripts de interoperabilidad entre
                   distintos esquemas (DCAT, DDI-CDI), anotación lingüística de corpus, <ptr
-                     type="software" xml:id="R12" target="#xslt"/><rs type="soft.name" ref="#R12"
+                     type="software" xml:id="R12" target="softw:xslt"/><rs type="cit:soft.name" ref="#R12"
                      >XSLT</rs> - LaTex - PDF y <ptr type="software" xml:id="R13"
-                     target="#apachecocoon"/><rs type="soft.name" ref="#R13">Cocoon</rs>.
+                     target="softw:apachecocoon"/><rs type="cit:soft.name" ref="#R13">Cocoon</rs>.
                   Lamentablemente, el 9% eligió otros sin especificar más.</p>
                <figure xml:id="figure13">
                   <graphic url="image/Fig_13.png" height="289px" width="468px"/>
@@ -550,20 +550,20 @@
                   los participantes para publicar sus archivos TEI. El objetivo era controlar si
                   había alguna plataforma que se destacara por su uso. Por ello, propusimos las
                   siguientes: 1. Infraestructura web creada <emph>ad hoc</emph> (por ejemplo, XML,
-                     <ptr type="software" xml:id="R14" target="#xslt"/><rs type="soft.name"
-                     ref="#R14">XSLT</rs>, <ptr type="software" xml:id="R15" target="#php"/><rs
-                     type="soft.name" ref="#R15">PHP</rs>, <ptr type="software" xml:id="R16"
-                     target="#python"/><rs type="soft.name" ref="#R16">Python</rs>, etc.), 2.
-                  Generadores web estáticos (<ptr type="software" xml:id="R17" target="#jekyll"/><rs
-                     type="soft.name" ref="#R17">Jekyll</rs>, <ptr type="software" xml:id="R18"
-                     target="#gatsby"/><rs type="soft.name" ref="#R18">Gatsby</rs>, etc.), 3. <ptr
-                     type="software" xml:id="R19" target="#teiboilerplate"/><rs type="soft.name"
+                     <ptr type="software" xml:id="R14" target="softw:xslt"/><rs type="cit:soft.name"
+                     ref="#R14">XSLT</rs>, <ptr type="software" xml:id="R15" target="softw:php"/><rs
+                     type="cit:soft.name" ref="#R15">PHP</rs>, <ptr type="software" xml:id="R16"
+                     target="softw:python"/><rs type="cit:soft.name" ref="#R16">Python</rs>, etc.), 2.
+                  Generadores web estáticos (<ptr type="software" xml:id="R17" target="softw:jekyll"/><rs
+                     type="cit:soft.name" ref="#R17">Jekyll</rs>, <ptr type="software" xml:id="R18"
+                     target="softw:gatsby"/><rs type="cit:soft.name" ref="#R18">Gatsby</rs>, etc.), 3. <ptr
+                     type="software" xml:id="R19" target="softw:teiboilerplate"/><rs type="cit:soft.name"
                      ref="#R19">Boilerplate</rs>, 4. <ptr type="software" xml:id="R20"
-                     target="#existdb"/><rs type="soft.name" ref="#R20">eXist</rs>; 5. <ptr
-                     type="software" xml:id="R21" target="#teipublisher"/><rs type="soft.name"
+                     target="softw:existdb"/><rs type="cit:soft.name" ref="#R20">eXist</rs>; 5. <ptr
+                     type="software" xml:id="R21" target="softw:teipublisher"/><rs type="cit:soft.name"
                      ref="#R21">TEI Publisher</rs>, 6. <ptr type="software" xml:id="R22"
-                     target="#ceteicean"/><rs type="soft.name" ref="#R22">CETEIcean</rs>, 7. <ptr
-                     type="software" xml:id="R23" target="#evt"/><rs type="soft.name" ref="#R23"
+                     target="softw:ceteicean"/><rs type="cit:soft.name" ref="#R22">CETEIcean</rs>, 7. <ptr
+                     type="software" xml:id="R23" target="softw:evt"/><rs type="cit:soft.name" ref="#R23"
                      >Edition Visualization Technology</rs>, y añadimos una opción 8. Otros.</p>
                <p>No es sorprendente que la puntuación más alta correspondiera a las
                   infraestructuras creadas <hi rend="italic">ad hoc</hi> (43). Así pues, la gran
@@ -572,80 +572,80 @@
                   características del texto y publicación. La relevancia de estos datos radica en la
                   escasez de plataformas que respondan a las necesidades de los profesionales. Sin
                   embargo, entre las plataformas más utilizadas, los participantes eligen <ptr
-                     type="software" xml:id="R24" target="#teipublisher"/><rs type="soft.name"
-                     ref="#R24">TEI Publisher</rs> (14),<note><rs type="soft.name" ref="#R24">TEI
-                        Publisher</rs>, fecha de consulta 16 de julio de 2023, <rs type="soft.url"
+                     type="software" xml:id="R24" target="softw:teipublisher"/><rs type="cit:soft.name"
+                     ref="#R24">TEI Publisher</rs> (14),<note><rs type="cit:soft.name" ref="#R24">TEI
+                        Publisher</rs>, fecha de consulta 16 de julio de 2023, <rs type="cit:soft.url"
                         ref="#R24"><ptr target="https://teipublisher.com/index.html"/></rs></note>
                   una herramienta diseñada en 2004 para crear repositorios basados en XML a través
                   de una base de datos XML nativa con <ptr type="software" xml:id="R25"
-                     target="#existdb"/><rs type="soft.name" ref="#R25">eXist</rs> que emplea además
+                     target="softw:existdb"/><rs type="cit:soft.name" ref="#R25">eXist</rs> que emplea además
                   una biblioteca de motor de búsqueda de texto llamada <ptr type="software"
-                     xml:id="R26" target="#lucene"/><rs type="soft.name" ref="#R26"
-                        >Lucene</rs>.<note><rs type="soft.name" ref="#R25">Exist Database</rs>,
-                     fecha de consulta 16 de julio de 2023, <rs type="soft.url" ref="#R25"><ptr
+                     xml:id="R26" target="softw:lucene"/><rs type="cit:soft.name" ref="#R26"
+                        >Lucene</rs>.<note><rs type="cit:soft.name" ref="#R25">Exist Database</rs>,
+                     fecha de consulta 16 de julio de 2023, <rs type="cit:soft.url" ref="#R25"><ptr
                            target="http://exist-db.org/"/></rs>.</note> De hecho, los proyectos que
                   se apoyan en la solución de base de datos <ptr type="software" xml:id="R27"
-                     target="#existdb"/><rs type="soft.name" ref="#R27">eXist</rs> (9) se encuentran
+                     target="softw:existdb"/><rs type="cit:soft.name" ref="#R27">eXist</rs> (9) se encuentran
                   entre las primeras posiciones. A continuación, los generadores web estáticos
                   aparecen como una opción viable y en alza, como <ptr type="software" xml:id="R28"
-                     target="#jekyll"/><rs type="soft.name" ref="#R28">Jekyll</rs> o <ptr
-                     type="software" xml:id="R29" target="#gatsby"/><rs type="soft.name" ref="#R29"
-                     >Gatsby</rs> (11).<note>Para más información véase sobre <rs type="soft.name"
+                     target="softw:jekyll"/><rs type="cit:soft.name" ref="#R28">Jekyll</rs> o <ptr
+                     type="software" xml:id="R29" target="softw:gatsby"/><rs type="cit:soft.name" ref="#R29"
+                     >Gatsby</rs> (11).<note>Para más información véase sobre <rs type="cit:soft.name"
                         ref="#R28">Jekyll</rs>, fecha de consulta 16 de julio de 2023,<rs
-                        type="soft.url" ref="#R28"><ptr target="https://jekyllrb.com/"/></rs> y <rs
-                        type="soft.name" ref="#R29">Gatsby</rs>, fecha de consulta 16 de julio de
-                     2023, <rs type="soft.url" ref="#R29"><ptr target="https://www.gatsbyjs.com/"
+                        type="cit:soft.url" ref="#R28"><ptr target="https://jekyllrb.com/"/></rs> y <rs
+                        type="cit:soft.name" ref="#R29">Gatsby</rs>, fecha de consulta 16 de julio de
+                     2023, <rs type="cit:soft.url" ref="#R29"><ptr target="https://www.gatsbyjs.com/"
                         /></rs>.</note> El hecho de que los generadores web estáticos formen parte
                   de las opciones mejor rankeadas responde probablemente a dos hechos: primero, el
                   auge de la computación mínima que permite la creación de infraestructuras sin
                   necesidad de servidores comerciales o institucionales (por ejemplo, los sitios
                   estáticos pueden vivir en servicios gratuitos como <ptr type="software"
-                     xml:id="R30" target="#github"/><rs type="soft.name" ref="#R30">GitHub</rs> y
-                     <ptr type="software" xml:id="R31" target="#githubpages"/><rs type="soft.name"
-                     ref="#R31">GitHub Pages</rs>)<note><rs type="soft.name" ref="#R31">GitHub
-                        Pages</rs>, fecha de consulta 16 de julio de 2023, <rs type="soft.url"
+                     xml:id="R30" target="softw:github"/><rs type="cit:soft.name" ref="#R30">GitHub</rs> y
+                     <ptr type="software" xml:id="R31" target="softw:githubpages"/><rs type="cit:soft.name"
+                     ref="#R31">GitHub Pages</rs>)<note><rs type="cit:soft.name" ref="#R31">GitHub
+                        Pages</rs>, fecha de consulta 16 de julio de 2023, <rs type="cit:soft.url"
                         ref="#R31"><ptr target="https://pages.github.com/"/></rs> .</note> y
                   segundo, la falta de acceso a infraestructuras digitales especialmente en América
                      Latina.<note>Para más información sobre el movimiento de la computación mínima,
                      véase la página del grupo Minimal Computing, fecha de consulta 16 de julio de
                      2023, <ptr target="https://go-dh.github.io/mincomp/about/"/>.</note> Además,
                   entre las otras plataformas para publicar archivos TEI algunos participantes
-                  respondieron estar usando <ptr type="software" xml:id="R32" target="#ceteicean"
-                     /><rs type="soft.name" ref="#R32">CETEIcean</rs> (6),<note>CETEIcean, fecha de
-                     consulta 16 de julio de 2023, <rs type="soft.url" ref="#R32"><ptr
+                  respondieron estar usando <ptr type="software" xml:id="R32" target="softw:ceteicean"
+                     /><rs type="cit:soft.name" ref="#R32">CETEIcean</rs> (6),<note>CETEIcean, fecha de
+                     consulta 16 de julio de 2023, <rs type="cit:soft.url" ref="#R32"><ptr
                            target="https://github.com/TEIC/CETEIcean"/></rs>.</note>
-                  <ptr type="software" xml:id="R33" target="#evt"/><rs type="soft.name" ref="#R33"
-                     >Edition Visualization Technology</rs> (5),<note><rs type="soft.name"
+                  <ptr type="software" xml:id="R33" target="softw:evt"/><rs type="cit:soft.name" ref="#R33"
+                     >Edition Visualization Technology</rs> (5),<note><rs type="cit:soft.name"
                         ref="#R33">EVT</rs>, fecha de consulta 16 de julio de 2023, <rs
-                        type="soft.url" ref="#R33"><ptr target="http://evt.labcd.unipi.it/"
+                        type="cit:soft.url" ref="#R33"><ptr target="http://evt.labcd.unipi.it/"
                      /></rs>.</note> mientras que sólo uno marcó la hoy bastante anticuada <ptr
-                     type="software" xml:id="R34" target="#teiboilerplate"/><rs type="soft.name"
-                     ref="#R34">Boilerplate</rs> (1).<note><rs type="soft.name" ref="#R34">TEI
-                        Boilerplate</rs>, fecha de consulta 16 de julio de 2023, <rs type="soft.url"
+                     type="software" xml:id="R34" target="softw:teiboilerplate"/><rs type="cit:soft.name"
+                     ref="#R34">Boilerplate</rs> (1).<note><rs type="cit:soft.name" ref="#R34">TEI
+                        Boilerplate</rs>, fecha de consulta 16 de julio de 2023, <rs type="cit:soft.url"
                         ref="#R34"><ptr target="https://dcl.ils.indiana.edu/teibp/"/></rs>.</note>
                   Entre los que respondieron con la opción <term>Otros</term>, los participantes
                   añadieron que reconocen su falta de conocimientos acerca de las tecnologías de
                   transformación y publicación de archivos TEI (4), mientras que otros mencionaron
                   estar utilizando otras opciones como <ptr type="software" xml:id="R35"
-                     target="#kiln"/><rs type="soft.name" ref="#R35">Kiln</rs>,<note><rs
-                        type="soft.name" ref="#R35">Kiln</rs>, fecha de consulta 16 de julio de
-                     2023, <rs type="soft.url" ref="#R35"><ptr
+                     target="softw:kiln"/><rs type="cit:soft.name" ref="#R35">Kiln</rs>,<note><rs
+                        type="cit:soft.name" ref="#R35">Kiln</rs>, fecha de consulta 16 de julio de
+                     2023, <rs type="cit:soft.url" ref="#R35"><ptr
                            target="https://kiln.readthedocs.io/en/latest/"/></rs>.</note>
-                  <ptr type="software" xml:id="R36" target="#teitok"/><rs type="soft.name"
-                     ref="#R36">TEITOK</rs>,<note><rs type="soft.name" ref="#R36">TEITOK</rs>, fecha
-                     de consulta 16 de julio de 2023, <rs type="soft.url" ref="#R36"><ptr
+                  <ptr type="software" xml:id="R36" target="softw:teitok"/><rs type="cit:soft.name"
+                     ref="#R36">TEITOK</rs>,<note><rs type="cit:soft.name" ref="#R36">TEITOK</rs>, fecha
+                     de consulta 16 de julio de 2023, <rs type="cit:soft.url" ref="#R36"><ptr
                            target="http://teitok.clul.ul.pt/"/></rs>.</note>
-                  <ptr type="software" xml:id="R37" target="#r"/><rs type="soft.name" ref="#R37"
-                     >R</rs> scripts,<note><rs type="soft.name" ref="#R37">R</rs> Scripts, fecha de
-                     consulta 16 de julio de 2023, <rs type="soft.url" ref="#R37"><ptr
+                  <ptr type="software" xml:id="R37" target="softw:r"/><rs type="cit:soft.name" ref="#R37"
+                     >R</rs> scripts,<note><rs type="cit:soft.name" ref="#R37">R</rs> Scripts, fecha de
+                     consulta 16 de julio de 2023, <rs type="cit:soft.url" ref="#R37"><ptr
                            target="http://mercury.webster.edu/aleshunas/R_learning_infrastructure/R%20scripts.html"
                         /></rs>.</note> o tener en mente para el futuro el uso de <ptr
-                     type="software" xml:id="R38" target="#textualcommunities"/><rs type="soft.name"
-                     ref="#R38">Textual Communities</rs><note><rs type="soft.name" ref="#R38"
+                     type="software" xml:id="R38" target="softw:textualcommunities"/><rs type="cit:soft.name"
+                     ref="#R38">Textual Communities</rs><note><rs type="cit:soft.name" ref="#R38"
                         >Textual Communities</rs>, fecha de consulta 16 de julio de 2023, <rs
-                        type="soft.url" ref="#R38"><ptr target="https://textualcommunities.org/app/"
-                        /></rs>.</note> o <ptr type="software" xml:id="R39" target="#teipublisher"
-                     /><rs type="soft.name" ref="#R39">TEI Publisher</rs>.</p>
+                        type="cit:soft.url" ref="#R38"><ptr target="https://textualcommunities.org/app/"
+                        /></rs>.</note> o <ptr type="software" xml:id="R39" target="softw:teipublisher"
+                     /><rs type="cit:soft.name" ref="#R39">TEI Publisher</rs>.</p>
                <figure xml:id="figure14">
                   <graphic url="image/Fig_14.png" height="289px" width="468px"/>
                   <head type="legend">Plataformas y herramientas para transformar y/o publicar
@@ -746,8 +746,8 @@
                      mejorar la enseñanza y el aprendizaje de la TEI?</q> Algunos de los
                   participantes insistieron en la necesidad de recursos y materiales de formación a
                   todos los niveles y en español, incluyendo además temas específicos (por ejemplo,
-                  transformaciones con <ptr type="software" xml:id="R40" target="#xslt"/><rs
-                     type="soft.name" ref="#R40">XSLT</rs>), así como otros tipos de recursos, como
+                  transformaciones con <ptr type="software" xml:id="R40" target="softw:xslt"/><rs
+                     type="cit:soft.name" ref="#R40">XSLT</rs>), así como otros tipos de recursos, como
                   referencias bibliográficas. La necesidad de formación formal e informal dentro y
                   fuera del mundo académico surge también como otra preocupación legítima. Entre las
                   demandas de formación aflora el desconocimiento de las etapas finales del proceso
@@ -781,7 +781,7 @@
                ordenador. El consorcio de la TEI está insuflado de un espíritu de apertura y
                colaboración que hace que los propios usuarios puedan proponer mejoras y
                modificaciones a través de su repositorio en <ptr type="software" xml:id="R41"
-                  target="#github"/><rs type="soft.name" ref="#R41">GitHub</rs>. Este espíritu de
+                  target="softw:github"/><rs type="cit:soft.name" ref="#R41">GitHub</rs>. Este espíritu de
                colaboración y difusión se manifiesta también a través de un diálogo continuo
                mediante una lista de discusión en línea y la organización anual de un congreso
                internacional. Por último, el consorcio es un gran paraguas que da lugar a diferentes
@@ -842,23 +842,23 @@
                de forma audible otras dos preocupaciones, en primer lugar, la necesidad de
                materiales de formación para todo el proceso de labor editorial, con especial
                insistencia en la transformación del XML-TEI (<ptr type="software" xml:id="R42"
-                  target="#xslt"/><rs type="soft.name" ref="#R42">XSLT</rs>, <ptr type="software"
-                  xml:id="R43" target="#xquery"/><rs type="soft.name" ref="#R43">XQuery</rs>) y
+                  target="softw:xslt"/><rs type="cit:soft.name" ref="#R42">XSLT</rs>, <ptr type="software"
+                  xml:id="R43" target="softw:xquery"/><rs type="cit:soft.name" ref="#R43">XQuery</rs>) y
                publicación de los archivos TEI. Esto significa que la comunidad ya ha superado las
                fases iniciales de familiarización con la TEI, y que ahora urgen temas más avanzados.
                En segundo lugar, han aparecido varias voces que defienden la necesidad de contar con
                editores XML gratuitos. El hecho de que el software más popular sea propietario
                desanima a algunos usuarios. Ni que decir tiene que ya se han dado algunos pasos para
                adaptar software de código abierto para trabajar con archivos TEI, como <ptr
-                  type="software" xml:id="R44" target="#visualstudiocode"/><rs type="soft.name"
+                  type="software" xml:id="R44" target="softw:visualstudiocode"/><rs type="cit:soft.name"
                   ref="#R44">Visual Studio Code</rs>, que se ha beneficiado del desarrollo del
-               plugin <ptr type="software" xml:id="R45" target="#scholarlyxml"/><rs type="soft.name"
+               plugin <ptr type="software" xml:id="R45" target="softw:scholarlyxml"/><rs type="cit:soft.name"
                   ref="#R45"><hi rend="italic">Scholarly</hi>
                   <hi rend="italic">XML</hi></rs>, que permite una codificación básica pero rigurosa
-               en XML-TEI.<note>Este trabajo se debe a <rs type="soft.agent" ref="#R45">Raffaele
+               en XML-TEI.<note>Este trabajo se debe a <rs type="cit:soft.agent" ref="#R45">Raffaele
                      Viglianti</rs> (Maryland Institute for Technology in the Humanities) y el
                   plugin puede descargarse en línea en: fecha de consulta 16 de julio de 2023, <rs
-                     type="soft.url" ref="#R45"><ptr
+                     type="cit:soft.url" ref="#R45"><ptr
                         target="https://marketplace.visualstudio.com/items?itemName=raffazizzi.sxml"
                      /></rs>.</note>
             </p>

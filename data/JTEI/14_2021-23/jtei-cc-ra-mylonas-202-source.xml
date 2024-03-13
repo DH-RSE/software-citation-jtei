@@ -632,7 +632,7 @@
             target="http://nomisma.org/">Nomisma</ref>, and <ref
             target="http://www.cidoc-crm.org/crmtex/home-8">CRMtex</ref><note>CIDOC (International
             Committee for Documentation) Conceptual <ptr type="software" xml:id="Reference"
-              target="#omekareference"/><rs type="soft.name" ref="#Reference">Reference</rs> Model,
+              target="softw:omekareference"/><rs type="cit:soft.name" ref="#Reference">Reference</rs> Model,
             accessed July 4, 2022, <ptr target="http://www.cidoc-crm.org/"/>; Nomisma (knowledge
             organization system for numismatics), accessed July 4, 2022, <ptr
               target="http://nomisma.org/"/>; CRMtex model for the study of ancient texts (an
@@ -679,8 +679,8 @@
           governing body which might provide the certification, and in fact the Guidelines are, as
           indicated in their name, not a standard. However, if the TEI consortium and its members
           recommend how to fulfill the FAIR principles by using the <gi>teiHeader</gi> as discussed
-          for each metric above, and provide <ptr type="software" xml:id="XSLT" target="#XSLT"/><rs
-            type="soft.name" ref="#XSLT">XSLT</rs> and Schematron files for validation, the output
+          for each metric above, and provide <ptr type="software" xml:id="XSLT" target="softw:XSLT"/><rs
+            type="cit:soft.name" ref="#XSLT">XSLT</rs> and Schematron files for validation, the output
           of that file could indicate compliance. As always, it is the responsibility of the encoder
           and project to make sure that the metadata are accurate and detailed.</p>
       </div>
@@ -694,7 +694,7 @@
           predictable and machine-readable form. Specifically, the TEI Guidelines and schema
           indicate where and how to encode licensing information, metadata formats, documentation,
           and identifiers and their presence can be verified using <ptr type="software"
-            xml:id="XSLT" target="#XSLT"/><rs type="soft.name" ref="#XSLT">XSLT</rs>, XPath, and
+            xml:id="XSLT" target="softw:XSLT"/><rs type="cit:soft.name" ref="#XSLT">XSLT</rs>, XPath, and
           Schematron. Overall, the affordances of the TEI, best practices of the EpiDoc community,
           and IIP archival format decisions have resulted in a set of documents that measure up to
           the requirements of FAIR metrics. Furthermore, the best practices adopted by the IIP

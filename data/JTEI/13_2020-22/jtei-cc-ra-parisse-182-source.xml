@@ -109,33 +109,33 @@
           need to be interoperable and reusable in order to improve research on themes such as
           phonology, prosody, interaction, syntax, and textometry. To help researchers reach this
           goal, CORLI has designed a pair of tools: <ptr type="software" xml:id="R1"
-            target="#teicorpo"/>
-          <rs type="soft.name" ref="#R1">TEICORPO</rs> to assist in the conversion and use of spoken
-          language corpora, and <ptr type="software" xml:id="R2" target="#teimeta"/>
-          <rs type="soft.name" ref="#R2">TEIMETA</rs> for metadata purposes. <ptr type="software"
-            xml:id="R3" target="#teicorpo"/>
-          <rs type="soft.name" ref="#R3">TEICORPO</rs> is based on the principle of an underlying
+            target="softw:teicorpo"/>
+          <rs type="cit:soft.name" ref="#R1">TEICORPO</rs> to assist in the conversion and use of spoken
+          language corpora, and <ptr type="software" xml:id="R2" target="softw:teimeta"/>
+          <rs type="cit:soft.name" ref="#R2">TEIMETA</rs> for metadata purposes. <ptr type="software"
+            xml:id="R3" target="softw:teicorpo"/>
+          <rs type="cit:soft.name" ref="#R3">TEICORPO</rs> is based on the principle of an underlying
           common format, namely TEI XML as described in its specification for spoken language use
           (ISO 2016). This tool enables the conversion of transcriptions created with alignment
-          software such as <ptr type="software" xml:id="R4" target="#clan"/>
-          <rs type="soft.name" ref="#R4">CLAN</rs>, <ptr type="software" xml:id="R5"
-            target="#transcriber"/>
-          <rs type="soft.name" ref="#R5">Transcriber</rs>, <ptr type="software" xml:id="R6"
-            target="#praat"/>
-          <rs type="soft.name" ref="#R6">Praat</rs>, or <ptr type="software" xml:id="R7"
-            target="#elan"/><rs type="soft.name" ref="#R7">ELAN</rs> as well as common file formats
+          software such as <ptr type="software" xml:id="R4" target="softw:clan"/>
+          <rs type="cit:soft.name" ref="#R4">CLAN</rs>, <ptr type="software" xml:id="R5"
+            target="softw:transcriber"/>
+          <rs type="cit:soft.name" ref="#R5">Transcriber</rs>, <ptr type="software" xml:id="R6"
+            target="softw:praat"/>
+          <rs type="cit:soft.name" ref="#R6">Praat</rs>, or <ptr type="software" xml:id="R7"
+            target="softw:elan"/><rs type="cit:soft.name" ref="#R7">ELAN</rs> as well as common file formats
           (CSV, XLSX, TXT, or DOCX) and the TEI format, which plays the role of a lossless pivot
           format. Backward conversion is possible in many cases, with limitations inherent in the
-          destination target format. <ptr type="software" xml:id="R8" target="#teicorpo"/>
-          <rs type="soft.name" ref="#R8">TEICORPO</rs> can run the <ptr type="software" xml:id="R9"
-            target="#treetagger"/>
-          <rs type="soft.name" ref="#R9">Treetagger</rs> part-of-speech tagger and the <ptr
-            type="software" xml:id="R10" target="#stanfordcorenlp"/>
-          <rs type="soft.name" ref="#R10">Stanford CoreNLP</rs> tools on TEI files and can export
+          destination target format. <ptr type="software" xml:id="R8" target="softw:teicorpo"/>
+          <rs type="cit:soft.name" ref="#R8">TEICORPO</rs> can run the <ptr type="software" xml:id="R9"
+            target="softw:treetagger"/>
+          <rs type="cit:soft.name" ref="#R9">Treetagger</rs> part-of-speech tagger and the <ptr
+            type="software" xml:id="R10" target="softw:stanfordcorenlp"/>
+          <rs type="cit:soft.name" ref="#R10">Stanford CoreNLP</rs> tools on TEI files and can export
           the resulting files to textometric tools such as <ptr type="software" xml:id="R11"
-            target="#txm"/><rs type="soft.name" ref="#R11">TXM</rs>, <ptr type="software"
-            xml:id="R12" target="#letrameur"/><rs type="soft.name" ref="#R12">Le Trameur</rs>, or
-            <ptr type="software" xml:id="R13" target="#iramuteq"/><rs type="soft.name" ref="#R13"
+            target="softw:txm"/><rs type="cit:soft.name" ref="#R11">TXM</rs>, <ptr type="software"
+            xml:id="R12" target="softw:letrameur"/><rs type="cit:soft.name" ref="#R12">Le Trameur</rs>, or
+            <ptr type="software" xml:id="R13" target="softw:iramuteq"/><rs type="cit:soft.name" ref="#R13"
             >Iramuteq</rs>, making it suitable for spoken language corpora editing as well as for
           various research purposes.</p>
       </div>
@@ -203,8 +203,8 @@
             limited coverage, even if the corpora involved are very large.</p>
         </div>
         <div xml:id="teicorpo">
-          <head>The <ptr type="software" xml:id="R14" target="#teicorpo"/>
-            <rs type="soft.name" ref="#R14">TEICORPO</rs> Approach</head>
+          <head>The <ptr type="software" xml:id="R14" target="softw:teicorpo"/>
+            <rs type="cit:soft.name" ref="#R14">TEICORPO</rs> Approach</head>
           <p>The goal of the CORLI consortium is to make it easier to deposit, share, and reuse
             data. With this goal in mind, CORLI has always promoted the use of open public
             repositories and open formats. Our policy is to advocate for the use of a common single
@@ -229,7 +229,7 @@
             for the needs of linguists. This means that the goal of the project was not to create
             and promote new standards, but rather to emphasize the good practices of CORLI’s members
             and make data sharing with other researchers easier. The goal of the <ptr
-              type="software" xml:id="R192" target="#teicorpo"/><rs type="soft.name" ref="#R192"
+              type="software" xml:id="R192" target="softw:teicorpo"/><rs type="cit:soft.name" ref="#R192"
               >TEICORPO</rs> project can thus be summarized as:</p>
           <list>
             <item>creating a tool for conversion between the different pieces of software used for
@@ -246,17 +246,17 @@
           <head>Similarities with and Differences from Other Approaches</head>
           <p>Many software packages dedicated to editing spoken language transcription contain
             utilities that can convert many formats: for example, <ptr type="software" xml:id="R15"
-              target="#exmaralda"/>
-            <rs type="soft.name" ref="#R15">EXMARaLDA</rs> ( <rs type="soft.bib.ref" ref="#R15"><ref
+              target="softw:exmaralda"/>
+            <rs type="cit:soft.name" ref="#R15">EXMARaLDA</rs> ( <rs type="cit:soft.bib.ref" ref="#R15"><ref
                 type="bibl" target="#schmidt2004">Schmidt 2004</ref>
-            </rs>; see <rs type="soft.url" ref="#R15"><ptr target="https://exmaralda.org"/></rs>),
-              <ptr type="software" xml:id="R16" target="#anvil"/>
-            <rs type="soft.name" ref="#R16">Anvil</rs> (<rs type="soft.bib.ref" ref="#R16">
-              <ref type="bibl" target="#kipp2001">Kipp 2001</ref></rs>; see <rs type="soft.url"
+            </rs>; see <rs type="cit:soft.url" ref="#R15"><ptr target="https://exmaralda.org"/></rs>),
+              <ptr type="software" xml:id="R16" target="softw:anvil"/>
+            <rs type="cit:soft.name" ref="#R16">Anvil</rs> (<rs type="cit:soft.bib.ref" ref="#R16">
+              <ref type="bibl" target="#kipp2001">Kipp 2001</ref></rs>; see <rs type="cit:soft.url"
               ref="#R16"><ptr target="https://www.anvil-software.org"/></rs>), and <ptr
-              type="software" xml:id="R17" target="#elan"/><rs type="soft.name" ref="#R17">ELAN</rs>
-              (<rs type="soft.bib.ref" ref="#R17"><ref type="bibl" target="#wittenburg2006"
-                >Wittenburg et al. 2006</ref></rs>; see <rs type="soft.url" ref="#R17">
+              type="software" xml:id="R17" target="softw:elan"/><rs type="cit:soft.name" ref="#R17">ELAN</rs>
+              (<rs type="cit:soft.bib.ref" ref="#R17"><ref type="bibl" target="#wittenburg2006"
+                >Wittenburg et al. 2006</ref></rs>; see <rs type="cit:soft.url" ref="#R17">
               <ptr target="https://archive.mpi.nl/tla/elan"/></rs>). However, in all cases, the
             conversions are limited to the features implemented in the tool itself—for example, with
             a limited set of metadata—and they cannot always be used to prepare data to be used by
@@ -270,62 +270,62 @@
             <item>TEI is used as a destination format.</item>
           </list>
           <p>The list of tools that are considered in the two projects is nearly the same. The only
-            tools missing in the <ptr type="software" xml:id="R18" target="#teicorpo"/>
-            <rs type="soft.name" ref="#R18">TEICORPO</rs> approach are <ptr type="software"
-              xml:id="R19" target="#exmaralda"/><rs type="soft.name" ref="#R19">EXMARaLDA</rs> and
-              <ptr type="software" xml:id="R241" target="#folker"/>FOLKER (<rs type="soft.bib.ref"
+            tools missing in the <ptr type="software" xml:id="R18" target="softw:teicorpo"/>
+            <rs type="cit:soft.name" ref="#R18">TEICORPO</rs> approach are <ptr type="software"
+              xml:id="R19" target="softw:exmaralda"/><rs type="cit:soft.name" ref="#R19">EXMARaLDA</rs> and
+              <ptr type="software" xml:id="R241" target="softw:folker"/>FOLKER (<rs type="cit:soft.bib.ref"
               ref="#R19"><ref type="bibl" target="#schmidts2010">Schmidt and Schütte
-            2010</ref></rs>; see <rs type="soft.url" ref="#R241"><ptr
+            2010</ref></rs>; see <rs type="cit:soft.url" ref="#R241"><ptr
                 target="https://exmaralda.org/en/folker-en/"/></rs>), but this was only because the
-            conversion tools from and to <ptr type="software" xml:id="R20" target="#EXMARaLDA"/><rs
-              type="soft.name" ref="#R20">EXMARaLDA</rs>, <ptr type="software" xml:id="R21"
-              target="#folker"/>
-            <rs type="soft.name" ref="#R21">FOLKER</rs>, and TEI already exist. They are available
-            as <ptr type="software" xml:id="R22" target="#XSLT"/><rs type="soft.name" ref="#R22"
+            conversion tools from and to <ptr type="software" xml:id="R20" target="softw:EXMARaLDA"/><rs
+              type="cit:soft.name" ref="#R20">EXMARaLDA</rs>, <ptr type="software" xml:id="R21"
+              target="softw:folker"/>
+            <rs type="cit:soft.name" ref="#R21">FOLKER</rs>, and TEI already exist. They are available
+            as <ptr type="software" xml:id="R22" target="softw:XSLT"/><rs type="cit:soft.name" ref="#R22"
               >XSLT</rs> stylesheets in the open-source distribution of <ptr type="software"
-              xml:id="R23" target="#exmaralda"/><rs type="soft.name" ref="#R23">EXMARaLDA</rs> (<rs
-              type="soft.url" ref="#R23"><ptr target="https://github.com/Exmaralda-Org/exmaralda"
+              xml:id="R23" target="softw:exmaralda"/><rs type="cit:soft.name" ref="#R23">EXMARaLDA</rs> (<rs
+              type="cit:soft.url" ref="#R23"><ptr target="https://github.com/Exmaralda-Org/exmaralda"
               /></rs>). The other common point is the use of the TEI format, and especially the more
             recent ISO version of TEI for spoken language (ISO/TEI; see <ref type="bibl"
               target="#iso2016">ISO 2016</ref>). The TEI format produced by the <ptr type="software"
-              xml:id="R24" target="#EXMARaLDA"/><rs type="soft.name" ref="#R24">EXMARaLDA</rs> and
-              <ptr type="software" xml:id="R25" target="#folker"/>
-            <rs type="soft.name" ref="#R25">FOLKER</rs> software fit within the process chain of
-              <ptr type="software" xml:id="R26" target="#teicorpo"/><rs type="soft.name" ref="#R26">
+              xml:id="R24" target="softw:EXMARaLDA"/><rs type="cit:soft.name" ref="#R24">EXMARaLDA</rs> and
+              <ptr type="software" xml:id="R25" target="softw:folker"/>
+            <rs type="cit:soft.name" ref="#R25">FOLKER</rs> software fit within the process chain of
+              <ptr type="software" xml:id="R26" target="softw:teicorpo"/><rs type="cit:soft.name" ref="#R26">
               TEICORPO</rs>. This demonstrates the usefulness of a well-known and efficient format
             such as TEI.</p>
           <p>There are, however, differences between the two projects that make them nonredundant
             but complementary, each project having specificities that can be useful or damaging
             depending on the user’s needs. One minor difference is that the <ptr type="software"
-              xml:id="R27" target="#teicorpo"/>
-            <rs type="soft.name" ref="#R27">TEICORPO</rs> project is not a functionality of an
+              xml:id="R27" target="softw:teicorpo"/>
+            <rs type="cit:soft.name" ref="#R27">TEICORPO</rs> project is not a functionality of an
             editing tool, but is a standalone tool for converting data between one format and
             another. This had certain effects on the user interface and explains some of the choices
             made in the development of the two tools.</p>
           <p>There are two major differences between <ptr type="software" xml:id="R28"
-              target="#teicorpo"/>
-            <rs type="soft.name" ref="#R28">TEICORPO</rs> and Schmidt’s approach, which affected
+              target="softw:teicorpo"/>
+            <rs type="cit:soft.name" ref="#R28">TEICORPO</rs> and Schmidt’s approach, which affected
             both the design of the tools and how they can be used. The first difference is that in
-            developing <ptr type="software" xml:id="R29" target="#teicorpo"/><rs type="soft.name"
+            developing <ptr type="software" xml:id="R29" target="softw:teicorpo"/><rs type="cit:soft.name"
               ref="#R29">TEICORPO</rs>, it was decided that the conversion between the original
             formats and TEI had to be lossless (or as lossless as possible) because we wanted to
             offer a means to store the research data for long-term conservation and dissemination in
             a standard XML format instead of in proprietary formats such as those used by <ptr
-              type="software" xml:id="R30" target="#clan"/>
-            <rs type="soft.name" ref="#R30">CLAN</rs> (<rs type="soft.bib.ref" ref="#R30"><ref
+              type="software" xml:id="R30" target="softw:clan"/>
+            <rs type="cit:soft.name" ref="#R30">CLAN</rs> (<rs type="cit:soft.bib.ref" ref="#R30"><ref
                 type="bibl" target="#macwhinney200">MacWhinney 2000</ref></rs>; see <rs
-              type="soft.url" ref="#R30"><ptr target="http://dali.talkbank.org/clan/"/></rs>), <ptr
-              type="software" xml:id="R31" target="#elan"/><rs type="soft.name" ref="#R31"
-            >ELAN</rs>, <ptr type="software" xml:id="R32" target="#praat"/>
-            <rs type="soft.name" ref="#R32">Praat</rs> (<rs type="soft.bib.ref" ref="#R32"><ref
+              type="cit:soft.url" ref="#R30"><ptr target="http://dali.talkbank.org/clan/"/></rs>), <ptr
+              type="software" xml:id="R31" target="softw:elan"/><rs type="cit:soft.name" ref="#R31"
+            >ELAN</rs>, <ptr type="software" xml:id="R32" target="softw:praat"/>
+            <rs type="cit:soft.name" ref="#R32">Praat</rs> (<rs type="cit:soft.bib.ref" ref="#R32"><ref
                 type="bibl" target="#boersma2001">Boersma and van Heuven 2001</ref></rs>; see <rs
-              type="soft.url" ref="#R32"><ptr target="http://www.fon.hum.uva.nl/praat/"/></rs>), and
-              <ptr type="software" xml:id="R33" target="#transcriber"/>
-            <rs type="soft.name" ref="#R33">Transcriber</rs> (<rs type="soft.bib.ref" ref="#R33"
+              type="cit:soft.url" ref="#R32"><ptr target="http://www.fon.hum.uva.nl/praat/"/></rs>), and
+              <ptr type="software" xml:id="R33" target="softw:transcriber"/>
+            <rs type="cit:soft.name" ref="#R33">Transcriber</rs> (<rs type="cit:soft.bib.ref" ref="#R33"
                 ><ref type="bibl" target="#barras2000">Barras et al. 2000</ref></rs>; see <rs
-              type="soft.url" ref="#R33"><ptr
+              type="cit:soft.url" ref="#R33"><ptr
                 target="http://trans.sourceforge.net/en/presentation.php"/></rs> and <rs
-              type="soft.url" ref="#R33"><ptr
+              type="cit:soft.url" ref="#R33"><ptr
                 target="http://perso.ens-lyon.fr/matthieu.quignard/Transcriber/"/></rs>). These
             proprietary formats are in XML or Unicode formats so that they can be conserved for the
             long term. However, they are not all well described or constrained, at least not in the
@@ -335,28 +335,28 @@
             safe to keep corpora in a format available only for a given tool that may disappear or
             fall into disuse.</p>
           <p>The second major difference is that the <ptr type="software" xml:id="R34"
-              target="#teicorpo"/>
-            <rs type="soft.name" ref="#R34">TEICORPO</rs> initiative does not target only spoken
+              target="softw:teicorpo"/>
+            <rs type="cit:soft.name" ref="#R34">TEICORPO</rs> initiative does not target only spoken
             language, but all types of annotation, including media of any type. This covers all
             spoken languages, vocal as well as sign languages, and also gesture and any type of
-            multimodal coding. The goal of <ptr type="software" xml:id="R35" target="#teicorpo"/>
-            <rs type="soft.name" ref="#R35">TEICORPO</rs> was not to advocate a linguistic mode of
+            multimodal coding. The goal of <ptr type="software" xml:id="R35" target="softw:teicorpo"/>
+            <rs type="cit:soft.name" ref="#R35">TEICORPO</rs> was not to advocate a linguistic mode of
             coding spoken data as a transcription convention does, but rather to propose a research
             model for storing and sharing data about language and other modalities. Consequently,
             the focus of the work was not on how the spoken data were coded (i.e., the
             microstructure), nor on the standard that should be used for transcribing in
-            orthographic format. Instead, the <ptr type="software" xml:id="R36" target="#teicorpo"/>
-            <rs type="soft.name" ref="#R36">TEICORPO</rs> approach focused on how to integrate
+            orthographic format. Instead, the <ptr type="software" xml:id="R36" target="softw:teicorpo"/>
+            <rs type="cit:soft.name" ref="#R36">TEICORPO</rs> approach focused on how to integrate
             multiple pieces of information into the TEI semantics (the macrostructure), as this is
-            possible with tools such as <ptr type="software" xml:id="R37" target="#elan"/><rs
-              type="soft.name" ref="#R37">ELAN</rs> or <ptr type="software" xml:id="R38"
-              target="#praat"/>
-            <rs type="soft.name" ref="#R38">PRAAT</rs>. The goal was to be able to convert a file
+            possible with tools such as <ptr type="software" xml:id="R37" target="softw:elan"/><rs
+              type="cit:soft.name" ref="#R37">ELAN</rs> or <ptr type="software" xml:id="R38"
+              target="softw:praat"/>
+            <rs type="cit:soft.name" ref="#R38">PRAAT</rs>. The goal was to be able to convert a file
             produced by these tools so that it can be saved in TEI format for long-term
             conservation.</p>
-          <p>Data in <ptr type="software" xml:id="R39" target="#praat"/>
-            <rs type="soft.name" ref="#R39">PRAAT</rs> and <ptr type="software" xml:id="R40"
-              target="#elan"/><rs type="soft.name" ref="#R40">ELAN</rs> formats can contain
+          <p>Data in <ptr type="software" xml:id="R39" target="softw:praat"/>
+            <rs type="cit:soft.name" ref="#R39">PRAAT</rs> and <ptr type="software" xml:id="R40"
+              target="softw:elan"/><rs type="cit:soft.name" ref="#R40">ELAN</rs> formats can contain
             information that is different from what is usually present in an ISO/TEI description,
             but that nonetheless remains within the structures authorized in the ISO/TEI. For
             example, the information is stored as described below in <gi>spanGrp</gi>, an element
@@ -365,36 +365,36 @@
               <soCalled>classical</soCalled>, we mean approaches based on an orthographic
             transcription represented as a list, as in the script of a play), it will be available
             for further processing by using the export features of <ptr type="software" xml:id="R41"
-              target="#teicorpo"/>
-            <rs type="soft.name" ref="#R41">TEICORPO</rs> (see <ptr target="#exporting"
+              target="softw:teicorpo"/>
+            <rs type="cit:soft.name" ref="#R41">TEICORPO</rs> (see <ptr target="#exporting"
               type="crossref"/> and further below for export functionalities) but other types of
             information are also available. Compared to <ptr type="software" xml:id="R42"
-              target="#praat"/>
-            <rs type="soft.name" ref="#R42">PRAAT</rs> and <ptr type="software" xml:id="R43"
-              target="#elan"/><rs type="soft.name" ref="#R43">ELAN</rs>, the integration of tools
-            such as <ptr type="software" xml:id="R44" target="#clan"/>
-            <rs type="soft.name" ref="#R44">CLAN</rs> or <ptr type="software" xml:id="R45"
-              target="#transcriber"/>
-            <rs type="soft.name" ref="#R45">Transcriber</rs> was much more straightforward, as the
+              target="softw:praat"/>
+            <rs type="cit:soft.name" ref="#R42">PRAAT</rs> and <ptr type="software" xml:id="R43"
+              target="softw:elan"/><rs type="cit:soft.name" ref="#R43">ELAN</rs>, the integration of tools
+            such as <ptr type="software" xml:id="R44" target="softw:clan"/>
+            <rs type="cit:soft.name" ref="#R44">CLAN</rs> or <ptr type="software" xml:id="R45"
+              target="softw:transcriber"/>
+            <rs type="cit:soft.name" ref="#R45">Transcriber</rs> was much more straightforward, as the
             organization of the files is less varied and more <soCalled>classical</soCalled>.</p>
           <div xml:id="microstructures">
             <head>Choice of the Microstructure Representation</head>
             <p>Processing of the microstructure, with the exception of information already available
               in the tools themselves (for example silence in <ptr type="software" xml:id="R46"
-                target="#transcriber"/>
-              <rs type="soft.name" ref="#R46">Transcriber</rs>), is not done during the conversion
+                target="softw:transcriber"/>
+              <rs type="cit:soft.name" ref="#R46">Transcriber</rs>), is not done during the conversion
               to TEI. The division into words or other elements such as morphemes or phonemes is not
               systematically done in any of the tools used by researchers in CORLI. When it exists,
               it is not included in the main transcription line but most often in dependent lines,
               as it represents an annotation with its own rules and guidelines. Division into words
               or other elements is part of the linguistic analysis rather than a simple storage
               operation.</p>
-            <p><ptr type="software" xml:id="R47" target="#teicorpo"/>
-              <rs type="soft.name" ref="#R47">TEICORPO</rs> therefore preserves as long-term storage
+            <p><ptr type="software" xml:id="R47" target="softw:teicorpo"/>
+              <rs type="cit:soft.name" ref="#R47">TEICORPO</rs> therefore preserves as long-term storage
               data both the original information that was created in the original software—the full
               unprocessed transcription—and the other linguistically processed transcriptions and
-              annotations. For <ptr type="software" xml:id="R48" target="#teicorpo"/>
-              <rs type="soft.name" ref="#R48">TEICORPO</rs>, microstructure processing, such as
+              annotations. For <ptr type="software" xml:id="R48" target="softw:teicorpo"/>
+              <rs type="cit:soft.name" ref="#R48">TEICORPO</rs>, microstructure processing, such as
               division into words, or text standardization when necessary, belongs to the linguistic
               analysis of the corpora. Hence, the TEI data file can be used both for data
               exploration and for scientific purposes. For example, when a researcher needs to parse
@@ -406,10 +406,10 @@
         </div>
       </div>
       <div xml:id="teicorpoproject">
-        <head>The <ptr type="software" xml:id="R49" target="#teicorpo"/>
-          <rs type="soft.name" ref="#R49">TEICORPO</rs> Project</head>
-        <p>The <ptr type="software" xml:id="R50" target="#teicorpo"/>
-          <rs type="soft.name" ref="#R50">TEICORPO</rs> project contains two different sets of
+        <head>The <ptr type="software" xml:id="R49" target="softw:teicorpo"/>
+          <rs type="cit:soft.name" ref="#R49">TEICORPO</rs> Project</head>
+        <p>The <ptr type="software" xml:id="R50" target="softw:teicorpo"/>
+          <rs type="cit:soft.name" ref="#R50">TEICORPO</rs> project contains two different sets of
           tools. One set focuses on conversion between various software packages used for spoken
           language coding and TEI. The other set focuses on using the TEI format for linguistic
           analyses (textometric or grammatical analyses).</p>
@@ -424,25 +424,25 @@
           <p>Some common practices have been identified in our community but other uses of the same
             software are of course possible:</p>
           <list>
-            <item><ptr type="software" xml:id="R51" target="#transcriber"/>
-              <rs type="soft.name" ref="#R51">Transcriber</rs> is widely used in
+            <item><ptr type="software" xml:id="R51" target="softw:transcriber"/>
+              <rs type="cit:soft.name" ref="#R51">Transcriber</rs> is widely used in
               sociolinguistics;</item>
-            <item><ptr type="software" xml:id="R52" target="#clan"/>
-              <rs type="soft.name" ref="#R52">CLAN</rs> is widely used in language acquisition and
+            <item><ptr type="software" xml:id="R52" target="softw:clan"/>
+              <rs type="cit:soft.name" ref="#R52">CLAN</rs> is widely used in language acquisition and
               especially in the Talkbank project;</item>
           </list>
           <list>
             <item>Praat is more specialized for phonetic or phonological annotations;</item>
-            <item><ptr type="software" xml:id="R53" target="#elan"/><rs type="soft.name" ref="#R53"
+            <item><ptr type="software" xml:id="R53" target="softw:elan"/><rs type="cit:soft.name" ref="#R53"
                 >ELAN</rs> is recommended for annotating video and particularly multimodality (for
               example, components such as gazes, gestures, and movements), and is often used for
               rare languages to describe the organization of the segments.</item>
           </list>
           <p>It should be pointed out here that whereas Transcriber and <ptr type="software"
-              xml:id="R193" target="#clan"/><rs type="soft.name" ref="#R193">CLAN</rs> files nearly
+              xml:id="R193" target="softw:clan"/><rs type="cit:soft.name" ref="#R193">CLAN</rs> files nearly
             always contain <soCalled>classical</soCalled> orthographic transcriptions, this is not
-            the case for Praat and <ptr type="software" xml:id="R54" target="#elan"/><rs
-              type="soft.name" ref="#R54">ELAN</rs> files. As our goal is to provide a generic
+            the case for Praat and <ptr type="software" xml:id="R54" target="softw:elan"/><rs
+              type="cit:soft.name" ref="#R54">ELAN</rs> files. As our goal is to provide a generic
             solution for long-term conservation and use for any type of project, conversion of all
             types of files produced by the four tools cited above will be possible. It is up to the
             user to determine which part of a corpus can be used with a classical approach, which
@@ -450,12 +450,12 @@
           <p>The list of tools reflects the uses and practices in the CORLI network, and is very
             similar to the list suggested by Schmidt (<ref target="#schmidt2011" type="bibl"
               >2011</ref>) with the exception of <ptr type="software" xml:id="R55"
-              target="#exmaralda"/><rs type="soft.name" ref="#R55">EXMARaLDA</rs> and <ptr
-              type="software" xml:id="R56" target="#folker"/>
-            <rs type="soft.name" ref="#R56">FOLKER</rs>. These two tools already have built-in
+              target="softw:exmaralda"/><rs type="cit:soft.name" ref="#R55">EXMARaLDA</rs> and <ptr
+              type="software" xml:id="R56" target="softw:folker"/>
+            <rs type="cit:soft.name" ref="#R56">FOLKER</rs>. These two tools already have built-in
             conversion features, so adding them to the <ptr type="software" xml:id="R57"
-              target="#teicorpo"/>
-            <rs type="soft.name" ref="#R57">TEICORPO</rs> project would be easy at a later date.</p>
+              target="softw:teicorpo"/>
+            <rs type="cit:soft.name" ref="#R57">TEICORPO</rs> project would be easy at a later date.</p>
           <p>Alignment applications deal with two main types of data presentation and organization.
             The presentation of the data has direct consequences for how the data are exploited, and
             therefore on the design of the tools that are used.</p>
@@ -477,46 +477,46 @@
               the production within the same tier sorted by timeline.</item>
           </list>
           <p>No tool offers both types of presentation. <ptr type="software" xml:id="R58"
-              target="#elan"/><rs type="soft.name" ref="#R58">ELAN</rs> offers some alternatives to
+              target="softw:elan"/><rs type="cit:soft.name" ref="#R58">ELAN</rs> offers some alternatives to
             editing or displaying data with the partition format, but none of the existing tools
             offer full-fledged list format editing. It is possible to represent the two structures
             within a similar model, as demonstrated by Bird and Liberman (<ref type="bibl"
               target="#bird2001">2001</ref>). However, this is not the case for the four tools
             listed above: each of them represents the data in a unique underlying data structure.
-            Transcriber and <ptr type="software" xml:id="R194" target="#clan"/><rs type="soft.name"
+            Transcriber and <ptr type="software" xml:id="R194" target="softw:clan"/><rs type="cit:soft.name"
               ref="#R194">CLAN</rs> are organized in list format; <ptr type="software" xml:id="R195"
-              target="#praat"/><rs type="soft.name" ref="#R195">Praat</rs> and <ptr type="software"
-              xml:id="R59" target="#elan"/><rs type="soft.name" ref="#R59">ELAN</rs> have a
+              target="softw:praat"/><rs type="cit:soft.name" ref="#R195">Praat</rs> and <ptr type="software"
+              xml:id="R59" target="softw:elan"/><rs type="cit:soft.name" ref="#R59">ELAN</rs> have a
             partition format.</p>
           <p>Each presentation format has its own pros and cons. Because of the possibilities
             offered by the presentation formats, and because the same software, even within the same
             presentation models, rarely provides a solution for all the needs of all users,
             researchers often have to use two or more pieces of software.</p>
           <p>The use of multiple tools is quite common. For example, <ptr type="software"
-              xml:id="R60" target="#praat"/>
-            <rs type="soft.name" ref="#R60">Praat</rs> and <ptr type="software" xml:id="R61"
-              target="#transcriber"/>
-            <rs type="soft.name" ref="#R61">Transcriber</rs> cannot be used when working on video
+              xml:id="R60" target="softw:praat"/>
+            <rs type="cit:soft.name" ref="#R60">Praat</rs> and <ptr type="software" xml:id="R61"
+              target="softw:transcriber"/>
+            <rs type="cit:soft.name" ref="#R61">Transcriber</rs> cannot be used when working on video
             recordings because these programs are limited to audio formats. But if researchers need
             to conduct spectral analysis for some purpose, they will have to use the <ptr
-              type="software" xml:id="R62" target="#praat"/>
-            <rs type="soft.name" ref="#R62">Praat</rs> software and convert not only the
+              type="software" xml:id="R62" target="softw:praat"/>
+            <rs type="cit:soft.name" ref="#R62">Praat</rs> software and convert not only the
             transcription, but also the media. In the field of language acquisition, where the <ptr
-              type="software" xml:id="R63" target="#clan"/>
-            <rs type="soft.name" ref="#R63">CLAN</rs> software is generally used to describe both
+              type="software" xml:id="R63" target="softw:clan"/>
+            <rs type="cit:soft.name" ref="#R63">CLAN</rs> software is generally used to describe both
             the child productions and the adult productions, when researchers are interested in
-            gestures, they use the <ptr type="software" xml:id="R64" target="#elan"/><rs
-              type="soft.name" ref="#R64">ELAN</rs> software, importing the <ptr type="software"
-              xml:id="R196" target="#clan"/><rs type="soft.name" ref="#R196">CLAN</rs> file to add
-            gesture tiers, as <ptr type="software" xml:id="R65" target="#elan"/><rs type="soft.name"
+            gestures, they use the <ptr type="software" xml:id="R64" target="softw:elan"/><rs
+              type="cit:soft.name" ref="#R64">ELAN</rs> software, importing the <ptr type="software"
+              xml:id="R196" target="softw:clan"/><rs type="cit:soft.name" ref="#R196">CLAN</rs> file to add
+            gesture tiers, as <ptr type="software" xml:id="R65" target="softw:elan"/><rs type="cit:soft.name"
               ref="#R65">ELAN</rs> is more suitable for the fine-grained analysis of visual data.
             Another common practice consists in first doing a rapid transcription using only
-            orthographic annotations in <ptr type="software" xml:id="R197" target="#transcriber"
-              /><rs type="soft.name" ref="#R197">Transcriber</rs> and then in a second stage
+            orthographic annotations in <ptr type="software" xml:id="R197" target="softw:transcriber"
+              /><rs type="cit:soft.name" ref="#R197">Transcriber</rs> and then in a second stage
             annotating some more interesting excerpts in greater detail including new information.
             In this case researchers will import the first transcription file into other tools such
-            as <ptr type="software" xml:id="R198" target="#praat"/><rs type="soft.name" ref="#R198"
-              >Praat</rs> or <ptr type="software" xml:id="R66" target="#elan"/><rs type="soft.name"
+            as <ptr type="software" xml:id="R198" target="softw:praat"/><rs type="cit:soft.name" ref="#R198"
+              >Praat</rs> or <ptr type="software" xml:id="R66" target="softw:elan"/><rs type="cit:soft.name"
               ref="#R66">ELAN</rs> and annotate them partially. It is therefore necessary to import
             or export files in different formats if researchers need to use different tools for
             different parts of their work.</p>
@@ -533,8 +533,8 @@
             CORLI consortium and in collaboration with the ORTOLANG infrastructure to design a
             common tool that could be used by the whole linguistic community. The goal was to make
             open-source software with proper maintenance freely available on <ptr type="software"
-              xml:id="R67" target="#teicorpo"/>
-            <rs type="soft.url" ref="#R67"><ptr target="http://ct3.ortolang.fr/teicorpo/"
+              xml:id="R67" target="softw:teicorpo"/>
+            <rs type="cit:soft.url" ref="#R67"><ptr target="http://ct3.ortolang.fr/teicorpo/"
             /></rs>.</p>
         </div>
         <div xml:id="conversion">
@@ -551,33 +551,33 @@
           <div xml:id="basicstruct">
             <head>Basic Structures</head>
             <p>Converting the metadata is straightforward, as the four tools (<ptr type="software"
-                xml:id="R68" target="#clan"/>
-              <rs type="soft.name" ref="#R68">CLAN</rs>, <ptr type="software" xml:id="R69"
-                target="#elan"/><rs type="soft.name" ref="#R69">ELAN</rs>, <ptr type="software"
-                xml:id="R70" target="#praat"/>
-              <rs type="soft.name" ref="#R70">Praat</rs>, and <ptr type="software" xml:id="R71"
-                target="#transcriber"/>
-              <rs type="soft.name" ref="#R71">Transcriber</rs>) do not enable a large amount of
+                xml:id="R68" target="softw:clan"/>
+              <rs type="cit:soft.name" ref="#R68">CLAN</rs>, <ptr type="software" xml:id="R69"
+                target="softw:elan"/><rs type="cit:soft.name" ref="#R69">ELAN</rs>, <ptr type="software"
+                xml:id="R70" target="softw:praat"/>
+              <rs type="cit:soft.name" ref="#R70">Praat</rs>, and <ptr type="software" xml:id="R71"
+                target="softw:transcriber"/>
+              <rs type="cit:soft.name" ref="#R71">Transcriber</rs>) do not enable a large amount of
               metadata to be edited. Most of the metadata available concerns the content of the
               sequence; some user metadata is also available, especially in <ptr type="software"
-                xml:id="R72" target="#clan"/>
-              <rs type="soft.name" ref="#R72">CLAN</rs> . The insertion of metadata follows the
+                xml:id="R72" target="softw:clan"/>
+              <rs type="cit:soft.name" ref="#R72">CLAN</rs> . The insertion of metadata follows the
               indications of the ISO/TEI 24624:2016 standard (<ref type="bibl" target="#iso2016">ISO
                 2016</ref>).</p>
             <p>Moreover, some tools, such as <ptr type="software" xml:id="R199"
-                target="#transcriber"/>
-              <rs type="soft.name" ref="#R199">Transcriber</rs>, include information about silences,
+                target="softw:transcriber"/>
+              <rs type="cit:soft.name" ref="#R199">Transcriber</rs>, include information about silences,
               pauses, and events in their XML format. This information is also processed within <ptr
-                type="software" xml:id="R73" target="#teicorpo"/>
-              <rs type="soft.name" ref="#R73">TEICORPO</rs>, once again following the
+                type="software" xml:id="R73" target="softw:teicorpo"/>
+              <rs type="cit:soft.name" ref="#R73">TEICORPO</rs>, once again following the
               recommendations of the ISO/TEI standard.</p>
             <p>Conversion of the main data, the transcription and the annotations, cannot always be
               done solely on the basis of the description provided in the ISO/TEI guidelines. These
               guidelines do, however, suffice to fully describe the content of the <ptr
-                type="software" xml:id="R74" target="#clan"/>
-              <rs type="soft.name" ref="#R74">CLAN</rs> and <ptr type="software" xml:id="R75"
-                target="#transcriber"/>
-              <rs type="soft.name" ref="#R75">Transcriber</rs> software. We took advantage of the
+                type="software" xml:id="R74" target="softw:clan"/>
+              <rs type="cit:soft.name" ref="#R74">CLAN</rs> and <ptr type="software" xml:id="R75"
+                target="softw:transcriber"/>
+              <rs type="cit:soft.name" ref="#R75">Transcriber</rs> software. We took advantage of the
               new <gi>annotationBlock</gi> element, which codes several annotation levels, a
               function that is commonly required in spoken-language annotations.</p>
             <p>The <gi>annotationBlock</gi> contains two major elements: the <gi>u</gi> element,
@@ -587,8 +587,8 @@
               elements as required. All <gi>span</gi> elements have the same type of content, as
               indicated in the parent <gi>spanGrp</gi> element. <ptr target="#example_code_1"
                 type="crossref"/> and <ptr target="#example_code_2" type="crossref"/> provide an
-              example of conversion from a <ptr type="software" xml:id="R76" target="#clan"/>
-              <rs type="soft.name" ref="#R76">CLAN</rs> file to illustrate how a production
+              example of conversion from a <ptr type="software" xml:id="R76" target="softw:clan"/>
+              <rs type="cit:soft.name" ref="#R76">CLAN</rs> file to illustrate how a production
               annotated on different levels (orthography, morphosyntax, dependencies) is represented
               in TEI with a first main utterance element <gi>u</gi> to which two <gi>spanGrp</gi>s
               are linked, one for each annotation level, in our case one <gi>spanGrp</gi> for
@@ -606,14 +606,14 @@
                 <val>mor</val> and <val>gra</val> attribute values represent grammatical knowledge.
               Using the content of these elements to produce advanced grammatical representation in
               more elaborate TEI and XML formats is of course possible, but would be a tailored task
-              which is beyond the scope of the <ptr type="software" xml:id="R77" target="#teicorpo"/>
-              <rs type="soft.name" ref="#R77">TEICORPO</rs> project.</p>
+              which is beyond the scope of the <ptr type="software" xml:id="R77" target="softw:teicorpo"/>
+              <rs type="cit:soft.name" ref="#R77">TEICORPO</rs> project.</p>
             <figure xml:id="example_code_1">
               <eg xml:space="preserve">*MOT: look at the tree ! 2263675_2265197
 %mor: v|look prep|at det|the n|tree !
 %gra: 1|0|ROOT 2|1|JCT 3|4|DET 4|2|POBJ 5|1|PUNCT</eg>
-              <head type="legend"><ptr type="software" xml:id="R200" target="#clan"/>
-                <rs type="soft.name" ref="#R200">CLAN</rs> representation of data (first three
+              <head type="legend"><ptr type="software" xml:id="R200" target="softw:clan"/>
+                <rs type="cit:soft.name" ref="#R200">CLAN</rs> representation of data (first three
                 lines)</head>
             </figure>
 
@@ -646,22 +646,22 @@
             <p>Although the presentation described above can represent the data of many corpora and
               tools, a single-level annotation structure within the <gi>spanGrp</gi> elements is
               insufficient to represent the complex organization that can be constructed with the
-                <ptr type="software" xml:id="R78" target="#elan"/><rs type="soft.name" ref="#R78"
-                >ELAN</rs> and <ptr type="software" xml:id="R79" target="#praat"/>
-              <rs type="soft.name" ref="#R79">Praat</rs> tools. <ptr type="software" xml:id="R80"
-                target="#elan"/><rs type="soft.name" ref="#R80">ELAN</rs> is a tool used by many
+                <ptr type="software" xml:id="R78" target="softw:elan"/><rs type="cit:soft.name" ref="#R78"
+                >ELAN</rs> and <ptr type="software" xml:id="R79" target="softw:praat"/>
+              <rs type="cit:soft.name" ref="#R79">Praat</rs> tools. <ptr type="software" xml:id="R80"
+                target="softw:elan"/><rs type="cit:soft.name" ref="#R80">ELAN</rs> is a tool used by many
               researchers to describe data of greater complexity than the data presented in the
               ISO/TEI guidelines. As the goal of the <ptr type="software" xml:id="R81"
-                target="#teicorpo"/>
-              <rs type="soft.name" ref="#R81">TEICORPO</rs> project was to convert all types of
+                target="softw:teicorpo"/>
+              <rs type="cit:soft.name" ref="#R81">TEICORPO</rs> project was to convert all types of
               structure used in the spoken language community, including <ptr type="software"
-                xml:id="R82" target="#elan"/><rs type="soft.name" ref="#R82">ELAN</rs> and <ptr
-                type="software" xml:id="R83" target="#praat"/>
-              <rs type="soft.name" ref="#R83">Praat</rs>, it was necessary to extend the description
+                xml:id="R82" target="softw:elan"/><rs type="cit:soft.name" ref="#R82">ELAN</rs> and <ptr
+                type="software" xml:id="R83" target="softw:praat"/>
+              <rs type="cit:soft.name" ref="#R83">Praat</rs>, it was necessary to extend the description
               method presented in <ptr target="#basicstruct" type="crossref"/>.</p>
-            <p>In <ptr type="software" xml:id="R84" target="#elan"/><rs type="soft.name" ref="#R84"
-                >ELAN</rs> and <ptr type="software" xml:id="R85" target="#praat"/>
-              <rs type="soft.name" ref="#R85">Praat</rs>, the multitiered annotations can be
+            <p>In <ptr type="software" xml:id="R84" target="softw:elan"/><rs type="cit:soft.name" ref="#R84"
+                >ELAN</rs> and <ptr type="software" xml:id="R85" target="softw:praat"/>
+              <rs type="cit:soft.name" ref="#R85">Praat</rs>, the multitiered annotations can be
               organized in a structured manner. These tools take advantage of the partition
               presentation of the data, so that the relationship between a parent tier and a child
               tier can be precisely organized. There are two main types of organization: symbolic
@@ -679,8 +679,8 @@
               links.</p>
             <figure xml:id="fig1">
               <graphic url="media/image1.PNG" width="620px" height="980px"/>
-              <head type="legend"><ptr type="software" xml:id="R86" target="#elan"/><rs
-                  type="soft.name" ref="#R86">ELAN</rs> annotation with symbolic structures</head>
+              <head type="legend"><ptr type="software" xml:id="R86" target="softw:elan"/><rs
+                  type="cit:soft.name" ref="#R86">ELAN</rs> annotation with symbolic structures</head>
             </figure>
 
             <p>In temporal division, the association between the main tier and the dependent tiers
@@ -688,8 +688,8 @@
               is included in the parent if the starting and end points are within the time limits of
               the starting and end points of the parent tier. <ptr target="#fig2" type="crossref"/>
               provides an example of such an organization created using <ptr type="software"
-                xml:id="R201" target="#praat"/>
-              <rs type="soft.name" ref="#R201">Praat</rs>. In this example, the tier at the top of
+                xml:id="R201" target="softw:praat"/>
+              <rs type="cit:soft.name" ref="#R201">Praat</rs>. In this example, the tier at the top of
               the representation contains phonemes that are included in the second tier, which
               contains syllables (for example, <term>S</term> and <term>a</term> are included in
                 <term>Sa</term>). Then the syllables are included in turn in the word-level tier
@@ -715,31 +715,31 @@
               this type of data is produced by members of the CORLI consortium, it needs to be
               preserved. Encoding the data in TEI using a standard tool makes the process
               reproducible, which is one of the goals of <ptr type="software" xml:id="R87"
-                target="#teicorpo"/>
-              <rs type="soft.name" ref="#R87">TEICORPO</rs>.</p>
+                target="softw:teicorpo"/>
+              <rs type="cit:soft.name" ref="#R87">TEICORPO</rs>.</p>
             <p>Although this type of data is not described in the ISO/TEI guidelines, it is in fact
               possible to store it in TEI format using current TEI features. TEI provides a general
               mechanism for storing hierarchically structured data by using the <gi>spanGrp</gi> and
                 <gi>span</gi> mechanism. Moreover, the <gi>span</gi> and <gi>spanGrp</gi> tags have
               attributes that can point to other elements or to timelines. Using this coding schema,
               it is therefore possible to store any type of structure, symbolic and/or temporal,
-              that can be generated with <ptr type="software" xml:id="R88" target="#elan"/><rs
-                type="soft.name" ref="#R88">ELAN</rs> or <ptr type="software" xml:id="R89"
-                target="#praat"/>
-              <rs type="soft.name" ref="#R89">PRAAT</rs>, as described above.</p>
+              that can be generated with <ptr type="software" xml:id="R88" target="softw:elan"/><rs
+                type="cit:soft.name" ref="#R88">ELAN</rs> or <ptr type="software" xml:id="R89"
+                target="softw:praat"/>
+              <rs type="cit:soft.name" ref="#R89">PRAAT</rs>, as described above.</p>
             <p>To do this, each element which is in a symbolic or temporal relation is represented
               by a <gi>spanGrp</gi> element of the TEI. The <gi>spanGrp</gi> element contains as
               many <gi>span</gi> elements as necessary to store all the elements present in the <ptr
-                type="software" xml:id="R90" target="#elan"/><rs type="soft.name" ref="#R90"
-                >ELAN</rs> or <ptr type="software" xml:id="R91" target="#praat"/>
-              <rs type="soft.name" ref="#R91">PRAAT</rs> representation. The parent element of a
+                type="software" xml:id="R90" target="softw:elan"/><rs type="cit:soft.name" ref="#R90"
+                >ELAN</rs> or <ptr type="software" xml:id="R91" target="softw:praat"/>
+              <rs type="cit:soft.name" ref="#R91">PRAAT</rs> representation. The parent element of a
                 <gi>spanGrp</gi> is the main <gi>annotationBlock</gi> element when the division in
-                <ptr type="software" xml:id="R92" target="#elan"/><rs type="soft.name" ref="#R92"
+                <ptr type="software" xml:id="R92" target="softw:elan"/><rs type="cit:soft.name" ref="#R92"
                 >ELAN</rs> or PRAAT is the first division of a main element. The parent element is
               another <gi>span</gi> element when the division in <ptr type="software" xml:id="R93"
-                target="#elan"/><rs type="soft.name" ref="#R93">ELAN</rs> or <ptr type="software"
-                xml:id="R94" target="#praat"/>
-              <rs type="soft.name" ref="#R94">PRAAT</rs> is a subdivision of another element which
+                target="softw:elan"/><rs type="cit:soft.name" ref="#R93">ELAN</rs> or <ptr type="software"
+                xml:id="R94" target="softw:praat"/>
+              <rs type="cit:soft.name" ref="#R94">PRAAT</rs> is a subdivision of another element which
               is not a main element. This XML structure is complemented by explicit information as
               allowed in TEI. The <gi>span</gi> elements are linked to the element they depend on,
               either with a symbolic link using the <att>target</att> attribute of the <gi>span</gi>
@@ -748,7 +748,7 @@
             <p>Two examples of how this is displayed in a TEI file are given below. The first
               example (see <ptr target="#fig3" type="crossref"/> and <ptr target="#example_code_3"
                 type="crossref"/>) corresponds to the <ptr type="software" xml:id="R95"
-                target="#elan"/><rs type="soft.name" ref="#R95">ELAN</rs> example above (see <ptr
+                target="softw:elan"/><rs type="cit:soft.name" ref="#R95">ELAN</rs> example above (see <ptr
                 target="#advancedstructures" type="crossref"/>, <ptr target="#fig1" type="crossref"
               />). The TEI encoding represents the words of the sentence from left to right (from
                 <term>gahwat</term> to <term>endi</term> in our example). The detail of the
@@ -760,8 +760,8 @@
               and <term>-DET</term>.</p>
             <figure xml:id="fig3">
               <graphic url="media/image1.PNG" width="620px" height="980px"/>
-              <head type="legend"><ptr type="software" xml:id="R96" target="#elan"/><rs
-                  type="soft.name" ref="#R96">ELAN</rs> example of a symbolic division</head>
+              <head type="legend"><ptr type="software" xml:id="R96" target="softw:elan"/><rs
+                  type="cit:soft.name" ref="#R96">ELAN</rs> example of a symbolic division</head>
             </figure>
             <!--      EXACTELY THE SAME AS FIG1: why repeat?-->
             <figure xml:id="example_code_3">
@@ -806,8 +806,8 @@
 
             <p>The second example is structured using time references. This example (see <ptr
                 target="#fig4" type="crossref"/> and <ptr target="#example_code_4" type="crossref"
-              />) corresponds to the <ptr type="software" xml:id="R97" target="#praat"/>
-              <rs type="soft.name" ref="#R97">Praat</rs> example above (see <ptr
+              />) corresponds to the <ptr type="software" xml:id="R97" target="softw:praat"/>
+              <rs type="cit:soft.name" ref="#R97">Praat</rs> example above (see <ptr
                 target="#advancedstructures" type="crossref"/>, <ptr target="#fig2" type="crossref"
               />). In this case, each part of the transcription is represented according to the
               timeline, but there is also a hierarchy which is represented by the <gi>spanGrp</gi>
@@ -820,8 +820,8 @@
               s37).</p>
             <figure xml:id="fig4">
               <graphic url="media/image2.PNG" width="620px" height="980px"/>
-              <head type="legend"><ptr type="software" xml:id="R98" target="#elan"/><rs
-                  type="soft.name" ref="#R98">ELAN</rs> example of a temporal division</head>
+              <head type="legend"><ptr type="software" xml:id="R98" target="softw:elan"/><rs
+                  type="cit:soft.name" ref="#R98">ELAN</rs> example of a temporal division</head>
             </figure>
             <figure xml:id="example_code_4">
               <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -849,19 +849,19 @@
             </figure>
             <p>The <gi>spanGrp</gi> and <gi>span</gi> offer a generic representation of data coming
               from relatively unconstrained representations produced by partition software. The
-              names of the tiers used in the <ptr type="software" xml:id="R99" target="#elan"/><rs
-                type="soft.name" ref="#R99">ELAN</rs> and <ptr type="software" xml:id="R100"
-                target="#praat"/>
-              <rs type="soft.name" ref="#R100">Praat</rs> tools are given in the content of the
+              names of the tiers used in the <ptr type="software" xml:id="R99" target="softw:elan"/><rs
+                type="cit:soft.name" ref="#R99">ELAN</rs> and <ptr type="software" xml:id="R100"
+                target="softw:praat"/>
+              <rs type="cit:soft.name" ref="#R100">Praat</rs> tools are given in the content of the
                 <att>type</att> attribute. These names are not used to provide structural
               information, the structure being represented only by the <gi>spanGrp</gi> and
                 <gi>span</gi> hierarchy. However, the organization into <gi>spanGrp</gi> and
                 <gi>span</gi> is not always sufficient to represent all the details of the tier
               organization of each software feature. This is the case for some of the <ptr
-                type="software" xml:id="R101" target="#elan"/><rs type="soft.name" ref="#R101"
+                type="software" xml:id="R101" target="softw:elan"/><rs type="cit:soft.name" ref="#R101"
                 >ELAN</rs> structures, which can specify the nature of <gi>span</gi> elements
               further than in the TEI feature. For example, the <term>timediv</term>
-              <ptr type="software" xml:id="R102" target="#elan"/><rs type="soft.name" ref="#R102"
+              <ptr type="software" xml:id="R102" target="softw:elan"/><rs type="cit:soft.name" ref="#R102"
                 >ELAN</rs> property specifies that only contiguous temporal division is allowed,
               whereas the <term>incl</term> property allows non-contiguous elements. It was
               therefore necessary to include the type of organization in the header of the TEI file,
@@ -873,18 +873,18 @@
         </div>
         <div xml:id="exporting">
           <head>Exporting to Research Tools</head>
-          <p>In the <ptr type="software" xml:id="R103" target="#teicorpo"/>
-            <rs type="soft.name" ref="#R103">TEICORPO</rs> approach, no modification is made to the
+          <p>In the <ptr type="software" xml:id="R103" target="softw:teicorpo"/>
+            <rs type="cit:soft.name" ref="#R103">TEICORPO</rs> approach, no modification is made to the
             original format and conversion remains as lossless as possible. This allows for all
             types of corpora to be stored for long-term preservation purposes. It also allows the
             corpora to be used with other editing tools, some of which are suited to specific
-            processing: for example, <ptr type="software" xml:id="R104" target="#praat"/>
-            <rs type="soft.name" ref="#R104">Praat</rs> for phonetics/phonology; <ptr
-              type="software" xml:id="R105" target="#transcriber"/>
-            <rs type="soft.name" ref="#R105">Transcriber</rs>/<ptr type="software" xml:id="R106"
-              target="#clan"/>
-            <rs type="soft.name" ref="#R106">CLAN</rs> for raw transcription; and <ptr
-              type="software" xml:id="R107" target="#elan"/><rs type="soft.name" ref="#R107"
+            processing: for example, <ptr type="software" xml:id="R104" target="softw:praat"/>
+            <rs type="cit:soft.name" ref="#R104">Praat</rs> for phonetics/phonology; <ptr
+              type="software" xml:id="R105" target="softw:transcriber"/>
+            <rs type="cit:soft.name" ref="#R105">Transcriber</rs>/<ptr type="software" xml:id="R106"
+              target="softw:clan"/>
+            <rs type="cit:soft.name" ref="#R106">CLAN</rs> for raw transcription; and <ptr
+              type="software" xml:id="R107" target="softw:elan"/><rs type="cit:soft.name" ref="#R107"
               >ELAN</rs> for gesture and visual coding.</p>
           <p>However, a large proportion of scientific research and applications done using corpora
             requires further processing of the data. For example, although querying or using raw
@@ -896,8 +896,8 @@
             structure</term>. This microstructure is integrated in Schmidt’s approach, in which the
             TEI file can contain standardized information about words, specific spoken language
             information, and sometimes even POS information.</p>
-          <p>This approach was not adopted in <ptr type="software" xml:id="R108" target="#teicorpo"/>
-            <rs type="soft.name" ref="#R108">TEICORPO</rs> for several reasons. First, we had to
+          <p>This approach was not adopted in <ptr type="software" xml:id="R108" target="softw:teicorpo"/>
+            <rs type="cit:soft.name" ref="#R108">TEICORPO</rs> for several reasons. First, we had to
             deal with a large variety of coding approaches, which makes it difficult to conduct work
             similar to that done in CHILDES (<ref type="bibl" target="#macwhinney200">MacWhinney
               2000</ref>; see <ptr target="https://childes.talkbank.org/"/>). Second, there was no
@@ -912,8 +912,8 @@
               <gi>span</gi> elements without modifying the original <gi>u</gi> element information.
             Second, we decided to design another category of tools for processing or making it
             possible to process the spoken language corpus, and to use powerful tools in corpus
-            analysis. This part of the <ptr type="software" xml:id="R109" target="#teicorpo"/>
-            <rs type="soft.name" ref="#R109">TEICORPO</rs> library is described in the next
+            analysis. This part of the <ptr type="software" xml:id="R109" target="softw:teicorpo"/>
+            <rs type="cit:soft.name" ref="#R109">TEICORPO</rs> library is described in the next
             section.</p>
         </div>
       </div>
@@ -938,22 +938,22 @@
           <head>Basic Import and Export Functions</head>
           <p>The command-line interface (see <ptr target="http://ct3.ortolang.fr/teicorpo/"/>) can
             perform conversions between TEI and the formats used by the following programs: <ptr
-              type="software" xml:id="R110" target="#clan"/>
-            <rs type="soft.name" ref="#R110">CLAN</rs>, <ptr type="software" xml:id="R111"
-              target="#elan"/><rs type="soft.name" ref="#R111">ELAN</rs>, <ptr type="software"
-              xml:id="R112" target="#praat"/>
-            <rs type="soft.name" ref="#R112">Praat</rs>, and <ptr type="software" xml:id="R113"
-              target="#transcriber"/>
-            <rs type="soft.name" ref="#R113">Transcriber</rs>. The conversions can be performed on
+              type="software" xml:id="R110" target="softw:clan"/>
+            <rs type="cit:soft.name" ref="#R110">CLAN</rs>, <ptr type="software" xml:id="R111"
+              target="softw:elan"/><rs type="cit:soft.name" ref="#R111">ELAN</rs>, <ptr type="software"
+              xml:id="R112" target="softw:praat"/>
+            <rs type="cit:soft.name" ref="#R112">Praat</rs>, and <ptr type="software" xml:id="R113"
+              target="softw:transcriber"/>
+            <rs type="cit:soft.name" ref="#R113">Transcriber</rs>. The conversions can be performed on
             single files or on whole directories or on a file tree. The command-line interface is
             suited to automatic processing in offline environments. The online interface (see <ptr
-              type="software" xml:id="R114" target="#teiconvert"/>
-            <rs type="soft.url" ref="#R114"><ptr target="http://ct3.ortolang.fr/teiconvert/"/></rs>)
+              type="software" xml:id="R114" target="softw:teiconvert"/>
+            <rs type="cit:soft.url" ref="#R114"><ptr target="http://ct3.ortolang.fr/teiconvert/"/></rs>)
             can convert one or several files selected by the user, but not whole directories.
             Results appear in the user’s download folder.</p>
           <p>In addition to the conversion to and from the alignment software, the online version of
-              <ptr type="software" xml:id="R115" target="#teicorpo"/>
-            <rs type="soft.name" ref="#R115">TEICORPO</rs> offers import and export in common
+              <ptr type="software" xml:id="R115" target="softw:teicorpo"/>
+            <rs type="cit:soft.name" ref="#R115">TEICORPO</rs> offers import and export in common
             spreadsheet formats (.xlsx and .csv) and word processing formats (.docx and .txt).
             Importing data is useful to create new data, and exporting is used to make reports or
             examples for a publication and for end users not familiar with transcription tasks or
@@ -1006,33 +1006,33 @@
               transcription.</item>
           </list>
           <p>Other features are available in both types of interface (command line and web service).
-              <ptr type="software" xml:id="R116" target="#teicorpo"/>
-            <rs type="soft.name" ref="#R116">TEICORPO</rs> allows the user to exclude some tiers,
+              <ptr type="software" xml:id="R116" target="softw:teicorpo"/>
+            <rs type="cit:soft.name" ref="#R116">TEICORPO</rs> allows the user to exclude some tiers,
             for example adult tiers in acquisition research where the user wants to study child
             production only, or comment tiers which are not necessary for some studies.</p>
         </div>
         <div xml:id="exportspec">
           <head>Export to Specialized Software</head>
           <p>Another kind of export concerns textometric software. <ptr type="software"
-              xml:id="R117" target="#teiconvert"/>
-            <rs type="soft.name" ref="#R117">TEICONVERT</rs> makes spoken language data available
-            for <ptr type="software" xml:id="R118" target="#txm"/><rs type="soft.name" ref="#R118"
-              >TXM</rs> (<rs type="soft.bib.ref" ref="#R118"><ref type="bibl" target="#heiden2010"
-                >Heiden 2010</ref></rs>; see <rs type="soft.url" ref="#R118"><ptr
+              xml:id="R117" target="softw:teiconvert"/>
+            <rs type="cit:soft.name" ref="#R117">TEICONVERT</rs> makes spoken language data available
+            for <ptr type="software" xml:id="R118" target="softw:txm"/><rs type="cit:soft.name" ref="#R118"
+              >TXM</rs> (<rs type="cit:soft.bib.ref" ref="#R118"><ref type="bibl" target="#heiden2010"
+                >Heiden 2010</ref></rs>; see <rs type="cit:soft.url" ref="#R118"><ptr
                 target="http://textometrie.ens-lyon.fr"/></rs>), <ptr type="software" xml:id="R119"
-              target="#letrameur"/>
-            <rs type="soft.name" ref="#R119">Le Trameur</rs> (<rs type="soft.bib.ref" ref="#R119"
+              target="softw:letrameur"/>
+            <rs type="cit:soft.name" ref="#R119">Le Trameur</rs> (<rs type="cit:soft.bib.ref" ref="#R119"
                 ><ref type="bibl" target="#fleury2014">Fleury and Zimina 2014</ref></rs>; see <rs
-              type="soft.url" ref="#R119"><ptr target="http://www.tal.univ-paris3.fr/trameur/"
-              /></rs>), and <ptr type="software" xml:id="R120" target="#iramuteq"/>
-            <rs type="soft.name" ref="#R120">Iramuteq</rs> (see <rs type="soft.url" ref="#R120"><ptr
-                target="http://iramuteq.org/"/></rs> and <rs type="soft.bib.ref" ref="#R120"><ref
+              type="cit:soft.url" ref="#R119"><ptr target="http://www.tal.univ-paris3.fr/trameur/"
+              /></rs>), and <ptr type="software" xml:id="R120" target="softw:iramuteq"/>
+            <rs type="cit:soft.name" ref="#R120">Iramuteq</rs> (see <rs type="cit:soft.url" ref="#R120"><ptr
+                target="http://iramuteq.org/"/></rs> and <rs type="cit:soft.bib.ref" ref="#R120"><ref
                 type="bibl" target="#souza2018">de Souza et al. 2018</ref></rs>), providing a
             dedicated TEI export for these tools. For example, for the <ptr type="software"
-              xml:id="R121" target="#txm"/><rs type="soft.name" ref="#R121">TXM</rs> software, the
+              xml:id="R121" target="softw:txm"/><rs type="cit:soft.name" ref="#R121">TXM</rs> software, the
             export includes a text element made of utterance elements including age and speaker
             attributes. <ptr target="#example_code_5" type="crossref"/> presents an example for the
-              <ptr type="software" xml:id="R122" target="#txm"/><rs type="soft.name" ref="#R122"
+              <ptr type="software" xml:id="R122" target="softw:txm"/><rs type="cit:soft.name" ref="#R122"
               >TXM</rs> software.</p>
           <figure xml:id="example_code_5">
             <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -1064,12 +1064,12 @@
               </TEI>
             </egXML>
             <head type="legend">Example of XML for the <ptr type="software" xml:id="R123"
-                target="#txm"/><rs type="soft.name" ref="#R123">TXM</rs> software</head>
+                target="softw:txm"/><rs type="cit:soft.name" ref="#R123">TXM</rs> software</head>
           </figure>
 
-          <p>An export has been developed for <ptr type="software" xml:id="R202" target="#lexico"
-              /><rs type="soft.name" ref="#R202">Lexico</rs> and <ptr type="software" xml:id="R203"
-              target="#letrameur"/><rs type="soft.name" ref="#R203">Le Trameur</rs> textometric
+          <p>An export has been developed for <ptr type="software" xml:id="R202" target="softw:lexico"
+              /><rs type="cit:soft.name" ref="#R202">Lexico</rs> and <ptr type="software" xml:id="R203"
+              target="softw:letrameur"/><rs type="cit:soft.name" ref="#R203">Le Trameur</rs> textometric
             software with a simple SGML file without timelines (see <ptr target="#example_code_6"
               type="crossref"/>).</p>
 
@@ -1078,23 +1078,23 @@
               &lt;loc=MOT>you have to rest now ? &lt;loc=CHI>yes . &lt;loc=MOT>from your big singing
               extravaganza ? &lt;loc=CHI>yes that was a party . &lt;loc=MOT>woof </eg>
             <head type="legend">Example of export for the <ptr type="software" xml:id="R204"
-                target="#lexico"/><rs type="soft.name" ref="#R204">Lexico</rs> or <ptr
-                type="software" xml:id="R205" target="#letrameur"/><rs type="soft.name" ref="#R205"
+                target="softw:lexico"/><rs type="cit:soft.name" ref="#R204">Lexico</rs> or <ptr
+                type="software" xml:id="R205" target="softw:letrameur"/><rs type="cit:soft.name" ref="#R205"
                 >Le Trameur</rs> software</head>
           </figure>
 
           <p>Likewise, another export is available for the textometric tool <ptr type="software"
-              xml:id="R124" target="#iramuteq"/><rs type="soft.name" ref="#R124">Iramuteq</rs>
+              xml:id="R124" target="softw:iramuteq"/><rs type="cit:soft.name" ref="#R124">Iramuteq</rs>
             without timelines (see <ptr target="#example_code_7" type="crossref"/>).</p>
           <figure xml:id="example_code_7">
             <eg>**** -*MOT you have to rest now ? -*CHI yes . -*MOT from your big singing
               extravaganza ? -*CHI yes that was a party . -*MOT woof . -*MOT that was a party that
               sure was some party . </eg>
             <head type="legend">Example of export for the <ptr type="software" xml:id="R206"
-                target="#iramuteq"/><rs type="soft.name" ref="#R206">IRAMUTEQ</rs> software</head>
+                target="softw:iramuteq"/><rs type="cit:soft.name" ref="#R206">IRAMUTEQ</rs> software</head>
           </figure>
-          <p>In all these cases, <ptr type="software" xml:id="R125" target="#teicorpo"/>
-            <rs type="soft.name" ref="#R125">TEICORPO</rs> is able to provide an export file and to
+          <p>In all these cases, <ptr type="software" xml:id="R125" target="softw:teicorpo"/>
+            <rs type="cit:soft.name" ref="#R125">TEICORPO</rs> is able to provide an export file and to
             remove unnecessary information from the TEI pivot format. This is useful, for example,
             with textometric software, which works only with orthographic tiers without a timeline
             or dependent information.</p>
@@ -1107,39 +1107,39 @@
             linguistic research. A present difficulty with these grammatical analyzers is that most
             often they run only on raw orthographic material, excluding other information. Moreover,
             their results are not always in a format that can be used with traditional spoken
-            language software such as <ptr type="software" xml:id="R126" target="#clan"/>
-            <rs type="soft.name" ref="#R126">CLAN</rs> , <ptr type="software" xml:id="R127"
-              target="#elan"/><rs type="soft.name" ref="#R127">ELAN</rs>, <ptr type="software"
-              xml:id="R128" target="#praat"/>
-            <rs type="soft.name" ref="#R128">Praat</rs>, <ptr type="software" xml:id="R129"
-              target="#transcriber"/>
-            <rs type="soft.name" ref="#R129">Transcriber</rs>, nor of course in TEI format.</p>
-          <p><ptr type="software" xml:id="R130" target="#teicorpo"/>
-            <rs type="soft.name" ref="#R130">TEICORPO</rs> provides a way to solve this problem by
+            language software such as <ptr type="software" xml:id="R126" target="softw:clan"/>
+            <rs type="cit:soft.name" ref="#R126">CLAN</rs> , <ptr type="software" xml:id="R127"
+              target="softw:elan"/><rs type="cit:soft.name" ref="#R127">ELAN</rs>, <ptr type="software"
+              xml:id="R128" target="softw:praat"/>
+            <rs type="cit:soft.name" ref="#R128">Praat</rs>, <ptr type="software" xml:id="R129"
+              target="softw:transcriber"/>
+            <rs type="cit:soft.name" ref="#R129">Transcriber</rs>, nor of course in TEI format.</p>
+          <p><ptr type="software" xml:id="R130" target="softw:teicorpo"/>
+            <rs type="cit:soft.name" ref="#R130">TEICORPO</rs> provides a way to solve this problem by
             running analyzers and putting the results from the analysis back into TEI format. Once
             the TEI format has been enriched with grammatical information, it is possible to use the
-            results and convert them back to <ptr type="software" xml:id="R131" target="#elan"/><rs
-              type="soft.name" ref="#R131">ELAN</rs> or <ptr type="software" xml:id="R132"
-              target="#praat"/>
-            <rs type="soft.name" ref="#R132">Praat</rs> and use the grammatical information in these
+            results and convert them back to <ptr type="software" xml:id="R131" target="softw:elan"/><rs
+              type="cit:soft.name" ref="#R131">ELAN</rs> or <ptr type="software" xml:id="R132"
+              target="softw:praat"/>
+            <rs type="cit:soft.name" ref="#R132">Praat</rs> and use the grammatical information in these
             spoken language software packages. It is also possible to export to <ptr type="software"
-              xml:id="R133" target="#txm"/><rs type="soft.name" ref="#R133">TXM</rs> and to use the
+              xml:id="R133" target="softw:txm"/><rs type="cit:soft.name" ref="#R133">TXM</rs> and to use the
             grammatical information in the textometric software. Two grammatical analyzers have been
-            implemented in <ptr type="software" xml:id="R134" target="#teicorpo"/>
-            <rs type="soft.name" ref="#R134">TEICORPO</rs>: <ptr type="software" xml:id="R135"
-              target="#treetagger"/>
-            <rs type="soft.name" ref="#R135">TreeTagger</rs> and <ptr type="software" xml:id="R136"
-              target="#stanfordcorenlp"/>
-            <rs type="soft.name" ref="#R136">CoreNLP</rs>.</p>
+            implemented in <ptr type="software" xml:id="R134" target="softw:teicorpo"/>
+            <rs type="cit:soft.name" ref="#R134">TEICORPO</rs>: <ptr type="software" xml:id="R135"
+              target="softw:treetagger"/>
+            <rs type="cit:soft.name" ref="#R135">TreeTagger</rs> and <ptr type="software" xml:id="R136"
+              target="softw:stanfordcorenlp"/>
+            <rs type="cit:soft.name" ref="#R136">CoreNLP</rs>.</p>
           <div xml:id="treetagger">
-            <head><ptr type="software" xml:id="R138" target="#treetagger"/>
-              <rs type="soft.name" ref="#R138">TreeTagger</rs></head>
-            <p><ptr type="software" xml:id="R139" target="#treetagger"/>
-              <rs type="soft.name" ref="#R139">TreeTagger</rs><note>
-                <p>Accessed March 11, 2021, <rs type="soft.url" ref="#R139"><ptr
+            <head><ptr type="software" xml:id="R138" target="softw:treetagger"/>
+              <rs type="cit:soft.name" ref="#R138">TreeTagger</rs></head>
+            <p><ptr type="software" xml:id="R139" target="softw:treetagger"/>
+              <rs type="cit:soft.name" ref="#R139">TreeTagger</rs><note>
+                <p>Accessed March 11, 2021, <rs type="cit:soft.url" ref="#R139"><ptr
                       target="https://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger/"/></rs>.</p>
-              </note> (<rs type="soft.bib.ref" ref="#R139"><ref type="bibl" target="#schimd1994"
-                  >Schmid 1994</ref></rs>; <rs type="soft.bib.ref" ref="#R139"><ref type="bibl"
+              </note> (<rs type="cit:soft.bib.ref" ref="#R139"><ref type="bibl" target="#schimd1994"
+                  >Schmid 1994</ref></rs>; <rs type="cit:soft.bib.ref" ref="#R139"><ref type="bibl"
                   target="#schmid1995">1995</ref></rs>) is a tool for annotating text with
               part-of-speech and lemma information. The software is freely available for research,
               education, and evaluation. It is available in twenty-five languages, provides
@@ -1147,29 +1147,29 @@
               done for instance by Benzitoun, Fort, and Sagot (<ref type="bibl"
                 target="#benzitoun2012">2012</ref>) in the PERCEO project. They defined a syntactic
               model suitable for spoken language corpora, using the training feature of <ptr
-                type="software" xml:id="R207" target="#treetagger"/>
-              <rs type="soft.name" ref="#R207">TreeTagger</rs> and an iterative process including
+                type="software" xml:id="R207" target="softw:treetagger"/>
+              <rs type="cit:soft.name" ref="#R207">TreeTagger</rs> and an iterative process including
               manual corrections to improve the results of the automatic tool.</p>
-            <p>The command-line version of <ptr type="software" xml:id="R140" target="#teicorpo"/>
-              <rs type="soft.name" ref="#R140">TEICORPO</rs> should be used to generate an annotated
+            <p>The command-line version of <ptr type="software" xml:id="R140" target="softw:teicorpo"/>
+              <rs type="cit:soft.name" ref="#R140">TEICORPO</rs> should be used to generate an annotated
               file with lemma and POS information based on <ptr type="software" xml:id="R141"
-                target="#treetagger"/>
-              <rs type="soft.name" ref="#R141">TreeTagger</rs>. <ptr type="software" xml:id="R142"
-                target="#treetagger"/>
-              <rs type="soft.name" ref="#R142">TreeTagger</rs> should be installed separately. The
-              implementation of <ptr type="software" xml:id="R143" target="#treetagger"/>
-              <rs type="soft.name" ref="#R143">TreeTagger</rs> in <ptr type="software" xml:id="R144"
-                target="#teicorpo"/>
-              <rs type="soft.name" ref="#R144">TEICORPO</rs> includes the ability to use any
+                target="softw:treetagger"/>
+              <rs type="cit:soft.name" ref="#R141">TreeTagger</rs>. <ptr type="software" xml:id="R142"
+                target="softw:treetagger"/>
+              <rs type="cit:soft.name" ref="#R142">TreeTagger</rs> should be installed separately. The
+              implementation of <ptr type="software" xml:id="R143" target="softw:treetagger"/>
+              <rs type="cit:soft.name" ref="#R143">TreeTagger</rs> in <ptr type="software" xml:id="R144"
+                target="softw:teicorpo"/>
+              <rs type="cit:soft.name" ref="#R144">TEICORPO</rs> includes the ability to use any
               syntactic model. For French data, we used the PERCEO model (<ref type="bibl"
                 target="#benzitoun2012">Benzitoun, Fort, and Sagot 2012</ref>).</p>
-            <p>The command line to be used is: <ptr type="software" xml:id="R240" target="#java"/><code>
-                <rs type="soft.name" ref="#R240">java</rs> -cp <ptr type="software" xml:id="R208"
-                  target="#teicorpo"/>
-                <rs type="soft.name" ref="#R208">TEICORPO</rs>.jar fr.ortolang.<ptr type="software"
-                  xml:id="R209" target="#teicorpo"/>
-                <rs type="soft.name" ref="#R209">TEICORPO</rs>.<ptr type="software" xml:id="R239"
-                  target="#treetagger"/> Tei <rs type="soft.name" ref="#R239">TreeTagger</rs>
+            <p>The command line to be used is: <ptr type="software" xml:id="R240" target="softw:java"/><code>
+                <rs type="cit:soft.name" ref="#R240">java</rs> -cp <ptr type="software" xml:id="R208"
+                  target="softw:teicorpo"/>
+                <rs type="cit:soft.name" ref="#R208">TEICORPO</rs>.jar fr.ortolang.<ptr type="software"
+                  xml:id="R209" target="softw:teicorpo"/>
+                <rs type="cit:soft.name" ref="#R209">TEICORPO</rs>.<ptr type="software" xml:id="R239"
+                  target="softw:treetagger"/> Tei <rs type="cit:soft.name" ref="#R239">TreeTagger</rs>
                 filenames...</code> with additional parameters:</p>
             <table xml:id="table2">
               <row role="label">
@@ -1182,16 +1182,16 @@
                 <cell><p><code>-model</code>
                     <gi>filename</gi></p></cell>
                 <cell><p><gi>filename</gi> is the full name of the <ptr type="software"
-                      xml:id="R145" target="#treetagger"/>
-                    <rs type="soft.name" ref="#R145">TreeTagger</rs> syntactic model. In our case,
+                      xml:id="R145" target="softw:treetagger"/>
+                    <rs type="cit:soft.name" ref="#R145">TreeTagger</rs> syntactic model. In our case,
                     we use the PERCEO model.</p></cell>
               </row>
               <row>
                 <cell><p><code>-program</code>
                     <gi>filename</gi></p></cell>
                 <cell><p><gi>filename</gi> is the full location of the <ptr type="software"
-                      xml:id="R146" target="#treetagger"/>
-                    <rs type="soft.name" ref="#R146">TreeTagger</rs> program, according to the
+                      xml:id="R146" target="softw:treetagger"/>
+                    <rs type="cit:soft.name" ref="#R146">TreeTagger</rs> program, according to the
                     system used (Windows, MacOS, or Linux).</p></cell>
               </row>
               <row>
@@ -1203,8 +1203,8 @@
             </table>
             <p>The environment variable TREE_TAGGER can be used to locate the model and the program.
               If no <code>-program</code> option is used, the default name for the <ptr
-                type="software" xml:id="R147" target="#treetagger"/>
-              <rs type="soft.name" ref="#R147">TreeTagger</rs> program is used.</p>
+                type="software" xml:id="R147" target="softw:treetagger"/>
+              <rs type="cit:soft.name" ref="#R147">TreeTagger</rs> program is used.</p>
             <p>The <code>-model</code> parameter is mandatory.</p>
             <p>The resulting filename ends with <code>.tei_corpo_ttg.tei_corpo.xml</code> or a
               specific name provided by the user (option <code>-o</code>).</p>
@@ -1278,8 +1278,8 @@
                 possibilities offered by the TEI <gi>spanGrp</gi> and <gi>span</gi> elements. It is
                 very powerful as it enables the user to insert as many description levels as
                 necessary (ten levels exist in the current version of CONLL). The implementation of
-                  <ptr type="software" xml:id="R210" target="#stanfordcorenlp"/>
-                <rs type="soft.name" ref="#R210"> CoreNLP</rs> (see below) takes full advantage of
+                  <ptr type="software" xml:id="R210" target="softw:stanfordcorenlp"/>
+                <rs type="cit:soft.name" ref="#R210"> CoreNLP</rs> (see below) takes full advantage of
                 these possibilities. <figure xml:id="example_code_10">
                   <egXML xmlns="http://www.tei-c.org/ns/Examples">
                     <annotationBlock end="#T7" start="#T6" who="CHI" xml:id="au4">
@@ -1320,55 +1320,55 @@
             </list>
           </div>
           <div xml:id="stanford">
-            <head><ptr type="software" xml:id="R148" target="#stanfordcorenlp"/>
-              <rs type="soft.name" ref="#R148">Stanford CoreNLP</rs></head>
-            <p><ptr type="software" xml:id="R149" target="#stanfordcorenlp"/>
-              <rs type="soft.name" ref="#R149">The Stanford Core Natural Language Processing</rs><note>
-                <p>Accessed March 11, 2021, <rs type="soft.url" ref="#R149"><ptr
+            <head><ptr type="software" xml:id="R148" target="softw:stanfordcorenlp"/>
+              <rs type="cit:soft.name" ref="#R148">Stanford CoreNLP</rs></head>
+            <p><ptr type="software" xml:id="R149" target="softw:stanfordcorenlp"/>
+              <rs type="cit:soft.name" ref="#R149">The Stanford Core Natural Language Processing</rs><note>
+                <p>Accessed March 11, 2021, <rs type="cit:soft.url" ref="#R149"><ptr
                       target="https://nlp.stanford.edu/software/"/></rs>.</p>
-              </note> (<ptr type="software" xml:id="R150" target="#stanfordcorenlp"/>
-              <rs type="soft.name" ref="#R150">CoreNLP</rs>) package is a suite of tools (<rs
-                type="soft.bib.ref" ref="#R150"><ref type="bibl" target="#manning2014">Manning et
+              </note> (<ptr type="software" xml:id="R150" target="softw:stanfordcorenlp"/>
+              <rs type="cit:soft.name" ref="#R150">CoreNLP</rs>) package is a suite of tools (<rs
+                type="cit:soft.bib.ref" ref="#R150"><ref type="bibl" target="#manning2014">Manning et
                   al. 2014</ref></rs>) that can be used under a GNU General Public License. The
               suite provides several tools such as a tokenizer, a POS tagger, a parser, a named
               entity recognizer, temporal tagging, and coreference resolution. All the tools are
               available for English, but only some of them are available for all languages. All
               software libraries are integrated into <ptr type="software" xml:id="R151"
-                target="#Java"/><rs type="soft.name" ref="#R151">Java</rs> JAR files, so all that is
+                target="softw:Java"/><rs type="cit:soft.name" ref="#R151">Java</rs> JAR files, so all that is
               required is to download JAR files from the <ptr type="software" xml:id="R211"
-                target="#stanfordcorenlp"/><rs type="soft.name" ref="#R211">CoreNLP</rs> website<note>
+                target="softw:stanfordcorenlp"/><rs type="cit:soft.name" ref="#R211">CoreNLP</rs> website<note>
                 <p>Accessed May 5, 2021, <ptr
                     target="https://stanfordnlp.github.io/CoreNLP/index.html#download"/>.</p>
-              </note> to use them with <ptr type="software" xml:id="R152" target="#teicorpo"/>
-              <rs type="soft.name" ref="#R152">TEICORPO</rs>. Using the analyzer is similar to using
-                <ptr type="software" xml:id="R153" target="#treetagger"/>
-              <rs type="soft.name" ref="#R153">TreeTagger</rs> . The -model and -syntaxformat
+              </note> to use them with <ptr type="software" xml:id="R152" target="softw:teicorpo"/>
+              <rs type="cit:soft.name" ref="#R152">TEICORPO</rs>. Using the analyzer is similar to using
+                <ptr type="software" xml:id="R153" target="softw:treetagger"/>
+              <rs type="cit:soft.name" ref="#R153">TreeTagger</rs> . The -model and -syntaxformat
               parameters can be used in a similar way to specify the grammatical model to be used
               and the output format. A command line example is:</p>
-            <p><code><ptr type="software" xml:id="R236" target="#java"/>
-                <rs type="soft.name" ref="#R236">java</rs> -cp "<ptr type="software" xml:id="R237"
-                  target="#teicorpo"/>
-                <rs type="soft.name" ref="#R237">teicorpo</rs>.jar:directory_for_SNLP/*"
-                  fr.ortolang.<ptr type="software" xml:id="R238" target="#teicorpo"/>
-                <rs type="soft.name" ref="#R238">teicorpo</rs>.TeiSNLP -syntaxformat svalue -model
+            <p><code><ptr type="software" xml:id="R236" target="softw:java"/>
+                <rs type="cit:soft.name" ref="#R236">java</rs> -cp "<ptr type="software" xml:id="R237"
+                  target="softw:teicorpo"/>
+                <rs type="cit:soft.name" ref="#R237">teicorpo</rs>.jar:directory_for_SNLP/*"
+                  fr.ortolang.<ptr type="software" xml:id="R238" target="softw:teicorpo"/>
+                <rs type="cit:soft.name" ref="#R238">teicorpo</rs>.TeiSNLP -syntaxformat svalue -model
                 filename.tei_corpo.xml</code></p>
             <p>The <term>directory_for_SNLP</term> is the name of the location on a computer where
-              all the <ptr type="software" xml:id="R212" target="#stanfordcorenlp"/>
-              <rs type="soft.name" ref="#R212">CoreNLP</rs> JAR files can be found. Note that using
-              the <ptr type="software" xml:id="R213" target="#stanfordcorenlp"/>
-              <rs type="soft.name" ref="#R213">CoreNLP</rs> software makes heavy demands on the
+              all the <ptr type="software" xml:id="R212" target="softw:stanfordcorenlp"/>
+              <rs type="cit:soft.name" ref="#R212">CoreNLP</rs> JAR files can be found. Note that using
+              the <ptr type="software" xml:id="R213" target="softw:stanfordcorenlp"/>
+              <rs type="cit:soft.name" ref="#R213">CoreNLP</rs> software makes heavy demands on the
               computer’s memory resources and it is necessary to instruct the <ptr type="software"
-                xml:id="R154" target="#Java"/><rs type="soft.name" ref="#R154">Java</rs> software to
+                xml:id="R154" target="softw:Java"/><rs type="cit:soft.name" ref="#R154">Java</rs> software to
               use a large amount of memory (for example to insert parameter -mx5g before parameter
                 <code>-cp</code> to indicate that 5 GB of memory will be used for a full English
               analysis).</p>
             <p>The <code>-model</code> parameter can take three values: english (use the full
               English grammar), french (use the full French grammar), or the name of a <ptr
-                type="software" xml:id="R214" target="#stanfordcorenlp"/>
-              <rs type="soft.name" ref="#R214">CoreNLP</rs> parameter file which specifies any type
+                type="software" xml:id="R214" target="softw:stanfordcorenlp"/>
+              <rs type="cit:soft.name" ref="#R214">CoreNLP</rs> parameter file which specifies any type
               of analysis that is available in <ptr type="software" xml:id="R215"
-                target="#stanfordcorenlp"/>
-              <rs type="soft.name" ref="#R215">CoreNLP</rs>.</p>
+                target="softw:stanfordcorenlp"/>
+              <rs type="cit:soft.name" ref="#R215">CoreNLP</rs>.</p>
             <p>The <code>-syntaxformat</code> parameter can take four values: <val>conll</val> (a
               full analysis with all possible tools: ten levels are produced in this case),
                 <val>dep</val> (a syntactic analysis using a dependency grammar), and <val>ref</val>
@@ -1378,24 +1378,24 @@
         <div xml:id="exportinggrammatical">
           <head>Exporting the Grammatical Analysis</head>
           <p>The results from the grammatical analysis can be used in transcription files such as
-            those used by <ptr type="software" xml:id="R155" target="#praat"/>
-            <rs type="soft.name" ref="#R155">Praat</rs> and <ptr type="software" xml:id="R156"
-              target="#elan"/><rs type="soft.name" ref="#R156">ELAN</rs>. A partition-like visual
+            those used by <ptr type="software" xml:id="R155" target="softw:praat"/>
+            <rs type="cit:soft.name" ref="#R155">Praat</rs> and <ptr type="software" xml:id="R156"
+              target="softw:elan"/><rs type="cit:soft.name" ref="#R156">ELAN</rs>. A partition-like visual
             presentation of data is very handy to represent a part of speech or a CONLL result. The
             orthographic line will appear at the top with divisions into words, divisions into parts
             of speech, and other syntactic information below. As the result of the analysis can
             contain a large number of tiers (each speaker will have as many tiers as there are
             elements in the grammatical analysis: for example, word, POS, and lemma for <ptr
-              type="software" xml:id="R216" target="#treetagger"/>
-            <rs type="soft.name" ref="#R216">Tree Tagger</rs>; ten tiers for <ptr type="software"
-              xml:id="R217" target="#stanfordcorenlp"/>
-            <rs type="soft.name" ref="#R217">CoreNLP</rs> full analysis), it is helpful to limit the
+              type="software" xml:id="R216" target="softw:treetagger"/>
+            <rs type="cit:soft.name" ref="#R216">Tree Tagger</rs>; ten tiers for <ptr type="software"
+              xml:id="R217" target="softw:stanfordcorenlp"/>
+            <rs type="cit:soft.name" ref="#R217">CoreNLP</rs> full analysis), it is helpful to limit the
             number of visible tiers, either using the <code>-a</code> option of <ptr type="software"
-              xml:id="R157" target="#teicorpo"/>
-            <rs type="soft.name" ref="#R157">TEICORPO</rs>, or limiting the display with the
+              xml:id="R157" target="softw:teicorpo"/>
+            <rs type="cit:soft.name" ref="#R157">TEICORPO</rs>, or limiting the display with the
             annotation tool.</p>
-          <p>An example is presented below in the <ptr type="software" xml:id="R158" target="#elan"
-              /><rs type="soft.name" ref="#R158">ELAN</rs> tool (see <ptr target="#fig5"
+          <p>An example is presented below in the <ptr type="software" xml:id="R158" target="softw:elan"
+              /><rs type="cit:soft.name" ref="#R158">ELAN</rs> tool (see <ptr target="#fig5"
               type="crossref"/>). The original utterance was <term>si c’est comme ça je m’en
               vais</term> (if that’s how it is, I’m leaving). It is displayed in the first line,
             highlighted in pink. The analysis into words (second line, consisting of numbers),
@@ -1405,22 +1405,22 @@
             (is).</p>
           <figure xml:id="fig5">
             <graphic url="media/image3.png" width="620px" height="980px"/>
-            <head type="legend">Example of <ptr type="software" xml:id="R159" target="#treetagger"/>
-              <rs type="soft.name" ref="#R159">TreeTagger</rs> analysis representation in a
+            <head type="legend">Example of <ptr type="software" xml:id="R159" target="softw:treetagger"/>
+              <rs type="cit:soft.name" ref="#R159">TreeTagger</rs> analysis representation in a
               partition software program</head>
           </figure>
 
           <p>Export can be done from TEI into a format used by textometric software (see <ptr
               target="#example_code_11" type="crossref"/>). This is the case for <ptr
-              type="software" xml:id="R160" target="#txm"/><rs type="soft.name" ref="#R160">TXM</rs>,<note>
-              <p>See the Textométrie website, last updated June 29, 2020, <rs type="soft.url"
+              type="software" xml:id="R160" target="softw:txm"/><rs type="cit:soft.name" ref="#R160">TXM</rs>,<note>
+              <p>See the Textométrie website, last updated June 29, 2020, <rs type="cit:soft.url"
                   ref="#R160"><ptr target="http://textometrie.ens-lyon.fr/?lang=en"/></rs>.</p>
             </note> a textometric software application. In this case, instead of using a partition
             representation, the information from the grammatical analysis is inserted at the word
             level in an XML structure. For example, in the case below, the <ptr type="software"
-              xml:id="R161" target="#txm"/><rs type="soft.name" ref="#R161">TXM</rs> export includes
-              <ptr type="software" xml:id="R162" target="#treetagger"/>
-            <rs type="soft.name" ref="#R162">TreeTagger</rs> annotations in POS, adding
+              xml:id="R161" target="softw:txm"/><rs type="cit:soft.name" ref="#R161">TXM</rs> export includes
+              <ptr type="software" xml:id="R162" target="softw:treetagger"/>
+            <rs type="cit:soft.name" ref="#R162">TreeTagger</rs> annotations in POS, adding
               <att>lemma</att> and <att>pos</att> attributes to the word element <gi>w</gi>.</p>
           <figure xml:id="example_code_11">
             <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -1452,69 +1452,69 @@
 
               </TEI>
             </egXML>
-            <head type="legend">Example of <ptr type="software" xml:id="R163" target="#treetagger"/>
-              <rs type="soft.name" ref="#R163">TreeTagger</rs> analysis representation that can be
-              imported into <ptr type="software" xml:id="R164" target="#txm"/><rs type="soft.name"
+            <head type="legend">Example of <ptr type="software" xml:id="R163" target="softw:treetagger"/>
+              <rs type="cit:soft.name" ref="#R163">TreeTagger</rs> analysis representation that can be
+              imported into <ptr type="software" xml:id="R164" target="softw:txm"/><rs type="cit:soft.name"
                 ref="#R164">TXM</rs></head>
           </figure>
         </div>
         <div xml:id="comparison">
           <head>Comparison with Other Software Suites</head>
           <p>The additional functionalities available in the <ptr type="software" xml:id="R165"
-              target="#teicorpo"/>
-            <rs type="soft.name" ref="#R165">TEICORPO</rs> suite are close to those available in the
-              <ptr type="software" xml:id="R166" target="#weblicht"/>
-            <rs type="soft.name" ref="#R166">Weblicht</rs> web services ( <rs type="soft.bib.ref"
+              target="softw:teicorpo"/>
+            <rs type="cit:soft.name" ref="#R165">TEICORPO</rs> suite are close to those available in the
+              <ptr type="software" xml:id="R166" target="softw:weblicht"/>
+            <rs type="cit:soft.name" ref="#R166">Weblicht</rs> web services ( <rs type="cit:soft.bib.ref"
               ref="#R166"><ref type="bibl" target="#hinrichs2010">Hinrichs, Hinrichs, and Zastrow
                 2010</ref></rs>). To a certain extent, the two suites of tools ( <ptr
-              type="software" xml:id="R167" target="#weblicht"/>
-            <rs type="soft.name" ref="#R167">Weblicht</rs> and <ptr type="software" xml:id="R168"
-              target="#teicorpo"/>
-            <rs type="soft.name" ref="#R168">TEICORPO</rs>) have the same purpose and
+              type="software" xml:id="R167" target="softw:weblicht"/>
+            <rs type="cit:soft.name" ref="#R167">Weblicht</rs> and <ptr type="software" xml:id="R168"
+              target="softw:teicorpo"/>
+            <rs type="cit:soft.name" ref="#R168">TEICORPO</rs>) have the same purpose and
             functionalities. They can import data from various formats, run similar processes on the
             data, and export the data for scientific uses. In some cases, the services could
-            complement each other or <ptr type="software" xml:id="R169" target="#teicorpo"/>
-            <rs type="soft.name" ref="#R169">TEICORPO</rs> could be integrated in the <ptr
-              type="software" xml:id="R170" target="#weblicht"/>
-            <rs type="soft.name" ref="#R170">Weblicht</rs> services. This is the case, for example,
+            complement each other or <ptr type="software" xml:id="R169" target="softw:teicorpo"/>
+            <rs type="cit:soft.name" ref="#R169">TEICORPO</rs> could be integrated in the <ptr
+              type="software" xml:id="R170" target="softw:weblicht"/>
+            <rs type="cit:soft.name" ref="#R170">Weblicht</rs> services. This is the case, for example,
             for handling the CHILDES format, which at the time of writing is more functional in <ptr
-              type="software" xml:id="R171" target="#teicorpo"/>
-            <rs type="soft.name" ref="#R171">TEICORPO</rs> than in <ptr type="software"
-              xml:id="R172" target="#weblicht"/>
-            <rs type="soft.name" ref="#R172">Weblicht</rs>.</p>
+              type="software" xml:id="R171" target="softw:teicorpo"/>
+            <rs type="cit:soft.name" ref="#R171">TEICORPO</rs> than in <ptr type="software"
+              xml:id="R172" target="softw:weblicht"/>
+            <rs type="cit:soft.name" ref="#R172">Weblicht</rs>.</p>
           <p>A major difference between the two suites is in the way they can be used and in the
-            type of data they target. <ptr type="software" xml:id="R173" target="#teicorpo"/>
-            <rs type="soft.name" ref="#R173">TEICORPO</rs> is intended to be used not as an
+            type of data they target. <ptr type="software" xml:id="R173" target="softw:teicorpo"/>
+            <rs type="cit:soft.name" ref="#R173">TEICORPO</rs> is intended to be used not as an
             independent tool, but as a utility tool that helps researchers to go from one type of
             data to another. For example, the syntactic analysis is intended to be used as a first
             step before being used in tools such as <ptr type="software" xml:id="R174"
-              target="#praat"/>
-            <rs type="soft.name" ref="#R174">Praat</rs>, <ptr type="software" xml:id="R175"
-              target="#elan"/><rs type="soft.name" ref="#R175">ELAN</rs>, or <ptr type="software"
-              xml:id="R176" target="#txm"/><rs type="soft.name" ref="#R176">TXM</rs>. Our more
+              target="softw:praat"/>
+            <rs type="cit:soft.name" ref="#R174">Praat</rs>, <ptr type="software" xml:id="R175"
+              target="softw:elan"/><rs type="cit:soft.name" ref="#R175">ELAN</rs>, or <ptr type="software"
+              xml:id="R176" target="softw:txm"/><rs type="cit:soft.name" ref="#R176">TXM</rs>. Our more
             recent developments (see <ref type="bibl" target="#badin2021">Badin et al. 2021</ref>)
             made it possible to insert metadata stored in CSV files (including participant metadata)
             into the TEI files. This makes it possible to achieve more powerful corpus analysis
-            using a tool such as <ptr type="software" xml:id="R177" target="#txm"/><rs
-              type="soft.name" ref="#R177">TXM</rs>.</p>
+            using a tool such as <ptr type="software" xml:id="R177" target="softw:txm"/><rs
+              type="cit:soft.name" ref="#R177">TXM</rs>.</p>
           <p>Our approach is somewhat similar to what is suggested in the conclusion of Schmidt,
             Hedeland, and Jettka (<ref type="bibl" target="#schmidt2017">2017</ref>), who describe a
             mechanism that makes it possible to use the power of <ptr type="software" xml:id="R178"
-              target="#weblicht"/>
-            <rs type="soft.name" ref="#R178">Weblicht</rs> to process their files that are in the
+              target="softw:weblicht"/>
+            <rs type="cit:soft.name" ref="#R178">Weblicht</rs> to process their files that are in the
             ISO/TEI format. A similar mechanism could be used within <ptr type="software"
-              xml:id="R179" target="#teicorpo"/>
-            <rs type="soft.name" ref="#R179">TEICORPO</rs> to take advantage of the tools that are
-            implemented in <ptr type="software" xml:id="R180" target="#weblicht"/>
-            <rs type="soft.name" ref="#R180">Weblicht</rs>. However, Schmidt, Hedeland, and Jettka
+              xml:id="R179" target="softw:teicorpo"/>
+            <rs type="cit:soft.name" ref="#R179">TEICORPO</rs> to take advantage of the tools that are
+            implemented in <ptr type="software" xml:id="R180" target="softw:weblicht"/>
+            <rs type="cit:soft.name" ref="#R180">Weblicht</rs>. However, Schmidt, Hedeland, and Jettka
               (<ref type="bibl" target="#schmidt2017">2017</ref>) suggest in their conclusion that
             it would be more interesting to work directly on ISO/TEI files because they contain a
             richer format. This is exactly what we did in <ptr type="software" xml:id="R181"
-              target="#teicorpo"/>
-            <rs type="soft.name" ref="#R181">TEICORPO</rs>. Our suggestion would be to use the tools
+              target="softw:teicorpo"/>
+            <rs type="cit:soft.name" ref="#R181">TEICORPO</rs>. Our suggestion would be to use the tools
             created by Schmidt, Hedeland, and Jettka (<ref type="bibl" target="#schmidt2017"
-              >2017</ref>) directly with the <ptr type="software" xml:id="R182" target="#teicorpo"/>
-            <rs type="soft.name" ref="#R182">TEICORPO</rs> files, so that their work would
+              >2017</ref>) directly with the <ptr type="software" xml:id="R182" target="softw:teicorpo"/>
+            <rs type="cit:soft.name" ref="#R182">TEICORPO</rs> files, so that their work would
             complement ours. Moreover, in this way, the two projects would be compatible and provide
             either new functionalities when the projects have clearly different goals, or data
             variants when the goals are closer.</p>
@@ -1522,42 +1522,42 @@
       </div>
       <div xml:id="conclusion">
         <head>Conclusion</head>
-        <p><ptr type="software" xml:id="R183" target="#teicorpo"/>
-          <rs type="soft.name" ref="#R183">TEICORPO</rs> is a functional tool, created by the CORLI
+        <p><ptr type="software" xml:id="R183" target="softw:teicorpo"/>
+          <rs type="cit:soft.name" ref="#R183">TEICORPO</rs> is a functional tool, created by the CORLI
           network and ORTOLANG, that converts files created by software specializing in editing
           spoken-language data into TEI format. The result is fully compatible with the most recent
           developments in TEI, especially those that concern spoken-language material.</p>
         <p>The TEI files can also be converted back to the original formats or to other formats used
           in spoken-language editing to take advantage of their functionalities. This makes TEI a
-          useful pivot format. Moreover, <ptr type="software" xml:id="R184" target="#teicorpo"/>
-          <rs type="soft.name" ref="#R184">TEICORPO</rs> allows conversion to formats used by tools
+          useful pivot format. Moreover, <ptr type="software" xml:id="R184" target="softw:teicorpo"/>
+          <rs type="cit:soft.name" ref="#R184">TEICORPO</rs> allows conversion to formats used by tools
           dedicated to corpus exploration and browsing.</p>
-        <p><ptr type="software" xml:id="R185" target="#teicorpo"/>
-          <rs type="soft.name" ref="#R185">TEICORPO</rs> exists as a command-line interface as well
+        <p><ptr type="software" xml:id="R185" target="softw:teicorpo"/>
+          <rs type="cit:soft.name" ref="#R185">TEICORPO</rs> exists as a command-line interface as well
           as a web service. It can thus be used by novice as well as advanced users, or by
           developers of linguistic software. The tool is free and open source so it can be further
           used and developed in other projects.</p>
-        <p><ptr type="software" xml:id="R186" target="#teicorpo"/>
-          <rs type="soft.name" ref="#R186">TEICORPO</rs> is intended to be part of a large set of
+        <p><ptr type="software" xml:id="R186" target="softw:teicorpo"/>
+          <rs type="cit:soft.name" ref="#R186">TEICORPO</rs> is intended to be part of a large set of
           tools using TEI for linguistic corpus research. It can be used in parallel with or as a
           complement to other tools such as Weblicht or the <ptr type="software" xml:id="R187"
-            target="#exmaralda"/><rs type="soft.name" ref="#R187">EXMARaLDA</rs> tools (see <ref
+            target="softw:exmaralda"/><rs type="cit:soft.name" ref="#R187">EXMARaLDA</rs> tools (see <ref
             type="bibl" target="#schmidt2017">Schmidt, Hedeland, and Jettka 2017</ref>). A
-          specificity of <ptr type="software" xml:id="R188" target="#teicorpo"/>
-          <rs type="soft.name" ref="#R188">TEICORPO</rs> is that it is more suitable for processing
+          specificity of <ptr type="software" xml:id="R188" target="softw:teicorpo"/>
+          <rs type="cit:soft.name" ref="#R188">TEICORPO</rs> is that it is more suitable for processing
           extended forms of TEI data (especially forms which are not inside the main <gi>u</gi>
-          element in the TEI code). <ptr type="software" xml:id="R189" target="#teicorpo"/>
-          <rs type="soft.name" ref="#R189">TEICORPO</rs> is also linked to <ptr type="software"
-            xml:id="R190" target="#teimeta"/>
-          <rs type="soft.name" ref="#R190">TEIMETA</rs>, a flexible tool for describing spoken
+          element in the TEI code). <ptr type="software" xml:id="R189" target="softw:teicorpo"/>
+          <rs type="cit:soft.name" ref="#R189">TEICORPO</rs> is also linked to <ptr type="software"
+            xml:id="R190" target="softw:teimeta"/>
+          <rs type="cit:soft.name" ref="#R190">TEIMETA</rs>, a flexible tool for describing spoken
           language corpora in a web interface generated from an ODD file (<ref type="bibl"
             target="#etienne">Etienne, Liégois, and Parisse, accepted</ref>). As TEI enables
           metadata and data to be stored in the same file, sharing this format will promote metadata
           sharing and will keep metadata linked to their data during the life cycle of the data.</p>
         <p>Potential further developments could provide wider coverage of different formats such as
           CMDI or linked data for editing or data exploration purposes; allow <ptr type="software"
-            xml:id="R191" target="#teicorpo"/>
-          <rs type="soft.name" ref="#R191">TEICORPO</rs> to work with other external tools such as
+            xml:id="R191" target="softw:teicorpo"/>
+          <rs type="cit:soft.name" ref="#R191">TEICORPO</rs> to work with other external tools such as
           grammatical analyzers; or enable the visualization of multilevel annotations.</p>
         <p/>
       </div>
@@ -1573,13 +1573,13 @@
             <title level="j">Corpus</title>
             <biblScope unit="issue">22</biblScope>. doi:<idno type="DOI"
             >10.4000/corpus.5752</idno>.</bibl>
-          <ptr type="software" xml:id="R224" target="#transcriber"/>
-          <rs type="soft.bib.ref" ref="#R224">
-            <bibl xml:id="barras2000"><rs type="soft.agent" ref="#R224"><author>Barras,
-                  Claude</author></rs>, <rs type="soft.agent" ref="#R224"><author>Edouard
-                  Geoffrois</author></rs>, <rs type="soft.agent" ref="#R224"><author>Zhibiao
-                  Wu</author></rs>, and <rs type="soft.agent" ref="#R224"><author>Mark
-                  Liberman</author></rs>. <date>2000</date>. <title level="a"><rs type="soft.name"
+          <ptr type="software" xml:id="R224" target="softw:transcriber"/>
+          <rs type="cit:soft.bib.ref" ref="#R224">
+            <bibl xml:id="barras2000"><rs type="cit:soft.agent" ref="#R224"><author>Barras,
+                  Claude</author></rs>, <rs type="cit:soft.agent" ref="#R224"><author>Edouard
+                  Geoffrois</author></rs>, <rs type="cit:soft.agent" ref="#R224"><author>Zhibiao
+                  Wu</author></rs>, and <rs type="cit:soft.agent" ref="#R224"><author>Mark
+                  Liberman</author></rs>. <date>2000</date>. <title level="a"><rs type="cit:soft.name"
                   ref="#R224">Transcriber</rs>: Development and Use of a Tool for Assisting Speech
                 Corpora Production.</title> In <title level="m">Speech Annotation and Corpus
                 Tools</title>, edited by <editor>Steven Bird</editor> and <editor>Jonathan
@@ -1601,10 +1601,10 @@
             issue, <title level="j">Speech Communication</title>
             <biblScope unit="issue">33 (1–2)</biblScope>: <biblScope unit="page">23–60</biblScope>.
               doi:<idno type="DOI">10.1016/S0167-6393(00)00068-6</idno>.</bibl>
-          <ptr type="software" xml:id="R225" target="#praat"/>
-          <rs type="soft.bib.ref" ref="#R225">
-            <bibl xml:id="boersma2001"><rs type="soft.agent" ref="#R225"><author>Boersma,
-                  Paul</author></rs>. <date>2001</date>. <title level="a"><rs type="soft.name"
+          <ptr type="software" xml:id="R225" target="softw:praat"/>
+          <rs type="cit:soft.bib.ref" ref="#R225">
+            <bibl xml:id="boersma2001"><rs type="cit:soft.agent" ref="#R225"><author>Boersma,
+                  Paul</author></rs>. <date>2001</date>. <title level="a"><rs type="cit:soft.name"
                   ref="#R225">Praat</rs>, A System for Doing Phonetics by Computer</title>. <title
                 level="j">Glot International</title>
               <biblScope unit="issue">5 (9/10)</biblScope>: <biblScope unit="page"
@@ -1612,20 +1612,20 @@
                 target="https://www.fon.hum.uva.nl/paul/papers/speakUnspeakPraat_glot2001.pdf"
               />.</bibl>
           </rs>
-          <ptr type="software" xml:id="R226" target="#teimeta"/>
-          <rs type="soft.bib.ref" ref="#R226">
-            <bibl xml:id="etienne"><rs type="soft.agent" ref="#R226"><author>Etienne,
-                  Carole</author></rs>, <rs type="soft.agent" ref="#R226"><author>Loïc
-                  Liégeois</author></rs>, and <rs type="soft.agent" ref="#R226"><author>Christophe
-                  Parisse</author></rs>. Accepted. <title level="a"><rs type="soft.name" ref="#R226"
+          <ptr type="software" xml:id="R226" target="softw:teimeta"/>
+          <rs type="cit:soft.bib.ref" ref="#R226">
+            <bibl xml:id="etienne"><rs type="cit:soft.agent" ref="#R226"><author>Etienne,
+                  Carole</author></rs>, <rs type="cit:soft.agent" ref="#R226"><author>Loïc
+                  Liégeois</author></rs>, and <rs type="cit:soft.agent" ref="#R226"><author>Christophe
+                  Parisse</author></rs>. Accepted. <title level="a"><rs type="cit:soft.name" ref="#R226"
                   >TEIMETA</rs>: An Evolutive Solution to Describe Spoken Language Corpora in a Web
                 Interface Generated from an ODD File.</title></bibl>
           </rs>
-          <ptr type="software" xml:id="R227" target="#letrameur"/>
-          <rs type="soft.bib.ref" ref="#R227">
-            <bibl xml:id="fleury2014"><rs type="soft.agent" ref="#R227"><author>Fleury,
-                  Serge</author></rs>, and <rs type="soft.agent" ref="#R227"><author>Maria
-                  Zimina</author></rs>. <date>2014</date>. <title level="a"><rs type="soft.name"
+          <ptr type="software" xml:id="R227" target="softw:letrameur"/>
+          <rs type="cit:soft.bib.ref" ref="#R227">
+            <bibl xml:id="fleury2014"><rs type="cit:soft.agent" ref="#R227"><author>Fleury,
+                  Serge</author></rs>, and <rs type="cit:soft.agent" ref="#R227"><author>Maria
+                  Zimina</author></rs>. <date>2014</date>. <title level="a"><rs type="cit:soft.name"
                   ref="#R227">Trameur</rs>: A Framework for Annotated Text Corpora
                 Exploration.</title> In Proceedings of COLING 2014, the 25th International
               Conference on Computational Linguistics: System Demonstrations, edited by
@@ -1633,10 +1633,10 @@
                 >57–61</biblScope>. N.p.: Dublin City University and Association for Computational
               Linguistics. <ptr target="https://www.aclweb.org/anthology/C14-2013"/>.</bibl>
           </rs>
-          <ptr type="software" xml:id="R228" target="#txm"/>
-          <rs type="soft.bib.ref" ref="#R228">
-            <bibl xml:id="heiden2010"><rs type="soft.agent" ref="#R228"><author>Heiden,
-                  Serge</author></rs>. <date>2010</date>. <title level="a">The <rs type="soft.name"
+          <ptr type="software" xml:id="R228" target="softw:txm"/>
+          <rs type="cit:soft.bib.ref" ref="#R228">
+            <bibl xml:id="heiden2010"><rs type="cit:soft.agent" ref="#R228"><author>Heiden,
+                  Serge</author></rs>. <date>2010</date>. <title level="a">The <rs type="cit:soft.name"
                   ref="#R228">TXM</rs> Platform: Building Open-Source Textual Analysis Software
                 Compatible with the TEI Encoding Scheme.</title> In Proceedings of the 24th Pacific
               Asia Conference on Language, Information and Computation (PACLIC24), edited by
@@ -1646,12 +1646,12 @@
               for Digital Enhancement of Cognitive Development, Waseda University. <ptr
                 target="https://www.aclweb.org/anthology/Y10-1044/"/>.</bibl>
           </rs>
-          <ptr type="software" xml:id="R229" target="#weblicht"/>
-          <rs type="soft.bib.ref" ref="#R229">
-            <bibl xml:id="hinrichs2010"><rs type="soft.agent" ref="#R229"><author>Hinrichs,
-                  Erhard</author></rs>, <rs type="soft.agent" ref="#R229"><author>Marie
-                  Hinrichs</author></rs>, and <rs type="soft.agent" ref="#R229"><author>Thomas
-                  Zastrow</author></rs>. <date>2010</date>. <title level="a"><rs type="soft.name"
+          <ptr type="software" xml:id="R229" target="softw:weblicht"/>
+          <rs type="cit:soft.bib.ref" ref="#R229">
+            <bibl xml:id="hinrichs2010"><rs type="cit:soft.agent" ref="#R229"><author>Hinrichs,
+                  Erhard</author></rs>, <rs type="cit:soft.agent" ref="#R229"><author>Marie
+                  Hinrichs</author></rs>, and <rs type="cit:soft.agent" ref="#R229"><author>Thomas
+                  Zastrow</author></rs>. <date>2010</date>. <title level="a"><rs type="cit:soft.name"
                   ref="#R229">WebLicht</rs>: Web-Based LRT Services for German.</title> In
               Proceedings of the ACL 2010 System Demonstrations, <biblScope unit="page"
                 >25–29</biblScope>. <ptr target="http://www.aclweb.org/anthology/P10-4005"/>.</bibl>
@@ -1660,10 +1660,10 @@
               <date>2016</date>. Language Resource Management — Transcription of Spoken Language.
             ISO 24624:2016. <ptr target="http://www.iso.org/iso/catalogue_detail.htm?csnumber=37338"
             />.</bibl>
-          <ptr type="software" xml:id="R230" target="#anvil"/>
-          <rs type="soft.bib.ref" ref="#R230">
-            <bibl xml:id="kipp2001"><rs type="soft.agent" ref="#R230"><author>Kipp,
-                Michael</author></rs>. <date>2001</date>. <title level="a"><rs type="soft.name"
+          <ptr type="software" xml:id="R230" target="softw:anvil"/>
+          <rs type="cit:soft.bib.ref" ref="#R230">
+            <bibl xml:id="kipp2001"><rs type="cit:soft.agent" ref="#R230"><author>Kipp,
+                Michael</author></rs>. <date>2001</date>. <title level="a"><rs type="cit:soft.name"
                   ref="#R230">Anvil</rs>: A Generic Annotation Tool for Multimodal Dialogue.</title>
               In Proceedings of the 7th European Conference on Speech Communication and Technology
               (Eurospeech 2001 Scandinavia), vol. 2, edited by <editor>Paul Dalsgaard</editor>,
@@ -1684,15 +1684,15 @@
               by<editor>Joan C. Beal</editor>, <editor>Karen P. Corrigan</editor>, and
               <editor>Hermann L. Moisl</editor>, <biblScope unit="page">163–80</biblScope>.
             Houndmills, Basingstoke, Hampshire: Palgrave-Macmillan.</bibl>
-          <ptr type="software" xml:id="R231" target="#stanfordcorenlp"/>
-          <rs type="soft.bib.ref" ref="#R231">
-            <bibl xml:id="manning2014"><rs type="soft.agent" ref="#R231"><author>Manning,
-                  Christopher D.</author></rs>, <rs type="soft.agent" ref="#R231"><author>Mihai
-                  Surdeanu</author></rs>,<rs type="soft.agent" ref="#R231"><author>John
-                  Bauer</author></rs>, <rs type="soft.agent" ref="#R231"><author>Jenny
-                  Finkel</author></rs>, <rs type="soft.agent" ref="#R231"><author>Steven J.
-                  Bethard</author></rs>, and <rs type="soft.agent" ref="#R231"><author>David
-                  McClosky</author></rs>. <date>2014</date>. <title level="a"><rs type="soft.name"
+          <ptr type="software" xml:id="R231" target="softw:stanfordcorenlp"/>
+          <rs type="cit:soft.bib.ref" ref="#R231">
+            <bibl xml:id="manning2014"><rs type="cit:soft.agent" ref="#R231"><author>Manning,
+                  Christopher D.</author></rs>, <rs type="cit:soft.agent" ref="#R231"><author>Mihai
+                  Surdeanu</author></rs>,<rs type="cit:soft.agent" ref="#R231"><author>John
+                  Bauer</author></rs>, <rs type="cit:soft.agent" ref="#R231"><author>Jenny
+                  Finkel</author></rs>, <rs type="cit:soft.agent" ref="#R231"><author>Steven J.
+                  Bethard</author></rs>, and <rs type="cit:soft.agent" ref="#R231"><author>David
+                  McClosky</author></rs>. <date>2014</date>. <title level="a"><rs type="cit:soft.name"
                   ref="#R231">The Stanford CoreNLP Natural Language Processing Toolkit</rs>.</title>
               In Proceedings of the 52nd Annual Meeting of the Association for Computational
               Linguistics: System Demonstrations, edited by <editor>Kalina Bontcheva</editor> and
@@ -1725,13 +1725,13 @@
             the ACL SIGDAT Workshop. Author’s version available at <ptr
               target="https://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger/data/tree-tagger2.pdf"
             />.</bibl>
-          <ptr type="software" xml:id="R232" target="#exmaralda"/>
+          <ptr type="software" xml:id="R232" target="softw:exmaralda"/>
 
-          <rs type="soft.bib.ref" ref="#R232">
-            <bibl xml:id="schmidt2004"><rs type="soft.agent" ref="#R232"><author>Schmidt,
+          <rs type="cit:soft.bib.ref" ref="#R232">
+            <bibl xml:id="schmidt2004"><rs type="cit:soft.agent" ref="#R232"><author>Schmidt,
                   Thomas</author></rs>
               <date>2004</date>. <title level="a">Transcribing and Annotating Spoken Language with
-                  <rs type="soft.name" ref="#R232">EXMARaLDA</rs></title>. In Proceedings of the
+                  <rs type="cit:soft.name" ref="#R232">EXMARaLDA</rs></title>. In Proceedings of the
               LREC-Workshop on XML-based Richly Annotated Corpora. Paris: ELRA. Author’s version
               available at <ptr target="https://ids-pub.bsz-bw.de/frontdoor/index/index/docId/2317"
               />.</bibl>
@@ -1750,39 +1750,39 @@
             Electronic Conference Proceedings 136. Linköping, Sweden: LiU Electronic Press. <ptr
               target="https://ep.liu.se/ecp/article.asp?issue=136&amp;article=009&amp;volume=0"/>;
               <ptr target="https://ep.liu.se/ecp/136/009/ecp17136009.pdf"/>.</bibl>
-          <ptr type="software" xml:id="R233" target="#folker"/>
-          <rs type="soft.bib.ref" ref="#R233">
-            <bibl xml:id="schmidts2010"><rs type="soft.agent" ref="#R233"><author>Schmidt,
-                  Thomas</author></rs>, and <rs type="soft.agent" ref="#R233"><author>Wilfried
-                  Schütte</author></rs>. <date>2010</date>. <title level="a"><rs type="soft.name"
+          <ptr type="software" xml:id="R233" target="softw:folker"/>
+          <rs type="cit:soft.bib.ref" ref="#R233">
+            <bibl xml:id="schmidts2010"><rs type="cit:soft.agent" ref="#R233"><author>Schmidt,
+                  Thomas</author></rs>, and <rs type="cit:soft.agent" ref="#R233"><author>Wilfried
+                  Schütte</author></rs>. <date>2010</date>. <title level="a"><rs type="cit:soft.name"
                   ref="#R233">FOLKER</rs>: An Annotation Tool for Efficient Transcription of
                 Natural, Multi-party Interaction.</title> In Proceedings of the Seventh Conference
               on International Language Resources and Evaluation (LREC’10), <biblScope unit="page"
                 >2091–96</biblScope>. N.p.: European Language Resources Association (ELRA). <ptr
                 target="http://lrec-conf.org/proceedings/lrec2010/"/>.</bibl>
           </rs>
-          <ptr type="software" xml:id="R234" target="#iramuteq"/>
-          <rs type="soft.bib.ref" ref="#R234">
-            <bibl xml:id="souza2018"><rs type="soft.agent" ref="#R234"><author>Souza, Marli
-                  Aparecida Rocha de</author></rs>, <rs type="soft.agent" ref="#R234"
-                  ><author>Marilene Loewen Wall</author></rs>, <rs type="soft.agent" ref="#R234"
+          <ptr type="software" xml:id="R234" target="softw:iramuteq"/>
+          <rs type="cit:soft.bib.ref" ref="#R234">
+            <bibl xml:id="souza2018"><rs type="cit:soft.agent" ref="#R234"><author>Souza, Marli
+                  Aparecida Rocha de</author></rs>, <rs type="cit:soft.agent" ref="#R234"
+                  ><author>Marilene Loewen Wall</author></rs>, <rs type="cit:soft.agent" ref="#R234"
                   ><author>Andrea Cristina de Morais Chaves Thuler</author></rs>, <rs
-                type="soft.agent" ref="#R234"><author>Ingrid Margareth Voth Lowen</author></rs>, and
-                <rs type="soft.agent" ref="#R234"><author>Aida Maris Peres</author></rs>.
-                <date>2018</date>. <title level="a">The Use of <rs type="soft.name" ref="#R234"
+                type="cit:soft.agent" ref="#R234"><author>Ingrid Margareth Voth Lowen</author></rs>, and
+                <rs type="cit:soft.agent" ref="#R234"><author>Aida Maris Peres</author></rs>.
+                <date>2018</date>. <title level="a">The Use of <rs type="cit:soft.name" ref="#R234"
                   >IRAMUTEQ</rs> Software for Data Analysis in Qualitative Research</title>. <title
                 level="j">Revista da Escola de Enfermagem da USP 52</title>, <biblScope unit="issue"
                 >e03353</biblScope>. doi:<idno type="DOI"
               >10.1590/S1980-220X2017015003353</idno>.</bibl>
           </rs>
-          <ptr type="software" xml:id="R235" target="#ELAN"/>
-          <rs type="soft.bib.ref" ref="#R235">
-            <bibl xml:id="wittenburg2006"><rs type="soft.agent" ref="#R235"><author>Wittenburg,
-                  Peter</author></rs>, <rs type="soft.agent" ref="#R235"><author>Hennie
-                  Brugman</author></rs>, <rs type="soft.agent" ref="#R235"><author>Albert
-                  Russel</author></rs>, <rs type="soft.agent" ref="#R235"><author>Alex
-                  Klassmann</author></rs>, and <rs type="soft.agent" ref="#R235"><author>Han
-                  Sloetjes</author></rs>. <date>2006</date>. <title level="a"><rs type="soft.name
+          <ptr type="software" xml:id="R235" target="softw:ELAN"/>
+          <rs type="cit:soft.bib.ref" ref="#R235">
+            <bibl xml:id="wittenburg2006"><rs type="cit:soft.agent" ref="#R235"><author>Wittenburg,
+                  Peter</author></rs>, <rs type="cit:soft.agent" ref="#R235"><author>Hennie
+                  Brugman</author></rs>, <rs type="cit:soft.agent" ref="#R235"><author>Albert
+                  Russel</author></rs>, <rs type="cit:soft.agent" ref="#R235"><author>Alex
+                  Klassmann</author></rs>, and <rs type="cit:soft.agent" ref="#R235"><author>Han
+                  Sloetjes</author></rs>. <date>2006</date>. <title level="a"><rs type="cit:soft.name
                     " ref="#R235">ELAN</rs>: A Professional Framework for
                 Multimodality Research.</title> In Proceedings of LREC 2006, Fifth International
               Conference on Language Resources and Evaluation, <biblScope unit="page"

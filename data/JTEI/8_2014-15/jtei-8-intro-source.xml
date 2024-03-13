@@ -186,11 +186,11 @@
           Iglesia and Göbel’s work uses XML and related Web technologies to process semantic
           entities and produce data-driven visualizations of the forthcoming edition of Theodor
           Fontane’s notebooks as well as comparisons with other edition projects using TEI. Rosselli
-          Del Turco et al. describe <ptr type="software" xml:id="R1" target="#evt"/><rs
-            type="soft.name" ref="#R1">EVT (Edition Visualization Technology)</rs>, a TEI based
+          Del Turco et al. describe <ptr type="software" xml:id="R1" target="softw:evt"/><rs
+            type="cit:soft.name" ref="#R1">EVT (Edition Visualization Technology)</rs>, a TEI based
           scholarly publishing tool under development since about 2010. Initially designed as a
           specific solution for the <title level="m">Digital Vercelli Book</title> project, <ptr
-            type="software" xml:id="R2" target="#evt"/><rs type="soft.name" ref="#R2">EVT</rs> has
+            type="software" xml:id="R2" target="softw:evt"/><rs type="cit:soft.name" ref="#R2">EVT</rs> has
           evolved into a flexible tool to create Web-based digital editions incorporating
           transcription files encoded in TEI XML and digital facsimiles of the source texts. Portela
           and Rito Silva’s article presents the rationale and the technical approaches adopted for
@@ -201,9 +201,9 @@
           paper illustrates the user-friendly and bottom-up design principles that have guided the
           development of the <title level="m">ediarum</title> TEI editing and publishing platform.
           Similarly, Boschetti and Del Grosso describe the design and development of <title
-            level="m"><ptr type="software" xml:id="R3" target="#teicophilib"/><rs type="soft.name"
+            level="m"><ptr type="software" xml:id="R3" target="softw:teicophilib"/><rs type="cit:soft.name"
               ref="#R3">TeiCoPhiLib</rs></title>, a library of <ptr type="software" xml:id="R4"
-            target="#java"/><rs type="soft.name" ref="#R4">Java</rs> software components devoted to
+            target="softw:java"/><rs type="cit:soft.name" ref="#R4">Java</rs> software components devoted to
           editing, processing, and visualising TEI documents in the domain of philological studies.
           This tool is particularly suited to fostering collaborative philological work. This
           cluster is closed by Dalmau and Hawkins’s article, the focus of which is not on specific
